@@ -1,0 +1,5 @@
+transformers
+tokenizers
+pandas
+scikit-learn
+libclang
