@@ -1,0 +1,35 @@
+# Dataset Guide
+
+This folder contains all datasets released with GRAML. It is the central entry point for reproduction, evaluation, ablation, and robustness experiments.
+
+## What This Folder Contains
+
+- `ID_dataset/`: the main in-distribution split used for training, validation, and testing
+- `OOD_dataset/`: external out-of-distribution evaluation sets from multiple open-source sources
+- `robustness/`: perturbed versions of test sets used for robustness analysis
+- `Ablation/`: variants of the task data used for ablation studies
+
+## How to Use It
+
+- Use `ID_dataset/` for the main training and validation pipeline.
+- Use `OOD_dataset/` to test cross-dataset generalization.
+- Use `robustness/` to test perturbation robustness.
+- Use `Ablation/` to measure the contribution of different task components.
+
+## Data Format
+
+Across the repository, the JSON files in this folder are used in a consistent way:
+
+- `instruction`: task instruction given to the model
+- `input`: source code snippet or code-centered input
+- `output`: target label or target text
+- `Task` or related keys such as `task`, `category`, `type`: task type
+
+The scripts in `traing+inference/` accept either a plain JSON list or a JSON object with a top-level `data` field.
+
+## Subfolder Guides
+
+- [Ablation](Ablation/README.md)
+- [ID_dataset](ID_dataset/README.md)
+- [OOD_dataset](OOD_dataset/README.md)
+- [robustness](robustness/README.md)

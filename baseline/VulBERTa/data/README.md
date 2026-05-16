@@ -1,18 +1,24 @@
-# Data
+# VulBERTa Data Notes
 
-Due to the size of data, we store the data files separately from GitHub.
+This folder is a placeholder for the larger upstream VulBERTa data assets.
 
-## How to download all the data
+## What This Folder Is For
 
-1. Download the compressed file from (https://1drv.ms/u/s!AueKnGqzBuIVkq4B9ESELGQ-VtjIYA?e=f0moEm)  
+In the original VulBERTa project, this directory is used for:
 
-2. Unzip the compressed file in this directory (e.g. `data`)  
-`unzip data.zip`
+- tokenizer training data
+- pretraining data
+- fine-tuning data
 
-3. This will extract 3 different folders: 
+Those large assets are not fully stored inside this GRAML repository.
 
-* `finetune`
-* `pretrain`
-* `tokenizer`
+## Why This Folder Still Exists
 
-4. Ready for usage.
+The folder is kept because:
+
+- it documents the structure expected by the original VulBERTa notebooks
+- it helps users who want to recover or extend the upstream workflow
+
+## In This Repository
+
+For GRAML reproduction, you usually do not need to populate this directory if you are using `run_vulberta.py` with the JSON datasets under `Dataset/`.

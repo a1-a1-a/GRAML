@@ -27,6 +27,16 @@ GRAML/
 `-- traing+inference/
 ```
 
+## Folder Guides
+
+For easier navigation, each major directory now has its own local guide:
+
+- [Dataset](Dataset/README.md): all released datasets, including ID, OOD, robustness, and ablation splits
+- [traing+inference](traing+inference/README.md): the main Unsloth fine-tuning and inference pipeline
+- [baseline](baseline/README.md): seven baseline implementations and their folder-level notes
+- [robustness_transformation](robustness_transformation/README.md): robustness perturbation generation utilities
+- [ToT](ToT/README.md): ToT-guided vulnerability reasoning code and generated descriptions
+
 ## Dataset Overview
 
 ### 1. `Dataset/ID_dataset/`
