@@ -253,7 +253,3 @@ Each baseline has its own subdirectory and runnable code. In particular, `baseli
 - Keep the repository directory names unchanged when using the commands above, especially `Dataset/` and `traing+inference/`.
 - The inference script is designed for Yes/No vulnerability detection and supports validation-based threshold tuning.
 - Output directories such as `checkpoints/` and `outputs/` are only examples; you can organize them however you prefer.
-
-## Citation
-
-If you find this repository useful in your research, please cite the corresponding paper. The BibTeX entry can be added here after publication.
