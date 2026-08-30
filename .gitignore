@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+
+# LaTeX / build
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Junk / temp
+*.tmp
+*.bak
+*.swp
+~$*
+.DS_Store
+Thumbs.db
+
+# Outputs (regenerable)
+checkpoints/
+outputs/
+predictions/

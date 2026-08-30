@@ -14,10 +14,10 @@ Use this folder to benchmark a standard RoBERTa-style classifier on the GRAML da
 ## Example
 
 ```bash
-python baseline/RoBerta/run.py \
-  --train_data_file Dataset/ID_dataset/Ultimate_train.json \
-  --eval_data_file Dataset/ID_dataset/Ultimate_valid.json \
-  --test_data_file Dataset/ID_dataset/Ultimate_test.json \
+python baseline/roberta/run.py \
+  --train_data_file Dataset/id/Ultimate_train.json \
+  --eval_data_file Dataset/id/Ultimate_valid.json \
+  --test_data_file Dataset/id/Ultimate_test.json \
   --output_dir outputs/roberta \
   --model_type roberta \
   --model_name_or_path roberta-base \

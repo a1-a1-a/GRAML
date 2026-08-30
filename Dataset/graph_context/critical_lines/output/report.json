@@ -1,0 +1,25 @@
+{
+  "total": 411,
+  "total_crit": 2961,
+  "total_rel": 7912,
+  "median_crit": 4,
+  "cap": 20,
+  "non_empty": 285,
+  "empty": 126,
+  "status": {
+    "joern_multirelation": 248,
+    "no_usable_joern_edges": 106,
+    "joern_ast_fallback": 50,
+    "joern_multirelation_anchor_cap": 7
+  },
+  "edge_weights_used": {
+    "REACHING_DEF": 0.5,
+    "CONTROL_DEPENDENCE": 0.3,
+    "CFG_NEXT": 0.2
+  },
+  "edges": {
+    "REACHING_DEF": 39404,
+    "CONTROL_DEPENDENCE": 21679,
+    "CFG_NEXT": 48024
+  }
+}

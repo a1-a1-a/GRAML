@@ -7,7 +7,7 @@ The repository is organized so that users can reproduce the main pipeline with t
 ## Highlights
 
 - `Dataset/` contains in-distribution, out-of-distribution, robustness, and ablation datasets.
-- `traing+inference/` contains the Unsloth-based fine-tuning and inference scripts.
+- `training_inference/` contains the Unsloth-based fine-tuning and inference scripts.
 - `baseline/` contains seven baseline model implementations.
 - `robustness_transformation/` contains code for generating perturbed robustness test sets.
 - `ToT/` contains the ToT-guided vulnerability reasoning script and generated vulnerability descriptions.
@@ -17,14 +17,16 @@ The repository is organized so that users can reproduce the main pipeline with t
 ```text
 GRAML/
 |-- Dataset/
-|   |-- Ablation/
-|   |-- ID_dataset/
-|   |-- OOD_dataset/
-|   `-- robustness/
-|-- ToT/
-|-- baseline/
-|-- robustness_transformation/
-`-- traing+inference/
+|   |-- id/                     # in-distribution train/valid/test
+|   |-- ood/                    # six external OOD datasets
+|   |-- robustness/             # robustness perturbations
+|   |-- ablations/              # ablation datasets (multi-task / graph evidence / direct CPG / random lines)
+|   |-- graph_context/          # critical-line selection outputs and Joern CPG examples
+|   `-- scripts/                # dataset construction scripts
+|-- training_inference/         # main GRAML training and inference
+|-- baseline/                   # encoder baselines + LLM baselines
+|-- robustness_transformation/  # robustness perturbation generation
+`-- ToT/                        # ToT-VR reasoning code and descriptions
 ```
 
 ## Folder Guides
@@ -32,22 +34,32 @@ GRAML/
 For easier navigation, each major directory now has its own local guide:
 
 - [Dataset](Dataset/README.md): all released datasets, including ID, OOD, robustness, and ablation splits
-- [traing+inference](traing+inference/README.md): the main Unsloth fine-tuning and inference pipeline
+- [training_inference](training_inference/README.md): the main Unsloth fine-tuning and inference pipeline
 - [baseline](baseline/README.md): seven baseline implementations and their folder-level notes
 - [robustness_transformation](robustness_transformation/README.md): robustness perturbation generation utilities
 - [ToT](ToT/README.md): ToT-guided vulnerability reasoning code and generated descriptions
 
 ## Dataset Overview
 
-### 1. `Dataset/ID_dataset/`
+### 1. `Dataset/id/`
 
 This folder contains the in-distribution dataset used in the main pipeline:
 
-- `Ultimate_train.json`: training set
-- `Ultimate_valid.json`: validation set
-- `Ultimate_test.json`: test set
+- `Ultimate_train.json`: training set (21,600 samples)
+- `Ultimate_valid.json`: validation set (2,310 samples)
+- `Ultimate_test.json`: test set (2,311 samples)
+- `raw_cve/`: raw CVE samples collected from 2019 to 2026 used to construct the training set
 
-### 2. `Dataset/OOD_dataset/`
+The training set covers four tasks:
+
+| Task | Count |
+|---|---|
+| Detection | 19,137 |
+| Description | 823 |
+| Localization | 820 |
+| Assessment | 820 |
+
+### 2. `Dataset/ood/`
 
 This folder contains out-of-distribution evaluation sets from six external open-source sources:
 
@@ -78,16 +90,27 @@ For each dataset, three perturbation types are provided:
 - `*_obfuscate.json`
 - `*_structure.json`
 
-### 4. `Dataset/Ablation/`
+### 4. `Dataset/ablations/`
 
-This folder contains the ablation datasets:
+This folder contains the ablation datasets organized by experiment:
 
-- `no_assessment.json`
-- `no_description.json`
-- `no_location.json`
-- `only_detection.json`
+- `multi_task/`: multi-task supervision ablations
+  - `only_detection.json`: detection task only
+  - `no_description.json`: without description task
+  - `no_location.json`: without localization task
+  - `no_assessment.json`: without assessment task
+- `direct_cpg/`: Direct CPG supervision ablation (raw CPG serializations as input)
+- `graph_evidence/`: w/o Graph Evidence ablation (no CPG evidence)
+- `random_lines/`: random-lines control ablation
 
-These files are used to study the contribution of different task components.
+### 5. `Dataset/graph_context/`
+
+This folder contains the graph-structured context extraction outputs:
+
+- `critical_lines/`: selected critical lines and typed line relations (with generation scripts)
+- `cpg_evidence/`: Joern CPG extraction examples
+
+These correspond to the graph-structured context extraction step described in the paper.
 
 ## Data Format
 
@@ -129,16 +152,16 @@ If your environment requires a CUDA-specific Unsloth installation, please follow
 The main training script is:
 
 ```text
-traing+inference/train_unsloth.py
+training_inference/train_unsloth.py
 ```
 
 Example:
 
 ```bash
-python traing+inference/train_unsloth.py \
+python training_inference/train_unsloth.py \
   --model_name path/to/base-model \
-  --train_path Dataset/ID_dataset/Ultimate_train.json \
-  --valid_path Dataset/ID_dataset/Ultimate_valid.json \
+  --train_path Dataset/id/Ultimate_train.json \
+  --valid_path Dataset/id/Ultimate_valid.json \
   --output_dir checkpoints/deepseek6.7b_r64a16 \
   --num_train_epochs 3 \
   --per_device_train_batch_size 32 \
@@ -165,16 +188,16 @@ python traing+inference/train_unsloth.py \
 The main inference script is:
 
 ```text
-traing+inference/infer_unsloth.py
+training_inference/infer_unsloth.py
 ```
 
 Example:
 
 ```bash
-python traing+inference/infer_unsloth.py \
+python training_inference/infer_unsloth.py \
   --adapter_path checkpoints/your_run/checkpoint-1731 \
-  --test_path Dataset/ID_dataset/Ultimate_test.json \
-  --valid_path Dataset/ID_dataset/Ultimate_valid.json \
+  --test_path Dataset/id/Ultimate_test.json \
+  --valid_path Dataset/id/Ultimate_valid.json \
   --output_path outputs/predictions \
   --curve_path outputs/curves \
   --summary_csv_path outputs/all_results_summary.csv \
@@ -210,7 +233,7 @@ The main script is:
 
 ```bash
 python robustness_transformation/apply_transformations.py \
-  --input_path Dataset/ID_dataset/Ultimate_test.json \
+  --input_path Dataset/id/Ultimate_test.json \
   --output_path outputs/robustness/Ultimate_test_tf1_tf6.json \
   --transforms tf_1 tf_6
 ```
@@ -235,21 +258,18 @@ The current script includes a built-in example. You can adapt it for your own co
 
 ## Baselines
 
-The `baseline/` folder contains implementations for seven baseline models:
+The `baseline/` folder contains:
 
-- CodeBERT
-- CodeBERTa
-- GPT-2
-- GraphCodeBERT
-- RoBERTa
-- UniXcoder
-- VulBERTa
+- **Seven encoder baselines**: CodeBERT, CodeBERTa, GPT-2, GraphCodeBERT, RoBERTa, UniXcoder, VulBERTa (each in its own subdirectory).
+- **LLM baselines** (`baseline/llm_baselines/`): few-shot / zero-shot large-language-model baselines (e.g., GPT-5) via an OpenAI-compatible API.
 
-Each baseline has its own subdirectory and runnable code. In particular, `baseline/VulBERTa/README.md` provides additional model-specific details.
+Each baseline has its own README and runnable code. In particular, `baseline/vulberta/README.md` provides additional model-specific details.
 
 ## Reproducibility Notes
 
 - Replace all placeholder model and checkpoint paths with paths in your own environment.
-- Keep the repository directory names unchanged when using the commands above, especially `Dataset/` and `traing+inference/`.
+- Keep the repository directory names unchanged when using the commands above, especially `Dataset/`, `training_inference/`, and `baseline/`.
 - The inference script is designed for Yes/No vulnerability detection and supports validation-based threshold tuning.
 - Output directories such as `checkpoints/` and `outputs/` are only examples; you can organize them however you prefer.
+- The API key in `baseline/llm_baselines/run_zero_shot.ps1` is a placeholder (`sk-XXX`); set your own key before running.
+- Set your own `OPENAI_API_KEY` before running the ToT-VR script.

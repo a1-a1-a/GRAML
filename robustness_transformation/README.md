@@ -19,7 +19,7 @@ Use this folder when you want to:
 
 ```bash
 python robustness_transformation/apply_transformations.py \
-  --input_path Dataset/ID_dataset/Ultimate_test.json \
+  --input_path Dataset/id/Ultimate_test.json \
   --output_path outputs/robustness/Ultimate_test_tf1_tf6.json \
   --transforms tf_1 tf_6
 ```

@@ -15,9 +15,9 @@ Use this folder when you want a baseline based on the CodeBERTa family while kee
 
 ```bash
 python baseline/codeberta/run.py \
-  --train_data_file Dataset/ID_dataset/Ultimate_train.json \
-  --eval_data_file Dataset/ID_dataset/Ultimate_valid.json \
-  --test_data_file Dataset/ID_dataset/Ultimate_test.json \
+  --train_data_file Dataset/id/Ultimate_train.json \
+  --eval_data_file Dataset/id/Ultimate_valid.json \
+  --test_data_file Dataset/id/Ultimate_test.json \
   --output_dir outputs/codeberta \
   --model_type roberta \
   --model_name_or_path path/to/codeberta-checkpoint \

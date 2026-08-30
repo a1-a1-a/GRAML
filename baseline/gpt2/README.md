@@ -15,9 +15,9 @@ Use this folder to benchmark a GPT-2-style classifier on the GRAML data format.
 
 ```bash
 python baseline/gpt2/run_gpt2.py \
-  --train_data_file Dataset/ID_dataset/Ultimate_train.json \
-  --eval_data_file Dataset/ID_dataset/Ultimate_valid.json \
-  --test_data_file Dataset/ID_dataset/Ultimate_test.json \
+  --train_data_file Dataset/id/Ultimate_train.json \
+  --eval_data_file Dataset/id/Ultimate_valid.json \
+  --test_data_file Dataset/id/Ultimate_test.json \
   --output_dir outputs/gpt2 \
   --model_type gpt2 \
   --model_name_or_path gpt2 \

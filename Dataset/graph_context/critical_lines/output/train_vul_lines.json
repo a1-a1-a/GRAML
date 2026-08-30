@@ -1,0 +1,4470 @@
+[
+  {
+    "sample_idx": 0,
+    "code": "static int xfrm_dump_policy(struct sk_buff *skb, struct netlink_callback *cb)\n{\nstruct net *net = sock_net(skb->sk);\nstruct xfrm_policy_walk *walk = (struct xfrm_policy_walk *) &cb->args[1];\nstruct xf...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 1,
+    "code": "void InspectorPageAgent::setDeviceOrientationOverride(ErrorString* error, double alpha, double beta, double gamma)\n{\nNewDeviceOrientationController* controller = NewDeviceOrientationController::from(m...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 2,
+    "code": "void ChromotingHost::ShutdownNetwork() {\nif (!context_->network_message_loop()->BelongsToCurrentThread()) {\ncontext_->network_message_loop()->PostTask(\nFROM_HERE, base::Bind(&ChromotingHost::ShutdownN...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 3,
+    "code": "static int chmd_read_headers(struct mspack_system *sys, struct mspack_file *fh,\nstruct mschmd_header *chm, int entire)\n{\nunsigned int section, name_len, x, errors, num_chunks;\nunsigned char buf[0x54],...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 4,
+    "code": "static Image *ReadWPGImage(const ImageInfo *image_info,\nExceptionInfo *exception)\n{\ntypedef struct\n{\nsize_t FileId;\nMagickOffsetType DataOffset;\nunsigned int ProductType;\nunsigned int FileType;\nunsign...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 5,
+    "code": "void PageFormAnalyserLogger::Flush() {\nstd::string text;\nfor (ConsoleLevel level : {kError, kWarning, kVerbose}) {\nfor (LogEntry& entry : node_buffer_[level]) {\ntext.clear();\ntext += \"[DOM] \";\ntext +=...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 6,
+    "code": "nfs_printfh(netdissect_options *ndo,\nregister const uint32_t *dp, const u_int len)\n{\nmy_fsid fsid;\nuint32_t ino;\nconst char *sfsname = NULL;\nchar *spacep;\nif (ndo->ndo_uflag) {\nu_int i;\nchar const *se...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 7,
+    "code": "MediaMetadataRetriever::MediaMetadataRetriever()\n{\nALOGV(\"constructor\");\nconst sp<IMediaPlayerService>& service(getService());\nif (service == 0) {\nALOGE(\"failed to obtain MediaMetadataRetrieverService...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 8,
+    "code": "static void testInspectorManualAttachDetach(CustomInspectorTest* test, gconstpointer)\n{\ntest->showInWindowAndWaitUntilMapped(GTK_WINDOW_TOPLEVEL);\ntest->resizeView(200, 200);\ntest->loadHtml(\"<html><bo...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 9,
+    "code": "_pyfribidi_log2vis (PyObject * self, PyObject * args, PyObject * kw)\n{\nPyObject *logical = NULL;\nFriBidiParType base = FRIBIDI_TYPE_RTL;\nconst char *encoding = \"utf-8\";\nint clean = 0;\nint reordernsm =...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 10,
+    "code": "int get_scl(void)\n{\nreturn qrio_get_gpio(DEBLOCK_PORT1, DEBLOCK_SCL1);\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 11,
+    "code": "static void record_and_restart(struct perf_event *event, unsigned long val,\nstruct pt_regs *regs, int nmi)\n{\nu64 period = event->hw.sample_period;\ns64 prev, delta, left;\nint record = 0;\nif (event->hw....",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 12,
+    "code": "static int multipath_ioctl(struct dm_target *ti, unsigned int cmd,\nunsigned long arg)\n{\nstruct multipath *m = (struct multipath *) ti->private;\nstruct block_device *bdev = NULL;\nfmode_t mode = 0;\nunsi...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 13,
+    "code": "OMX_ERRORTYPE  omx_vdec::component_deinit(OMX_IN OMX_HANDLETYPE hComp)\n{\n(void) hComp;\n#ifdef _ANDROID_\nif (iDivXDrmDecrypt) {\ndelete iDivXDrmDecrypt;\niDivXDrmDecrypt=NULL;\n}\n#endif\nunsigned i = 0;\nif...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 14,
+    "code": "static void fanout_release(struct sock *sk)\n{\nstruct packet_sock *po = pkt_sk(sk);\nstruct packet_fanout *f;\nf = po->fanout;\nif (!f)\nreturn;\nmutex_lock(&fanout_mutex);\npo->fanout = NULL;\nif (atomic_dec...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 15,
+    "code": "php_http_url_t *php_http_url_parse(const char *str, size_t len, unsigned flags TSRMLS_DC)\n{\nsize_t maxlen = 3 * len;\nstruct parse_state *state = ecalloc(1, sizeof(*state) + maxlen);\nstate->end = str +...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 16,
+    "code": "OMX_ERRORTYPE  omx_vdec::get_config(OMX_IN OMX_HANDLETYPE      hComp,\nOMX_IN OMX_INDEXTYPE configIndex,\nOMX_INOUT OMX_PTR     configData)\n{\n(void) hComp;\nOMX_ERRORTYPE eRet = OMX_ErrorNone;\nif (m_stat...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 17,
+    "code": "void Document::processHttpEquiv(const String& equiv, const String& content)\n{\nASSERT(!equiv.isNull() && !content.isNull());\nFrame* frame = this->frame();\nif (equalIgnoringCase(equiv, \"default-style\"))...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 18,
+    "code": "DOMFileSystemSync* WorkerGlobalScopeFileSystem::webkitRequestFileSystemSync(WorkerGlobalScope& worker, int type, long long size, ExceptionState& exceptionState)\n{\nExecutionContext* secureContext = wor...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 19,
+    "code": "void TabletModeWindowManager::ForgetWindow(aura::Window* window,\nbool destroyed) {\nadded_windows_.erase(window);\nwindow->RemoveObserver(this);\nWindowToState::iterator it = window_state_map_.find(windo...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 20,
+    "code": "int btpan_tap_open()\n{\nstruct ifreq ifr;\nint fd, err;\nconst char *clonedev = \"/dev/tun\";\nif ((fd = open(clonedev, O_RDWR)) < 0)\n{\nBTIF_TRACE_DEBUG(\"could not open %s, err:%d\", clonedev, errno);\nreturn...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 21,
+    "code": "new_msg_register_event (u_int32_t seqnum, struct lsa_filter_type *filter)\n{\nu_char buf[OSPF_API_MAX_MSG_SIZE];\nstruct msg_register_event *emsg;\nint len;\nemsg = (struct msg_register_event *) buf;\nlen =...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 22,
+    "code": "unsigned int munlock_vma_page(struct page *page)\n{\nunsigned int nr_pages;\nstruct zone *zone = page_zone(page);\nBUG_ON(!PageLocked(page));\nspin_lock_irq(&zone->lru_lock);\nnr_pages = hpage_nr_pages(page...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 23,
+    "code": "void ProcessRequest() {\nDCHECK_CURRENTLY_ON(BrowserThread::UI);\ntimer.Stop();\nWallpaperManager* manager = WallpaperManager::Get();\nif (manager->pending_inactive_ == this)\nmanager->pending_inactive_ = ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 24,
+    "code": "PHP_FUNCTION(mcrypt_cfb)\n{\nzval **mode;\nchar *cipher, *key, *data, *iv = NULL;\nint cipher_len, key_len, data_len, iv_len = 0;\nMCRYPT_GET_CRYPT_ARGS\nconvert_to_long_ex(mode);\nphp_mcrypt_do_crypt(cipher...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 25,
+    "code": "RunLoop::RunLoop()\n: delegate_(tls_delegate.Get().Get()),\norigin_task_runner_(ThreadTaskRunnerHandle::Get()),\nweak_factory_(this) {\nDCHECK(delegate_) << \"A RunLoop::Delegate must be bound to this thre...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 26,
+    "code": "void jpc_qmfb_split_colgrp(jpc_fix_t *a, int numrows, int stride,\nint parity)\n{\nint bufsize = JPC_CEILDIVPOW2(numrows, 1);\njpc_fix_t splitbuf[QMFB_SPLITBUFSIZE * JPC_QMFB_COLGRPSIZE];\njpc_fix_t *buf =...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 27,
+    "code": "chpass_principal_2_svc(chpass_arg *arg, struct svc_req *rqstp)\n{\nstatic generic_ret              ret;\nchar                            *prime_arg;\ngss_buffer_desc                 client_name,\nservice_n...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 28,
+    "code": "const char* SegmentInfo::GetTitleAsUTF8() const\n{\nreturn m_pTitleAsUTF8;\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 29,
+    "code": "virtual std::string GetKeyboardOverlayId(const std::string& input_method_id) {\nif (!initialized_successfully_)\nreturn \"\";\nreturn chromeos::GetKeyboardOverlayId(input_method_id);\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 30,
+    "code": "juniper_monitor_print(netdissect_options *ndo,\nconst struct pcap_pkthdr *h, register const u_char *p)\n{\nstruct juniper_l2info_t l2info;\nstruct juniper_monitor_header {\nuint8_t pkt_type;\nuint8_t paddin...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 31,
+    "code": "int key_reject_and_link(struct key *key,\nunsigned timeout,\nunsigned error,\nstruct key *keyring,\nstruct key *authkey)\n{\nstruct assoc_array_edit *edit;\nstruct timespec now;\nint ret, awaken, link_ret = 0...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 32,
+    "code": "void ManualFillingControllerImpl::OnGenerationRequested() {\nDCHECK(pwd_controller_);\npwd_controller_->OnGenerationRequested();\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 33,
+    "code": "static int parse_options(char *options, struct super_block *sb,\nunsigned long *journal_devnum,\nunsigned int *journal_ioprio,\next4_fsblk_t *n_blocks_count, int is_remount)\n{\nstruct ext4_sb_info *sbi = ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 34,
+    "code": "void FetchManager::Loader::Start() {\nif (!ContentSecurityPolicy::ShouldBypassMainWorld(execution_context_) &&\n!execution_context_->GetContentSecurityPolicy()->AllowConnectToSource(\nfetch_request_data_...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 35,
+    "code": "sg_write(struct file *filp, const char __user *buf, size_t count, loff_t * ppos)\n{\nint mxsize, cmd_size, k;\nint input_size, blocking;\nunsigned char opcode;\nSg_device *sdp;\nSg_fd *sfp;\nSg_request *srp;...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 36,
+    "code": "FramebufferInfoTest()\n: manager_(1, 1),\nfeature_info_(new FeatureInfo()),\nrenderbuffer_manager_(NULL, kMaxRenderbufferSize, kMaxSamples,\nkDepth24Supported) {\ntexture_manager_.reset(new TextureManager(...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 37,
+    "code": "static const char *parse_array( cJSON *item, const char *value )\n{\ncJSON *child;\nif ( *value != '[' ) {\nep = value;\nreturn 0;\n}\nitem->type = cJSON_Array;\nvalue = skip( value + 1 );\nif ( *value == ']' ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 38,
+    "code": "bool ClipboardUtil::GetUrl(IDataObject* data_object,\nbase::string16* url, base::string16* title, bool convert_filenames) {\nDCHECK(data_object && url && title);\nif (!HasUrl(data_object, convert_filenam...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 39,
+    "code": "int btrfs_truncate_inode_items(struct btrfs_trans_handle *trans,\nstruct btrfs_root *root,\nstruct inode *inode,\nu64 new_size, u32 min_type)\n{\nstruct btrfs_path *path;\nstruct extent_buffer *leaf;\nstruct...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 40,
+    "code": "static int try_read_command(conn *c) {\nassert(c != NULL);\nassert(c->rcurr <= (c->rbuf + c->rsize));\nassert(c->rbytes > 0);\nif (c->protocol == negotiating_prot || c->transport == udp_transport)  {\nif (...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 41,
+    "code": "void PrintWebViewHelper::OnPrintPreview(const DictionaryValue& settings) {\nDCHECK(is_preview_enabled_);\nprint_preview_context_.OnPrintPreview();\nif (!UpdatePrintSettings(print_preview_context_.frame()...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 42,
+    "code": "BlobStorageContext::BlobFlattener::BlobFlattener(\nconst BlobDataBuilder& input_builder,\nBlobEntry* output_blob,\nBlobStorageRegistry* registry) {\nconst std::string& uuid = input_builder.uuid_;\nstd::set...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 43,
+    "code": "static bool on_accept(private_stroke_socket_t *this, stream_t *stream)\n{\nstroke_msg_t *msg;\nuint16_t len;\nFILE *out;\nif (!stream->read_all(stream, &len, sizeof(len)))\n{\nif (errno != EWOULDBLOCK)\n{\nDBG...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 44,
+    "code": "void aes_crypt_ecb( aes_context *ctx,\nint mode,\nconst unsigned char input[16],\nunsigned char output[16] )\n{\nint i;\nunsigned long *RK, X0, X1, X2, X3, Y0, Y1, Y2, Y3;\n#if defined(XYSSL_PADLOCK_C) && de...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 45,
+    "code": "void PluginInstance::RequestRead(NPStream* stream, NPByteRange* range_list) {\nstd::string range_info = \"bytes=\";\nwhile (range_list) {\nrange_info += IntToString(range_list->offset);\nrange_info += \"-\";\n...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 46,
+    "code": "int ip6_find_1stfragopt(struct sk_buff *skb, u8 **nexthdr)\n{\nu16 offset = sizeof(struct ipv6hdr);\nstruct ipv6_opt_hdr *exthdr =\n(struct ipv6_opt_hdr *)(ipv6_hdr(skb) + 1);\nunsigned int packet_len = sk...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 47,
+    "code": "void gdImageJpegCtx (gdImagePtr im, gdIOCtx * outfile, int quality)\n{\nstruct jpeg_compress_struct cinfo;\nstruct jpeg_error_mgr jerr;\nint i, j, jidx;\nvolatile JSAMPROW row = 0;\nJSAMPROW rowptr[1];\njmpb...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 48,
+    "code": "kadm5_modify_principal(void *server_handle,\nkadm5_principal_ent_t entry, long mask)\n{\nint                     ret, ret2, i;\nkadm5_policy_ent_rec    pol;\nkrb5_boolean            have_pol = FALSE;\nkrb5_...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 49,
+    "code": "static void Rp_test(js_State *J)\n{\njs_Regexp *re;\nconst char *text;\nint opts;\nResub m;\nre = js_toregexp(J, 0);\ntext = js_tostring(J, 1);\nopts = 0;\nif (re->flags & JS_REGEXP_G) {\nif (re->last > strlen(...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 50,
+    "code": "static inline void jmp_rel(struct x86_emulate_ctxt *ctxt, int rel)\n{\nassign_eip_near(ctxt, ctxt->_eip + rel);\n}...",
+    "matched": true,
+    "vuln_lines": [
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 51,
+    "code": "int do_adjtimex(struct timex *txc)\n{\nlong mtemp, save_adjust, rem;\ns64 freq_adj;\nint result;\nif (txc->modes && !capable(CAP_SYS_TIME))\nreturn -EPERM;\nif ((txc->modes & ADJ_OFFSET_SINGLESHOT) == ADJ_OF...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      79,
+      80,
+      81
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 52,
+    "code": "long FrameSequenceState_gif::drawFrame(int frameNr,\nColor8888* outputPtr, int outputPixelStride, int previousFrameNr) {\nGifFileType* gif = mFrameSequence.getGif();\nif (!gif) {\nALOGD(\"Cannot drawFrame,...",
+    "matched": true,
+    "vuln_lines": [
+      76,
+      77,
+      78
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 53,
+    "code": "check_acl(pam_handle_t *pamh,\nconst char *sense, const char *this_user, const char *other_user,\nint noent_code, int debug)\n{\nstruct passwd *pwd;\nFILE *fp = NULL;\nint i, fd = -1, save_errno;\nuid_t fsui...",
+    "matched": true,
+    "vuln_lines": [
+      7,
+      22,
+      30
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 54,
+    "code": "ext4_xattr_release_block(handle_t *handle, struct inode *inode,\nstruct buffer_head *bh)\n{\nstruct mb_cache_entry *ce = NULL;\nint error = 0;\nstruct mb_cache *ext4_mb_cache = EXT4_GET_MB_CACHE(inode);\nce...",
+    "matched": true,
+    "vuln_lines": [
+      3,
+      5,
+      6,
+      14,
+      15,
+      23,
+      24
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 55,
+    "code": "toomany(struct magic_set *ms, const char *name, uint16_t num)\n{\nif (file_printf(ms, \", too many %s header sections (%u)\", name, num\n) == -1)\nreturn -1;\nreturn 0;\n}...",
+    "matched": true,
+    "vuln_lines": [
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 56,
+    "code": "static irqreturn_t i8042_interrupt(int irq, void *dev_id)\n{\nstruct i8042_port *port;\nstruct serio *serio;\nunsigned long flags;\nunsigned char str, data;\nunsigned int dfl;\nunsigned int port_no;\nbool fil...",
+    "matched": true,
+    "vuln_lines": [
+      56
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 57,
+    "code": "static int open_url(AVFormatContext *s, AVIOContext **pb, const char *url,\nAVDictionary *opts, AVDictionary *opts2, int *is_http)\n{\nHLSContext *c = s->priv_data;\nAVDictionary *tmp = NULL;\nconst char *...",
+    "matched": true,
+    "vuln_lines": [
+      17
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 58,
+    "code": "void svc_rdma_xdr_encode_array_chunk(struct rpcrdma_write_array *ary,\nint chunk_no,\n__be32 rs_handle,\n__be64 rs_offset,\nu32 write_len)\n{\nstruct rpcrdma_segment *seg = &ary->wc_array[chunk_no].wc_targe...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 59,
+    "code": "void WebUIExtension::Send(gin::Arguments* args) {\nblink::WebLocalFrame* frame;\nRenderFrame* render_frame;\nif (!ShouldRespondToRequest(&frame, &render_frame))\nreturn;\nstd::string message;\nif (!args->Ge...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 60,
+    "code": "void RunInvTxfm(int16_t *out, uint8_t *dst, int stride) {\ninv_txfm_(out, dst, stride, tx_type_);\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 61,
+    "code": "void swapBuffers()\n{\nif (m_xPixmap)\nreturn;\n#if PLATFORM(QT)\nif (!m_surface->isVisible())\nreturn;\nwhile (!m_surface->isExposed())\nQCoreApplication::processEvents();\nQOpenGLContext* glContext = QOpenGL...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      26
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 62,
+    "code": "void PlatformSensorProviderBase::FreeResourcesIfNeeded() {\nDCHECK_CALLED_ON_VALID_THREAD(thread_checker_);\nif (sensor_map_.empty() && requests_map_.empty()) {\nFreeResources();\nshared_buffer_handle_.re...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 63,
+    "code": "static __be32 nfsacld_proc_setacl(struct svc_rqst * rqstp,\nstruct nfsd3_setaclargs *argp,\nstruct nfsd_attrstat *resp)\n{\nstruct inode *inode;\nsvc_fh *fh;\n__be32 nfserr = 0;\nint error;\ndprintk(\"nfsd: SE...",
+    "matched": true,
+    "vuln_lines": [
+      14,
+      15,
+      16,
+      17,
+      21,
+      23,
+      24,
+      25,
+      27,
+      34
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 64,
+    "code": "static int masq_inet_event(struct notifier_block *this,\nunsigned long event,\nvoid *ptr)\n{\nstruct net_device *dev = ((struct in_ifaddr *)ptr)->ifa_dev->dev;\nstruct netdev_notifier_info info;\nnetdev_not...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 65,
+    "code": "static Image *ReadUYVYImage(const ImageInfo *image_info,\nExceptionInfo *exception)\n{\nImage\n*image;\nMagickBooleanType\nstatus;\nregister ssize_t\nx;\nregister PixelPacket\n*q;\nssize_t\ny;\nunsigned char\nu,\nv,...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 66,
+    "code": "iperf_json_printf(const char *format, ...)\n{\ncJSON* o;\nva_list argp;\nconst char *cp;\nchar name[100];\nchar* np;\ncJSON* j;\no = cJSON_CreateObject();\nif (o == NULL)\nreturn NULL;\nva_start(argp, format);\nn...",
+    "matched": true,
+    "vuln_lines": [
+      27,
+      30
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 67,
+    "code": "pdf_read_new_xref_section(fz_context *ctx, pdf_document *doc, fz_stream *stm, int64_t i0, int i1, int w0, int w1, int w2)\n{\npdf_xref_entry *table;\npdf_xref_entry *table;\nint i, n;\nif (i0 < 0 || i1 < 0...",
+    "matched": true,
+    "vuln_lines": [
+      5,
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 68,
+    "code": "void EntrySync::remove(ExceptionState& exceptionState) const\n{\nRefPtr<VoidSyncCallbackHelper> helper = VoidSyncCallbackHelper::create();\nm_fileSystem->remove(this, helper->successCallback(), helper->e...",
+    "matched": true,
+    "vuln_lines": [
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 69,
+    "code": "GDataDirectory::GDataDirectory(GDataDirectory* parent,\nGDataDirectoryService* directory_service)\n: GDataEntry(parent, directory_service) {\nfile_info_.is_directory = true;\n}...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 70,
+    "code": "void CmdBufferImageTransportFactory::DestroySharedSurfaceHandle(\nconst gfx::GLSurfaceHandle& handle) {\nif (!context_->makeContextCurrent()) {\nNOTREACHED() << \"Failed to make shared graphics context cu...",
+    "matched": true,
+    "vuln_lines": [
+      6,
+      7,
+      8
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 71,
+    "code": "log2vis_encoded_string (PyObject * string, const char *encoding,\nFriBidiParType base_direction, int clean, int reordernsm)\n{\nPyObject *logical = NULL;\nPyObject *result = NULL;\nlogical = PyUnicode_Deco...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 72,
+    "code": "void SoftAACEncoder2::onQueueFilled(OMX_U32  ) {\nif (mSignalledError) {\nreturn;\n}\nList<BufferInfo *> &inQueue = getPortQueue(0);\nList<BufferInfo *> &outQueue = getPortQueue(1);\nif (!mSentCodecSpecific...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 73,
+    "code": "void PulseAudioMixer::GetDefaultPlaybackDevice() {\nDCHECK_GT(mainloop_lock_count_, 0);\nDCHECK(pa_context_);\nDCHECK(pa_context_get_state(pa_context_) == PA_CONTEXT_READY);\nCallbackWrapper data = {this,...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 74,
+    "code": "SQLRETURN SQLSetDescField( SQLHDESC descriptor_handle,\nSQLSMALLINT rec_number,\nSQLSMALLINT field_identifier,\nSQLPOINTER value,\nSQLINTEGER buffer_length )\n{\nDMHDESC descriptor = (DMHDESC) descriptor_ha...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 75,
+    "code": "static void hugetlbfs_put_super(struct super_block *sb)\n{\nstruct hugetlbfs_sb_info *sbi = HUGETLBFS_SB(sb);\nif (sbi) {\nsb->s_fs_info = NULL;\nkfree(sbi);\n}\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 76,
+    "code": "void CreatePPEvent(const WebInputEvent& event,\nstd::vector<PP_InputEvent>* pp_events) {\npp_events->clear();\nswitch (event.type) {\ncase WebInputEvent::MouseDown:\ncase WebInputEvent::MouseUp:\ncase WebIn...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 77,
+    "code": "OMX_ERRORTYPE SoftRaw::internalGetParameter(\nOMX_INDEXTYPE index, OMX_PTR params) {\nswitch (index) {\ncase OMX_IndexParamAudioPcm:\n{\nOMX_AUDIO_PARAM_PCMMODETYPE *pcmParams =\n(OMX_AUDIO_PARAM_PCMMODETYP...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 78,
+    "code": "sf_open\t(const char *path, int mode, SF_INFO *sfinfo)\n{\tSF_PRIVATE \t*psf ;\nassert (sizeof (sf_count_t) == 8) ;\nif ((psf = calloc (1, sizeof (SF_PRIVATE))) == NULL)\n{\tsf_errno = SFE_MALLOC_FAILED ;\nret...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 79,
+    "code": "void AppControllerImpl::OnAppUpdate(const apps::AppUpdate& update) {\nif (!update.StateIsNull() && !update.NameChanged() &&\n!update.ReadinessChanged()) {\nreturn;\n}\nif (client_) {\nclient_->OnAppChanged(...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 80,
+    "code": "void PrintMsg_Print_Params::Reset() {\npage_size = gfx::Size();\ncontent_size = gfx::Size();\nprintable_area = gfx::Rect();\nmargin_top = 0;\nmargin_left = 0;\ndpi = 0;\nmin_shrink = 0;\nmax_shrink = 0;\ndesir...",
+    "matched": true,
+    "vuln_lines": [
+      16
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 81,
+    "code": "static void perf_syscall_enter(void *ignore, struct pt_regs *regs, long id)\n{\nstruct syscall_metadata *sys_data;\nstruct syscall_trace_enter *rec;\nstruct hlist_head *head;\nint syscall_nr;\nint rctx;\nint...",
+    "matched": true,
+    "vuln_lines": [
+      9
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 82,
+    "code": "static v8::Handle<v8::Value> intMethodWithArgsCallback(const v8::Arguments& args)\n{\nINC_STATS(\"DOM.TestObj.intMethodWithArgs\");\nif (args.Length() < 3)\nreturn V8Proxy::throwNotEnoughArgumentsError();\nT...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 83,
+    "code": "void PlatformSensorProviderLinux::CreateFusionSensor(\nmojom::SensorType type,\nmojo::ScopedSharedBufferMapping mapping,\nconst CreateSensorCallback& callback) {\nDCHECK(IsFusionSensorType(type));\nstd::un...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      24
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 84,
+    "code": "int Equalizer_getParameter(EffectContext *pContext,\nvoid *pParam,\nuint32_t *pValueSize,\nvoid *pValue){\nint status = 0;\nint bMute = 0;\nint32_t *pParamTemp = (int32_t *)pParam;\nint32_t param = *pParamTe...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 85,
+    "code": "int cg_mkdir(const char *path, mode_t mode)\n{\nstruct fuse_context *fc = fuse_get_context();\nchar *fpath = NULL, *path1, *cgdir = NULL, *controller;\nconst char *cgroup;\nint ret;\nif (!fc)\nreturn -EIO;\nc...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 86,
+    "code": "static int userfaultfd_unregister(struct userfaultfd_ctx *ctx,\nunsigned long arg)\n{\nstruct mm_struct *mm = ctx->mm;\nstruct vm_area_struct *vma, *prev, *cur;\nint ret;\nstruct uffdio_range uffdio_unregis...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 87,
+    "code": "XIQueryDevice(Display *dpy, int deviceid, int *ndevices_return)\n{\nXIDeviceInfo        *info = NULL;\nxXIQueryDeviceReq   *req;\nxXIQueryDeviceReq   *req;\nxXIQueryDeviceReply reply;\nchar                *...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 88,
+    "code": "bool ResourceFetcher::StartLoad(Resource* resource) {\nDCHECK(resource);\nDCHECK(resource->StillNeedsLoad());\nResourceRequest request(resource->GetResourceRequest());\nResourceLoader* loader = nullptr;\n{...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 89,
+    "code": "void HeapObjectHeader::zapMagic() {\nASSERT(checkHeader());\nm_magic = zappedMagic;\n}...",
+    "matched": true,
+    "vuln_lines": [
+      1
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 90,
+    "code": "static int proc_sys_readdir(struct file *file, struct dir_context *ctx)\n{\nstruct ctl_table_header *head = grab_header(file_inode(file));\nstruct ctl_table_header *h = NULL;\nstruct ctl_table *entry;\nstr...",
+    "matched": true,
+    "vuln_lines": [
+      11
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 91,
+    "code": "void RunTestsInFile(const std::string& filename,\nconst std::string& pdf_filename) {\nextensions::ResultCatcher catcher;\nGURL url(embedded_test_server()->GetURL(\"/pdf/\" + pdf_filename));\nASSERT_TRUE(Loa...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 92,
+    "code": "int vp8_remove_decoder_instances(struct frame_buffers *fb)\n{\nif(!fb->use_frame_threads)\n{\nVP8D_COMP *pbi = fb->pbi[0];\nif (!pbi)\nreturn VPX_CODEC_ERROR;\n#if CONFIG_MULTITHREAD\nif (pbi->b_multithreaded...",
+    "matched": true,
+    "vuln_lines": [
+      8,
+      9
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 93,
+    "code": "long Chapters::Atom::Parse(IMkvReader* pReader, long long pos, long long size) {\nconst long long stop = pos + size;\nwhile (pos < stop) {\nlong long id, size;\nlong status = ParseElementHeader(pReader, p...",
+    "matched": true,
+    "vuln_lines": [
+      35,
+      37
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 94,
+    "code": "static void dns_resolver_describe(const struct key *key, struct seq_file *m)\n{\nseq_puts(m, key->description);\nif (key_is_instantiated(key)) {\nint err = PTR_ERR(key->payload.data[dns_key_error]);\nif (e...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 95,
+    "code": "static int udp_push_pending_frames(struct sock *sk)\n{\nstruct udp_sock  *up = udp_sk(sk);\nstruct inet_sock *inet = inet_sk(sk);\nstruct flowi4 *fl4 = &inet->cork.fl.u.ip4;\nstruct sk_buff *skb;\nint err =...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 96,
+    "code": "void Track::Info::Clear()\n{\ndelete[] nameAsUTF8;\nnameAsUTF8 = NULL;\ndelete[] language;\nlanguage = NULL;\ndelete[] codecId;\ncodecId = NULL;\ndelete[] codecPrivate;\ncodecPrivate = NULL;\ncodecPrivateSize =...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 97,
+    "code": "bool PrintWebViewHelper::OnMessageReceived(const IPC::Message& message) {\nbool handled = true;\nIPC_BEGIN_MESSAGE_MAP(PrintWebViewHelper, message)\n#if defined(ENABLE_BASIC_PRINTING)\nIPC_MESSAGE_HANDLER...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 98,
+    "code": "void WebstoreStandaloneInstaller::BeginInstall() {\nAddRef();\nif (!crx_file::id_util::IdIsValid(id_)) {\nCompleteInstall(webstore_install::INVALID_ID, kInvalidWebstoreItemId);\nreturn;\n}\nwebstore_install...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 99,
+    "code": "static int nfs_can_extend_write(struct file *file, struct page *page, struct inode *inode)\n{\nif (file->f_flags & O_DSYNC)\nreturn 0;\nif (NFS_PROTO(inode)->have_delegation(inode, FMODE_WRITE))\nreturn 1;...",
+    "matched": true,
+    "vuln_lines": [
+      6,
+      7,
+      9
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 100,
+    "code": "void RunFwdTxfm(int16_t *in, int16_t *out, int stride) {\nfwd_txfm_(in, out, stride, tx_type_);\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 101,
+    "code": "static v8::Handle<v8::Value> uniformMatrixHelper(const v8::Arguments& args,\nint matrixSize)\n{\nif (args.Length() != 3)\nreturn V8Proxy::throwNotEnoughArgumentsError();\nWebGLRenderingContext* context = V...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 102,
+    "code": "DataReductionProxySettings::DataReductionProxySettings()\n: unreachable_(false),\ndeferred_initialization_(false),\nprefs_(nullptr),\nconfig_(nullptr),\nclock_(base::DefaultClock::GetInstance()) {}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 103,
+    "code": "cdf_read_sector(const cdf_info_t *info, void *buf, size_t offs, size_t len,\nconst cdf_header_t *h, cdf_secid_t id)\n{\nassert((size_t)CDF_SEC_SIZE(h) == len);\nreturn cdf_read(info, (off_t)CDF_SEC_POS(h,...",
+    "matched": true,
+    "vuln_lines": [
+      3,
+      4,
+      5
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 104,
+    "code": "bool BrowserCommandController::ExecuteCommandWithDisposition(\nint id, WindowOpenDisposition disposition) {\nif (!SupportsCommand(id) || !IsCommandEnabled(id))\nreturn false;\nif (browser_->tab_strip_mode...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 105,
+    "code": "explicit CancelAndIgnoreNavigationForPluginFrameThrottle(\nNavigationHandle* handle)\n: NavigationThrottle(handle) {}...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 106,
+    "code": "static int set_composite_interface(struct libusb_context* ctx, struct libusb_device* dev,\nchar* dev_interface_path, char* device_id, int api, int sub_api)\n{\nunsigned i;\nstruct windows_device_priv *pri...",
+    "matched": true,
+    "vuln_lines": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 107,
+    "code": "cib_timeout_handler(gpointer data)\n{\nstruct timer_rec_s *timer = data;\ntimer_expired = TRUE;\ncrm_err(\"Call %d timed out after %ds\", timer->call_id, timer->timeout);\nreturn TRUE;\n}...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 108,
+    "code": "static int http_connect(URLContext *h, const char *path, const char *local_path,\nconst char *hoststr, const char *auth,\nconst char *proxyauth, int *new_location)\n{\nHTTPContext *s = h->priv_data;\nint p...",
+    "matched": true,
+    "vuln_lines": [
+      8,
+      46,
+      110
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 109,
+    "code": "void NavigationController::GoForward() {\nif (!CanGoForward()) {\nNOTREACHED();\nreturn;\n}\nif (tab_contents_->interstitial_page()) {\ntab_contents_->interstitial_page()->CancelForNavigation();\n}\nbool tran...",
+    "matched": true,
+    "vuln_lines": [
+      5,
+      6,
+      7
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 110,
+    "code": "my_object_increment_val (MyObject *obj, GError **error)\n{\nobj->val++;\nreturn TRUE;\n}...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 111,
+    "code": "void VarianceTest<VarianceFunctionType>::RefTest() {\nfor (int i = 0; i < 10; ++i) {\nfor (int j = 0; j < block_size_; j++) {\nsrc_[j] = rnd.Rand8();\nref_[j] = rnd.Rand8();\n}\nunsigned int sse1, sse2;\nuns...",
+    "matched": true,
+    "vuln_lines": [
+      3,
+      4,
+      8,
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 112,
+    "code": "spnego_gss_wrap(\nOM_uint32 *minor_status,\ngss_ctx_id_t context_handle,\nint conf_req_flag,\ngss_qop_t qop_req,\ngss_buffer_t input_message_buffer,\nint *conf_state,\ngss_buffer_t output_message_buffer)\n{\nO...",
+    "matched": true,
+    "vuln_lines": [
+      11
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 113,
+    "code": "void fe_netjoin_init(void)\n{\nsettings_add_bool(\"misc\", \"hide_netsplit_quits\", TRUE);\nsettings_add_int(\"misc\", \"netjoin_max_nicks\", 10);\njoin_tag = -1;\nprinting_joins = FALSE;\nread_settings();\nsignal_a...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 114,
+    "code": "ReverbConvolverStage::ReverbConvolverStage(const float* impulseResponse, size_t, size_t reverbTotalLatency, size_t stageOffset, size_t stageLength,\nsize_t fftSize, size_t renderPhase, size_t renderSli...",
+    "matched": true,
+    "vuln_lines": [
+      15
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 115,
+    "code": "FileMetricsProviderTest()\n: create_large_files_(GetParam()),\ntask_runner_(new base::TestSimpleTaskRunner()),\nthread_task_runner_handle_(task_runner_),\nstatistics_recorder_(\nbase::StatisticsRecorder::C...",
+    "matched": true,
+    "vuln_lines": [
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 116,
+    "code": "chdlc_print(netdissect_options *ndo, register const u_char *p, u_int length)\n{\nu_int proto;\nproto = EXTRACT_16BITS(&p[2]);\nif (ndo->ndo_eflag) {\nND_PRINT((ndo, \"%s, ethertype %s (0x%04x), length %u: \"...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 117,
+    "code": "const user_manager::UserList UserSelectionScreen::PrepareUserListForSending(\nconst user_manager::UserList& users,\nconst AccountId& owner,\nbool is_signin_to_add) {\nuser_manager::UserList users_to_send;...",
+    "matched": true,
+    "vuln_lines": [
+      8,
+      9,
+      10,
+      12,
+      18,
+      22
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 118,
+    "code": "void Document::open(Document* entered_document,\nExceptionState& exception_state) {\nif (ImportLoader()) {\nexception_state.ThrowDOMException(\nkInvalidStateError, \"Imported document doesn't support open(...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 119,
+    "code": "long mkvparser::UnserializeFloat(\nIMkvReader* pReader,\nlong long pos,\nlong long size_,\ndouble& result)\n{\nassert(pReader);\nassert(pos >= 0);\nif ((size_ != 4) && (size_ != 8))\nreturn E_FILE_FORMAT_INVAL...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      48
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 120,
+    "code": "static inline int mk_vhost_fdt_close(struct session_request *sr)\n{\nint id;\nunsigned int hash;\nstruct vhost_fdt_hash_table *ht = NULL;\nstruct vhost_fdt_hash_chain *hc;\nif (config->fdt == MK_FALSE) {\nre...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 121,
+    "code": "donote(struct magic_set *ms, void *vbuf, size_t offset, size_t size,\nint clazz, int swap, size_t align, int *flags)\n{\nElf32_Nhdr nh32;\nElf64_Nhdr nh64;\nsize_t noff, doff;\n#ifdef ELFCORE\nint os_style =...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 122,
+    "code": "kadm5_randkey_principal_3(void *server_handle,\nkrb5_principal principal,\nkrb5_boolean keepold,\nint n_ks_tuple, krb5_key_salt_tuple *ks_tuple,\nkrb5_keyblock **keyblocks,\nint *n_keys)\n{\nkrb5_db_entry   ...",
+    "matched": true,
+    "vuln_lines": [
+      11,
+      77,
+      78
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 123,
+    "code": "int assoc_array_gc(struct assoc_array *array,\nconst struct assoc_array_ops *ops,\nbool (*iterator)(void *object, void *iterator_data),\nvoid *iterator_data)\n{\nstruct assoc_array_shortcut *shortcut, *new...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 124,
+    "code": "ZSTD_buildCTable(void* dst, size_t dstCapacity,\nFSE_CTable* nextCTable, U32 FSELog, symbolEncodingType_e type,\nU32* count, U32 max,\nconst BYTE* codeTable, size_t nbSeq,\nconst S16* defaultNorm, U32 def...",
+    "matched": true,
+    "vuln_lines": [
+      12
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 125,
+    "code": "int inode_change_ok(const struct inode *inode, struct iattr *attr)\n{\nunsigned int ia_valid = attr->ia_valid;\nif (ia_valid & ATTR_SIZE) {\nint error = inode_newsize_ok(inode, attr->ia_size);\nif (error)\n...",
+    "matched": true,
+    "vuln_lines": [
+      13,
+      18,
+      25
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 126,
+    "code": "bool PulseAudioMixer::InitSync() {\nif (!InitThread())\nreturn false;\nreturn PulseAudioInit();\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 127,
+    "code": "void Document::InitContentSecurityPolicy(ContentSecurityPolicy* csp) {\nSetContentSecurityPolicy(csp ? csp : ContentSecurityPolicy::Create());\nif (frame_) {\nFrame* inherit_from = frame_->Tree().Parent(...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      8,
+      14,
+      15
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 128,
+    "code": "void ImageCapture::SetMediaTrackConstraints(\nScriptPromiseResolver* resolver,\nconst HeapVector<MediaTrackConstraintSet>& constraints_vector) {\nDCHECK_GT(constraints_vector.size(), 0u);\nif (!service_) ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 129,
+    "code": "bool Cues::Find(long long time_ns, const Track* pTrack, const CuePoint*& pCP,\nconst CuePoint::TrackPosition*& pTP) const {\nassert(time_ns >= 0);\nassert(pTrack);\n#if 0\nLoadCuePoint();\nassert(m_cue_poin...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      50,
+      57,
+      59,
+      65,
+      67,
+      68,
+      69,
+      71,
+      72,
+      73
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 130,
+    "code": "cJSON *cJSON_CreateObject( void )\n{\ncJSON *item = cJSON_New_Item();\nif ( item )\nitem->type = cJSON_Object;\nreturn item;\n}...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 131,
+    "code": "static struct fileIdentDesc *udf_find_entry(struct inode *dir,\nconst struct qstr *child,\nstruct udf_fileident_bh *fibh,\nstruct fileIdentDesc *cfi)\n{\nstruct fileIdentDesc *fi = NULL;\nloff_t f_pos;\nint ...",
+    "matched": true,
+    "vuln_lines": [
+      80
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 132,
+    "code": "hb_buffer_clear (hb_buffer_t *buffer)\n{\nbuffer->have_output = FALSE;\nbuffer->have_positions = FALSE;\nbuffer->len = 0;\nbuffer->out_len = 0;\nbuffer->i = 0;\nbuffer->max_lig_id = 0;\nbuffer->max_lig_id = 0...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 133,
+    "code": "void NaClListener::OnMsgStart(const nacl::NaClStartParams& params) {\nstruct NaClChromeMainArgs *args = NaClChromeMainArgsCreate();\nif (args == NULL) {\nLOG(ERROR) << \"NaClChromeMainArgsCreate() failed\"...",
+    "matched": true,
+    "vuln_lines": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 134,
+    "code": "static int create_qp_common(struct mlx5_ib_dev *dev, struct ib_pd *pd,\nstruct ib_qp_init_attr *init_attr,\nstruct ib_udata *udata, struct mlx5_ib_qp *qp)\n{\nstruct mlx5_ib_resources *devr = &dev->devr;\n...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 135,
+    "code": "void PropertyTreeManager::SetupRootClipNode() {\ncc::ClipTree& clip_tree = property_trees_.clip_tree;\nclip_tree.clear();\ncc::ClipNode& clip_node =\n*clip_tree.Node(clip_tree.Insert(cc::ClipNode(), kReal...",
+    "matched": true,
+    "vuln_lines": [
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 136,
+    "code": "static int rndis_set_response(USBNetState *s,\nrndis_set_msg_type *buf, unsigned int length)\n{\nrndis_set_cmplt_type *resp =\nrndis_queue_response(s, sizeof(rndis_set_cmplt_type));\nuint32_t bufoffs, bufl...",
+    "matched": true,
+    "vuln_lines": [
+      11
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 137,
+    "code": "int mutt_b64_decode(char *out, const char *in)\n{\nint len = 0;\nunsigned char digit4;\ndo\n{\nconst unsigned char digit1 = in[0];\nif ((digit1 > 127) || (base64val(digit1) == BAD))\nreturn -1;\nconst unsigned...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 138,
+    "code": "connection_exit_begin_conn(cell_t *cell, circuit_t *circ)\n{\nedge_connection_t *n_stream;\nrelay_header_t rh;\nchar *address = NULL;\nuint16_t port = 0;\nor_circuit_t *or_circ = NULL;\nconst or_options_t *o...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 139,
+    "code": "int cipso_v4_validate(const struct sk_buff *skb, unsigned char **option)\n{\nunsigned char *opt = *option;\nunsigned char *tag;\nunsigned char opt_iter;\nunsigned char err_offset = 0;\nu8 opt_len;\nu8 tag_le...",
+    "matched": true,
+    "vuln_lines": [
+      93
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 140,
+    "code": "GpuChannel::GpuChannel(GpuChannelManager* gpu_channel_manager,\nGpuWatchdog* watchdog,\ngfx::GLShareGroup* share_group,\nint client_id,\nbool software)\n: gpu_channel_manager_(gpu_channel_manager),\nclient_...",
+    "matched": true,
+    "vuln_lines": [
+      7,
+      8
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 141,
+    "code": "vc4_get_bcl(struct drm_device *dev, struct vc4_exec_info *exec)\n{\nstruct drm_vc4_submit_cl *args = exec->args;\nvoid *temp = NULL;\nvoid *bin;\nint ret = 0;\nuint32_t bin_offset = 0;\nuint32_t shader_rec_o...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 142,
+    "code": "void AutofillExternalDelegate::OnSuggestionsReturned(\nint query_id,\nconst std::vector<Suggestion>& input_suggestions,\nbool autoselect_first_suggestion,\nbool is_all_server_suggestions) {\nif (query_id !...",
+    "matched": true,
+    "vuln_lines": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 143,
+    "code": "hcom_client_init\n(\nOUT\tp_hsm_com_client_hdl_t\t*p_hdl,\nIN\t\tchar\t\t\t\t\t*server_path,\nIN\t\tchar\t\t\t\t\t*client_path,\nIN\t\tint\t\t\t\t\t\tmax_data_len\n)\n{\nhsm_com_client_hdl_t\t*hdl = NULL;\nhsm_com_errno_t\t\t\tres = HSM_...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 144,
+    "code": "virtual void SetUp() {\nfull_itxfm_ = GET_PARAM(0);\npartial_itxfm_ = GET_PARAM(1);\ntx_size_  = GET_PARAM(2);\nlast_nonzero_ = GET_PARAM(3);\n}...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 145,
+    "code": "status_t MPEG4Extractor::parseChunk(off64_t *offset, int depth) {\nALOGV(\"entering parseChunk %lld/%d\", (long long)*offset, depth);\nuint32_t hdr[2];\nif (mDataSource->readAt(*offset, hdr, 8) < 8) {\nretu...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 146,
+    "code": "RTCSessionDescriptionRequestImpl::RTCSessionDescriptionRequestImpl(ScriptExecutionContext* context, PassRefPtr<RTCSessionDescriptionCallback> successCallback, PassRefPtr<RTCErrorCallback> errorCallbac...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 147,
+    "code": "static int nr_recvmsg(struct kiocb *iocb, struct socket *sock,\nstruct msghdr *msg, size_t size, int flags)\n{\nstruct sock *sk = sock->sk;\nstruct sockaddr_ax25 *sax = (struct sockaddr_ax25 *)msg->msg_na...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 148,
+    "code": "int dtls1_get_record(SSL *s)\n{\nint ssl_major,ssl_minor;\nint i,n;\nSSL3_RECORD *rr;\nunsigned char *p = NULL;\nunsigned short version;\nDTLS1_BITMAP *bitmap;\nunsigned int is_next_epoch;\nrr= &(s->s3->rrec);...",
+    "matched": true,
+    "vuln_lines": [
+      10,
+      98
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 149,
+    "code": "bool mkvparser::Match(\nIMkvReader* pReader,\nlong long& pos,\nunsigned long id_,\nunsigned char*& buf,\nsize_t& buflen)\n{\nassert(pReader);\nassert(pos >= 0);\nlong long total, available;\nlong status = pRead...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 150,
+    "code": "void ChromeInvalidationClient::RegisterIds(const ObjectIdSet& ids) {\nDCHECK(CalledOnValidThread());\nregistered_ids_ = ids;\nif (ticl_state_ == NO_NOTIFICATION_ERROR && registration_manager_.get()) {\nre...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 151,
+    "code": "gfx::Rect AutofillPopupBaseView::CalculateClippingBounds() const {\nif (parent_widget_)\nreturn parent_widget_->GetClientAreaBoundsInScreen();\nreturn PopupViewCommon().GetWindowBounds(delegate_->contain...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 152,
+    "code": "EncodedJSValue JSC_HOST_CALL jsTestObjPrototypeFunctionStrictFunction(ExecState* exec)\n{\nJSValue thisValue = exec->hostThisValue();\nif (!thisValue.inherits(&JSTestObj::s_info))\nreturn throwVMTypeError...",
+    "matched": true,
+    "vuln_lines": [
+      9
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 153,
+    "code": "hstore_from_array(PG_FUNCTION_ARGS)\n{\nArrayType  *in_array = PG_GETARG_ARRAYTYPE_P(0);\nint\t\t\tndims = ARR_NDIM(in_array);\nint\t\t\tcount;\nint32\t\tbuflen;\nHStore\t   *out;\nPairs\t   *pairs;\nDatum\t   *in_datum...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 154,
+    "code": "int asn1_ex_i2c(ASN1_VALUE **pval, unsigned char *cout, int *putype,\nconst ASN1_ITEM *it)\n{\nASN1_BOOLEAN *tbool = NULL;\nASN1_STRING *strtmp;\nASN1_OBJECT *otmp;\nint utype;\nconst unsigned char *cont;\nun...",
+    "matched": true,
+    "vuln_lines": [
+      60,
+      62
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 155,
+    "code": "static void copy_fields(const FieldMatchContext *fm, AVFrame *dst,\nconst AVFrame *src, int field)\n{\nint plane;\nfor (plane = 0; plane < 4 && src->data[plane]; plane++)\nav_image_copy_plane(dst->data[pla...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 156,
+    "code": "void MediaElementAudioSourceNode::process(size_t numberOfFrames)\n{\nAudioBus* outputBus = output(0)->bus();\nif (!mediaElement() || !m_sourceNumberOfChannels || !m_sourceSampleRate) {\noutputBus->zero();...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 157,
+    "code": "PHP_METHOD(Phar, addEmptyDir)\n{\nchar *dirname;\nsize_t dirname_len;\nPHAR_ARCHIVE_OBJECT();\nif (zend_parse_parameters(ZEND_NUM_ARGS(), \"s\", &dirname, &dirname_len) == FAILURE) {\nreturn;\n}\nif (dirname_le...",
+    "matched": true,
+    "vuln_lines": [
+      5
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 158,
+    "code": "ID3::getAlbumArt(size_t *length, String8 *mime) const {\n*length = 0;\nmime->setTo(\"\");\nIterator it(\n*this,\n(mVersion == ID3_V2_3 || mVersion == ID3_V2_4) ? \"APIC\" : \"PIC\");\nwhile (!it.done()) {\nsize_t ...",
+    "matched": true,
+    "vuln_lines": [
+      14,
+      15,
+      17,
+      23,
+      24,
+      25,
+      26,
+      27,
+      30,
+      31,
+      50
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 159,
+    "code": "static int save_dev(blkid_dev dev, FILE *file)\n{\nstruct list_head *p;\nif (!dev || dev->bid_name[0] != '/')\nreturn 0;\nDBG(SAVE, ul_debug(\"device %s, type %s\", dev->bid_name, dev->bid_type ?\ndev->bid_ty...",
+    "matched": true,
+    "vuln_lines": [
+      15
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 160,
+    "code": "void DeviceTokenFetcher::StopAutoRetry() {\nscheduler_->CancelDelayedWork();\nbackend_.reset();\n}...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 161,
+    "code": "juniper_mfr_print(netdissect_options *ndo,\nconst struct pcap_pkthdr *h, register const u_char *p)\n{\nstruct juniper_l2info_t l2info;\nmemset(&l2info, 0, sizeof(l2info));\nl2info.pictype = DLT_JUNIPER_MFR...",
+    "matched": true,
+    "vuln_lines": [
+      25,
+      36,
+      41
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 162,
+    "code": "void vlan_setup(struct net_device *dev)\n{\nether_setup(dev);\ndev->priv_flags\t\t|= IFF_802_1Q_VLAN;\ndev->priv_flags\t\t&= ~IFF_XMIT_DST_RELEASE;\ndev->tx_queue_len\t= 0;\ndev->netdev_ops\t\t= &vlan_netdev_ops;\n...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 163,
+    "code": "WORD32 ih264d_parse_pslice(dec_struct_t *ps_dec, UWORD16 u2_first_mb_in_slice)\n{\ndec_pic_params_t * ps_pps = ps_dec->ps_cur_pps;\ndec_slice_params_t * ps_cur_slice = ps_dec->ps_cur_slice;\ndec_bit_strea...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 164,
+    "code": "void RemoveInvalidFilesFromPersistentDirectory(\nconst GDataCacheMetadataMap::ResourceIdToFilePathMap& persistent_file_map,\nconst GDataCacheMetadataMap::ResourceIdToFilePathMap& outgoing_file_map,\nGDat...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 165,
+    "code": "AppProto AppLayerProtoDetectGetProto(AppLayerProtoDetectThreadCtx *tctx,\nFlow *f,\nuint8_t *buf, uint32_t buflen,\nuint8_t ipproto, uint8_t direction)\n{\nSCEnter();\nSCLogDebug(\"buflen %u for %s direction...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 166,
+    "code": "static long vfio_pci_ioctl(void *device_data,\nunsigned int cmd, unsigned long arg)\n{\nstruct vfio_pci_device *vdev = device_data;\nunsigned long minsz;\nif (cmd == VFIO_DEVICE_GET_INFO) {\nstruct vfio_dev...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 167,
+    "code": "static int hid_submit_bulk_transfer(int sub_api, struct usbi_transfer *itransfer) {\nstruct libusb_transfer *transfer = USBI_TRANSFER_TO_LIBUSB_TRANSFER(itransfer);\nstruct windows_transfer_priv *transf...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 168,
+    "code": "_PUBLIC_ size_t strlen_m_ext_handle(struct smb_iconv_handle *ic,\nconst char *s, charset_t src_charset, charset_t dst_charset)\n{\nsize_t count = 0;\n#ifdef DEVELOPER\nswitch (dst_charset) {\ncase CH_DOS:\nc...",
+    "matched": true,
+    "vuln_lines": [
+      32
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 169,
+    "code": "void CCLayerTreeHostTest::doBeginTest()\n{\nASSERT(isMainThread());\nASSERT(!m_running);\nm_running = true;\nm_client = MockLayerTreeHostClient::create(this);\nRefPtr<LayerChromium> rootLayer = LayerChromiu...",
+    "matched": true,
+    "vuln_lines": [
+      3,
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 170,
+    "code": "static opj_bool pi_next_cprl(opj_pi_iterator_t * pi)\n{\nopj_pi_comp_t *comp = NULL;\nopj_pi_resolution_t *res = NULL;\nlong index = 0;\nif (!pi->first) {\ncomp = &pi->comps[pi->compno];\ngoto LABEL_SKIP;\n} ...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 171,
+    "code": "static Image *ReadRLEImage(const ImageInfo *image_info,ExceptionInfo *exception)\n{\n#define SkipLinesOp  0x01\n#define SetColorOp  0x02\n#define SkipPixelsOp  0x03\n#define ByteDataOp  0x05\n#define RunDat...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 172,
+    "code": "void Label::SizeToFit(int max_width) {\nDCHECK(is_multi_line_);\nstd::vector<std::wstring> lines;\nbase::SplitString(UTF16ToWideHack(text_), L'\\n', &lines);\nint label_width = 0;\nfor (std::vector<std::wst...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      3,
+      5,
+      7,
+      8
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 173,
+    "code": "inline HTMLIFrameElement::HTMLIFrameElement(Document& document)\n: HTMLFrameElementBase(iframeTag, document),\ndid_load_non_empty_document_(false),\ncollapsed_by_client_(false),\nsandbox_(HTMLIFrameElemen...",
+    "matched": true,
+    "vuln_lines": [
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 174,
+    "code": "static int http_receive_data(HTTPContext *c)\n{\nHTTPContext *c1;\nint len, loop_run = 0;\nwhile (c->chunked_encoding && !c->chunk_size &&\nc->buffer_end > c->buffer_ptr) {\nlen = recv(c->fd, c->buffer_ptr,...",
+    "matched": true,
+    "vuln_lines": [
+      17
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 175,
+    "code": "void ExtensionTtsController::FinishCurrentUtterance() {\nif (current_utterance_) {\ncurrent_utterance_->FinishAndDestroy();\ncurrent_utterance_ = NULL;\n}\n}...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 176,
+    "code": "void *hashtable_get(hashtable_t *hashtable, const char *key)\n{\npair_t *pair;\nsize_t hash;\nbucket_t *bucket;\nhash = hash_str(key);\nbucket = &hashtable->buckets[hash % num_buckets(hashtable)];\npair = ha...",
+    "matched": true,
+    "vuln_lines": [
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 177,
+    "code": "static Image *ReadFITSImage(const ImageInfo *image_info,\nExceptionInfo *exception)\n{\ntypedef struct _FITSInfo\n{\nMagickBooleanType\nextend,\nsimple;\nint\nbits_per_pixel,\ncolumns,\nrows,\nnumber_axes,\nnumber...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 178,
+    "code": "parse_file (FILE* input_file, char* directory,\nchar *body_filename, char *body_pref,\nint flags)\n{\nuint32 d;\nuint16 key;\nAttr *attr = NULL;\nFile *file = NULL;\nint rtf_size = 0, html_size = 0;\nMessageBo...",
+    "matched": true,
+    "vuln_lines": [
+      53,
+      58
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 179,
+    "code": "long jpc_bitstream_getbits(jpc_bitstream_t *bitstream, int n)\n{\nlong v;\nint u;\nassert(n >= 0 && n < 32);\nv = 0;\nwhile (--n >= 0) {\nif ((u = jpc_bitstream_getbit(bitstream)) < 0) {\nreturn -1;\n}\nv = (v ...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 180,
+    "code": "isis_print_id(const uint8_t *cp, int id_len)\n{\nint i;\nstatic char id[sizeof(\"xxxx.xxxx.xxxx.yy-zz\")];\nchar *pos = id;\nfor (i = 1; i <= SYSTEM_ID_LEN; i++) {\nsnprintf(pos, sizeof(id) - (pos - id), \"%02...",
+    "matched": true,
+    "vuln_lines": [
+      5
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 181,
+    "code": "exsltDateCreateDate (exsltDateType type)\n{\nexsltDateValPtr ret;\nret = (exsltDateValPtr) xmlMalloc(sizeof(exsltDateVal));\nif (ret == NULL) {\nxsltGenericError(xsltGenericErrorContext,\n\"exsltDateCreateDa...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 182,
+    "code": "bool GetPathFromHandle(HANDLE handle, std::wstring* path) {\nNtQueryObjectFunction NtQueryObject = NULL;\nResolveNTFunctionPtr(\"NtQueryObject\", &NtQueryObject);\nOBJECT_NAME_INFORMATION* name = NULL;\nULO...",
+    "matched": true,
+    "vuln_lines": [
+      3,
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 183,
+    "code": "void SplashOutputDev::drawSoftMaskedImage(GfxState *state, Object *ref,\nStream *str, int width, int height,\nGfxImageColorMap *colorMap,\nStream *maskStr,\nint maskWidth, int maskHeight,\nGfxImageColorMap...",
+    "matched": true,
+    "vuln_lines": [
+      82,
+      92,
+      104
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 184,
+    "code": "ossl_cipher_set_key(VALUE self, VALUE key)\n{\nEVP_CIPHER_CTX *ctx;\nint key_len;\nStringValue(key);\nGetCipher(self, ctx);\nkey_len = EVP_CIPHER_CTX_key_length(ctx);\nif (RSTRING_LEN(key) != key_len)\nossl_r...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 185,
+    "code": "static Image *ReadSUNImage(const ImageInfo *image_info,ExceptionInfo *exception)\n{\n#define RMT_EQUAL_RGB  1\n#define RMT_NONE  0\n#define RMT_RAW  2\n#define RT_STANDARD  1\n#define RT_ENCODED  2\n#define ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 186,
+    "code": "int BrowserRootView::OnPerformDrop(const ui::DropTargetEvent& event) {\nif (!forwarding_to_tab_strip_)\nreturn ui::DragDropTypes::DRAG_NONE;\nGURL url;\nbase::string16 title;\nui::OSExchangeData mapped_dat...",
+    "matched": true,
+    "vuln_lines": [
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 187,
+    "code": "void ShellWindow::Observe(int type,\nconst content::NotificationSource& source,\nconst content::NotificationDetails& details) {\nswitch (type) {\ncase chrome::NOTIFICATION_EXTENSION_UNLOADED: {\nconst exte...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 188,
+    "code": "void BackendImpl::OnEntryDestroyEnd() {\nDecreaseNumRefs();\nif (data_->header.num_bytes > max_size_ && !read_only_ &&\n(up_ticks_ > kTrimDelay || user_flags_ & kNoRandom))\neviction_.TrimCache(false);\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 189,
+    "code": "static Image *ReadVIFFImage(const ImageInfo *image_info,\nExceptionInfo *exception)\n{\n#define VFF_CM_genericRGB  15\n#define VFF_CM_ntscRGB  1\n#define VFF_CM_NONE  0\n#define VFF_DEP_DECORDER  0x4\n#defin...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 190,
+    "code": "static void locationWithExceptionAttributeSetter(v8::Local<v8::Value> jsValue, const v8::PropertyCallbackInfo<void>& info)\n{\nTestObject* proxyImp = V8TestObject::toNative(info.Holder());\nTestNode* imp...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 191,
+    "code": "PaintPropertyTreeBuilderFragmentContext()\n: current_effect(EffectPaintPropertyNode::Root()) {\ncurrent.clip = absolute_position.clip = fixed_position.clip =\nClipPaintPropertyNode::Root();\ncurrent.trans...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 192,
+    "code": "static int get_client_hello(SSL *s)\n{\nint i, n;\nunsigned long len;\nunsigned char *p;\nSTACK_OF(SSL_CIPHER) *cs;\nSTACK_OF(SSL_CIPHER) *cl;\nSTACK_OF(SSL_CIPHER) *prio, *allow;\nint z;\nif (s->state == SSL2...",
+    "matched": true,
+    "vuln_lines": [
+      115,
+      120,
+      121,
+      122
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 193,
+    "code": "int ptrace_setxregs(struct task_struct *child, void __user *uregs)\n{\nstruct thread_info *ti = task_thread_info(child);\nstruct pt_regs *regs = task_pt_regs(child);\nelf_xtregs_t *xtregs = uregs;\nint ret...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 194,
+    "code": "pp::Var Invoke(Plugin* plugin,\nCallType call_type,\nnacl::string call_name,\nconst char* caller,\nconst std::vector<pp::Var>& args,\npp::Var* exception) {\nuintptr_t id = plugin->browser_interface()->Strin...",
+    "matched": true,
+    "vuln_lines": [
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 195,
+    "code": "_warc_read(struct archive_read *a, const void **buf, size_t *bsz, int64_t *off)\n{\nstruct warc_s *w = a->format->data;\nconst char *rab;\nssize_t nrd;\nif (w->cntoff >= w->cntlen) {\neof:\n*buf = NULL;\n*bsz...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 196,
+    "code": "void ThreadableBlobRegistry::unregisterBlobURL(const KURL& url)\n{\nif (BlobURL::getOrigin(url) == \"null\")\noriginMap()->remove(url.string());\nif (isMainThread())\nblobRegistry().unregisterBlobURL(url);\ne...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      5,
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 197,
+    "code": "static int clie_5_attach(struct usb_serial *serial)\n{\nstruct usb_serial_port *port;\nunsigned int pipe;\nint j;\nif (serial->num_ports < 2)\nreturn -1;\nport = serial->port[0];\nport->bulk_out_endpointAddre...",
+    "matched": true,
+    "vuln_lines": [
+      5,
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 198,
+    "code": "static void regulator_ena_gpio_free(struct regulator_dev *rdev)\n{\nstruct regulator_enable_gpio *pin, *n;\nif (!rdev->ena_pin)\nreturn;\nlist_for_each_entry_safe(pin, n, &regulator_ena_gpio_list, list) {\n...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 199,
+    "code": "static int nntp_hcache_namer(const char *path, char *dest, size_t destlen)\n{\nreturn snprintf(dest, destlen, \"%s.hcache\", path);\n}...",
+    "matched": true,
+    "vuln_lines": [
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 200,
+    "code": "isis_print_mt_capability_subtlv(netdissect_options *ndo,\nconst uint8_t *tptr, int len)\n{\nint stlv_type, stlv_len, tmp;\nwhile (len > 2)\n{\nstlv_type = *(tptr++);\nstlv_len  = *(tptr++);\nND_PRINT((ndo, \"\\...",
+    "matched": true,
+    "vuln_lines": [
+      16,
+      37,
+      53
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 201,
+    "code": "void DatabaseImpl::IDBThreadHelper::CreateTransaction(\nint64_t transaction_id,\nconst std::vector<int64_t>& object_store_ids,\nblink::WebIDBTransactionMode mode) {\nDCHECK(idb_thread_checker_.CalledOnVal...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 202,
+    "code": "void common_timer_get(struct k_itimer *timr, struct itimerspec64 *cur_setting)\n{\nconst struct k_clock *kc = timr->kclock;\nktime_t now, remaining, iv;\nstruct timespec64 ts64;\nbool sig_none;\nsig_none = ...",
+    "matched": true,
+    "vuln_lines": [
+      17
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 203,
+    "code": "s_aes_process(stream_state * ss, stream_cursor_read * pr,\nstream_cursor_write * pw, bool last)\n{\nstream_aes_state *const state = (stream_aes_state *) ss;\nconst unsigned char *limit;\nconst long in_size...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 204,
+    "code": "const Cluster* Segment::GetFirst() const\n{\nif ((m_clusters == NULL) || (m_clusterCount <= 0))\nreturn &m_eos;\nCluster* const pCluster = m_clusters[0];\nassert(pCluster);\nreturn pCluster;\n}...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 205,
+    "code": "virDomainGetTime(virDomainPtr dom,\nlong long *seconds,\nunsigned int *nseconds,\nunsigned int flags)\n{\nVIR_DOMAIN_DEBUG(dom, \"seconds=%p, nseconds=%p, flags=%x\",\nseconds, nseconds, flags);\nvirResetLastE...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 206,
+    "code": "static int uhid_event(btif_hh_device_t *p_dev)\n{\nstruct uhid_event ev;\nssize_t ret;\nmemset(&ev, 0, sizeof(ev));\nif(!p_dev)\n{\nAPPL_TRACE_ERROR(\"%s: Device not found\",__FUNCTION__)\nreturn -1;\n}\nret = re...",
+    "matched": true,
+    "vuln_lines": [
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 207,
+    "code": "void test_base64_decode(void)\n{\nchar buffer[16];\nint len = mutt_b64_decode(buffer, encoded);\nif (!TEST_CHECK(len == sizeof(clear) - 1))\n{\nTEST_MSG(\"Expected: %zu\", sizeof(clear) - 1);\nTEST_MSG(\"Actual...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 208,
+    "code": "static void nfs4_open_release(void *calldata)\n{\nstruct nfs4_opendata *data = calldata;\nstruct nfs4_state *state = NULL;\nif (data->cancelled == 0)\ngoto out_free;\nif (data->rpc_status != 0 || !data->rpc...",
+    "matched": true,
+    "vuln_lines": [
+      12
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 209,
+    "code": "next_format(png_bytep colour_type, png_bytep bit_depth,\nunsigned int* palette_number, int no_low_depth_gray)\n{\nif (*bit_depth == 0)\n{\n*colour_type = 0;\nif (no_low_depth_gray)\n*bit_depth = 8;\nelse\n*bit...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      6,
+      7,
+      8,
+      13,
+      15,
+      21,
+      23
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 210,
+    "code": "void arch_pick_mmap_layout(struct mm_struct *mm)\n{\nunsigned long random_factor = 0UL;\nif (current->flags & PF_RANDOMIZE)\nrandom_factor = arch_mmap_rnd();\nmm->mmap_legacy_base = mmap_legacy_base(random...",
+    "matched": true,
+    "vuln_lines": [
+      5
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 211,
+    "code": "GF_Err dinf_Read(GF_Box *s, GF_BitStream *bs)\n{\nGF_Err e = gf_isom_box_array_read(s, bs, dinf_AddBox);\nif (e) {\nreturn e;\n}\nif (!((GF_DataInformationBox *)s)->dref) {\nGF_LOG(GF_LOG_ERROR, GF_LOG_CONTA...",
+    "matched": true,
+    "vuln_lines": [
+      8
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 212,
+    "code": "static void ParseCommon(map_string_t *settings, const char *conf_filename)\n{\nconst char *value;\nvalue = get_map_string_item_or_NULL(settings, \"WatchCrashdumpArchiveDir\");\nif (value)\n{\ng_settings_sWatc...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 213,
+    "code": "construct_command_line(struct manager_ctx *manager, struct server *server)\n{\nstatic char cmd[BUF_SIZE];\nchar *method = manager->method;\nint i;\nbuild_config(working_dir, server);\nif (server->method) me...",
+    "matched": true,
+    "vuln_lines": [
+      3,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 214,
+    "code": "virtual void SetUp() {\nInitializeConfig();\nSetMode(GET_PARAM(1));\nset_cpu_used_ = GET_PARAM(2);\n}...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 215,
+    "code": "void receive_tcppacket(connection_t *c, const char *buffer, int len) {\nvpn_packet_t outpkt;\noutpkt.len = len;\nif(c->options & OPTION_TCPONLY)\noutpkt.priority = 0;\nelse\noutpkt.priority = -1;\nmemcpy(out...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 216,
+    "code": "static sk_sp<SkImage> scaleSkImage(sk_sp<SkImage> skImage,\nunsigned resizeWidth,\nunsigned resizeHeight,\nSkFilterQuality resizeQuality) {\nSkImageInfo resizedInfo = SkImageInfo::Make(\nresizeWidth, resiz...",
+    "matched": true,
+    "vuln_lines": [
+      14
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 217,
+    "code": "bool config_save(const config_t *config, const char *filename) {\nassert(config != NULL);\nassert(filename != NULL);\nassert(*filename != '\\0');\nchar *temp_filename = osi_calloc(strlen(filename) + 5);\nif...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      18,
+      21,
+      23,
+      24,
+      26,
+      27,
+      38
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 218,
+    "code": "static int __init ipgre_init(void)\n{\nint err;\nprintk(KERN_INFO \"GRE over IPv4 tunneling driver\\n\");\nif (inet_add_protocol(&ipgre_protocol, IPPROTO_GRE) < 0) {\nprintk(KERN_INFO \"ipgre init: can't add p...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      7,
+      10,
+      22,
+      23
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 219,
+    "code": "static int filter_frame(AVFilterLink *inlink, AVFrame *in)\n{\nAVFilterContext *ctx = inlink->dst;\nBoxBlurContext *s = ctx->priv;\nAVFilterLink *outlink = inlink->dst->outputs[0];\nAVFrame *out;\nint plane...",
+    "matched": true,
+    "vuln_lines": [
+      16,
+      21
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 220,
+    "code": "WORD32 ih264d_parse_bslice(dec_struct_t * ps_dec, UWORD16 u2_first_mb_in_slice)\n{\ndec_pic_params_t * ps_pps = ps_dec->ps_cur_pps;\ndec_slice_params_t * ps_slice = ps_dec->ps_cur_slice;\ndec_bit_stream_t...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 221,
+    "code": "String InspectorPageAgent::CachedResourceTypeJson(\nconst Resource& cached_resource) {\nreturn ResourceTypeJson(CachedResourceType(cached_resource));\n}...",
+    "matched": true,
+    "vuln_lines": [
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 222,
+    "code": "static vpx_codec_err_t decoder_peek_si_internal(const uint8_t *data,\nunsigned int data_sz,\nvpx_codec_stream_info_t *si,\nint *is_intra_only,\nvpx_decrypt_cb decrypt_cb,\nvoid *decrypt_state) {\nint intra_...",
+    "matched": true,
+    "vuln_lines": [
+      7,
+      27,
+      28,
+      33
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 223,
+    "code": "int msPostGISLayerSetTimeFilter(layerObj *lp, const char *timestring, const char *timefield)\n{\nchar **atimes, **aranges = NULL;\nint numtimes=0,i=0,numranges=0;\nsize_t buffer_size = 512;\nchar buffer[51...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 224,
+    "code": "int ff_mpeg4_decode_picture_header(Mpeg4DecContext *ctx, GetBitContext *gb)\n{\nMpegEncContext *s = &ctx->m;\nunsigned startcode, v;\nint ret;\nint vol = 0;\nalign_get_bits(gb);\nif (s->codec_tag == AV_RL32(...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 225,
+    "code": "ChooserContextBase::GetGrantedObjects(const GURL& requesting_origin,\nconst GURL& embedding_origin) {\nDCHECK_EQ(requesting_origin, requesting_origin.GetOrigin());\nDCHECK_EQ(embedding_origin, embedding_...",
+    "matched": true,
+    "vuln_lines": [
+      7,
+      9,
+      21
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 226,
+    "code": "bool AsyncPixelTransfersCompletedQuery::End(\nbase::subtle::Atomic32 submit_count) {\nAsyncMemoryParams mem_params;\nBuffer buffer = manager()->decoder()->GetSharedMemoryBuffer(shm_id());\nif (!buffer.sha...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 227,
+    "code": "bool ExtensionViewGuest::NavigateGuest(const std::string& src,\nbool force_navigation) {\nGURL url = extension_url_.Resolve(src);\nbool url_not_allowed = (url != GURL(url::kAboutBlankURL)) &&\n(url.GetOri...",
+    "matched": true,
+    "vuln_lines": [
+      3,
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 228,
+    "code": "void ExtensionTtsSpeakFunction::SpeechFinished() {\nerror_ = utterance_->error();\nbool success = error_.empty();\nSendResponse(success);\nRelease();\n}...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 229,
+    "code": "int use_conf(char *test_path)\n{\nint ret;\nsize_t flags = 0;\nchar filename[1024], errstr[1024];\nchar *buffer;\nFILE *infile, *conffile;\njson_t *json;\njson_error_t error;\nsprintf(filename, \"%s%cinput\", te...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 230,
+    "code": "image_pixel_init(image_pixel *this, png_const_bytep row, png_byte colour_type,\npng_byte bit_depth, png_uint_32 x, store_palette palette)\n{\nPNG_CONST png_byte sample_depth = (png_byte)(colour_type ==\nP...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      3,
+      5,
+      7,
+      15,
+      27,
+      28,
+      29,
+      31,
+      32,
+      34
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 231,
+    "code": "static Image *ReadCUTImage(const ImageInfo *image_info,ExceptionInfo *exception)\n{\nImage *image,*palette;\nImageInfo *clone_info;\nMagickBooleanType status;\nMagickOffsetType\noffset;\nsize_t EncodedByte;\n...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 232,
+    "code": "static ssize_t aio_setup_vectored_rw(int type, struct kiocb *kiocb, bool compat)\n{\nssize_t ret;\n#ifdef CONFIG_COMPAT\nif (compat)\nret = compat_rw_copy_check_uvector(type,\n(struct compat_iovec __user *)...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 233,
+    "code": "void PaintController::CopyCachedSubsequence(size_t begin_index,\nsize_t end_index) {\nDCHECK(!RuntimeEnabledFeatures::PaintUnderInvalidationCheckingEnabled());\nbase::AutoReset<size_t> subsequence_begin_...",
+    "matched": true,
+    "vuln_lines": [
+      17,
+      34
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 234,
+    "code": "static ssize_t qib_write(struct file *fp, const char __user *data,\nsize_t count, loff_t *off)\n{\nconst struct qib_cmd __user *ucmd;\nstruct qib_ctxtdata *rcd;\nconst void __user *src;\nsize_t consumed, co...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 235,
+    "code": "void BrowserEventRouter::DispatchTabUpdatedEvent(\nWebContents* contents, DictionaryValue* changed_properties) {\nDCHECK(changed_properties);\nDCHECK(contents);\nscoped_ptr<ListValue> args_base(new ListVa...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      6,
+      12
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 236,
+    "code": "static int parse_index(git_index *index, const char *buffer, size_t buffer_size)\n{\nint error = 0;\nunsigned int i;\nstruct index_header header = { 0 };\ngit_oid checksum_calculated, checksum_expected;\nco...",
+    "matched": true,
+    "vuln_lines": [
+      31,
+      32
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 237,
+    "code": "lexer_process_char_literal (parser_context_t *context_p,\nconst uint8_t *char_p,\nsize_t length,\nuint8_t literal_type,\nbool has_escape)\n{\nparser_list_iterator_t literal_iterator;\nlexer_literal_t *litera...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 238,
+    "code": "WORD32 ih264d_mark_err_slice_skip(dec_struct_t * ps_dec,\nWORD32 num_mb_skip,\nUWORD8 u1_is_idr_slice,\nUWORD16 u2_frame_num,\npocstruct_t *ps_cur_poc,\nWORD32 prev_slice_err)\n{\nWORD32 i2_cur_mb_addr;\nUWOR...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 239,
+    "code": "void ide_dma_cb(void *opaque, int ret)\n{\nIDEState *s = opaque;\nint n;\nint64_t sector_num;\nbool stay_active = false;\nif (ret == -ECANCELED) {\nreturn;\n}\nif (ret < 0) {\nint op = IDE_RETRY_DMA;\nif (s->dma...",
+    "matched": true,
+    "vuln_lines": [
+      40
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 240,
+    "code": "CreateDataReductionProxyChromeIOData(\nProfile* profile,\nconst scoped_refptr<base::SingleThreadTaskRunner>& io_task_runner,\nconst scoped_refptr<base::SingleThreadTaskRunner>& ui_task_runner) {\nDCHECK_C...",
+    "matched": true,
+    "vuln_lines": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 241,
+    "code": "void DiceResponseHandler::ProcessDiceSignoutHeader(\nconst std::vector<signin::DiceResponseParams::AccountInfo>& account_infos) {\nVLOG(1) << \"Start processing Dice signout response\";\nif (account_consis...",
+    "matched": true,
+    "vuln_lines": [
+      23,
+      28
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 242,
+    "code": "CheckClientDownloadRequest(\ncontent::DownloadItem* item,\nconst CheckDownloadCallback& callback,\nDownloadProtectionService* service,\nconst scoped_refptr<SafeBrowsingDatabaseManager>& database_manager,\n...",
+    "matched": true,
+    "vuln_lines": [
+      11
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 243,
+    "code": "static int snd_compr_allocate_buffer(struct snd_compr_stream *stream,\nstruct snd_compr_params *params)\n{\nunsigned int buffer_size;\nvoid *buffer;\nbuffer_size = params->buffer.fragment_size * params->bu...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 244,
+    "code": "bool NavigateToUrlWithEdge(const base::string16& url) {\nbase::string16 protocol_url = L\"microsoft-edge:\" + url;\nSHELLEXECUTEINFO info = { sizeof(info) };\ninfo.fMask = SEE_MASK_NOASYNC | SEE_MASK_FLAG_...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 245,
+    "code": "status_t SampleTable::setCompositionTimeToSampleParams(\noff64_t data_offset, size_t data_size) {\nALOGI(\"There are reordered frames present.\");\nif (mCompositionTimeDeltaEntries != NULL || data_size < 8...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 246,
+    "code": "ft_bitmap_assure_buffer( FT_Memory   memory,\nFT_Bitmap*  bitmap,\nFT_UInt     xpixels,\nFT_UInt     ypixels )\n{\nFT_Error        error;\nint             pitch;\nint             new_pitch;\nFT_UInt         b...",
+    "matched": true,
+    "vuln_lines": [
+      9,
+      41,
+      42,
+      47,
+      49,
+      68,
+      75
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 247,
+    "code": "static void perf_event_interrupt(struct pt_regs *regs)\n{\nint i;\nstruct cpu_hw_events *cpuhw = &__get_cpu_var(cpu_hw_events);\nstruct perf_event *event;\nunsigned long val;\nint found = 0;\nint nmi;\nif (cp...",
+    "matched": true,
+    "vuln_lines": [
+      32
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 248,
+    "code": "AudioOutputDevice::AudioOutputDevice(\nAudioOutputIPC* ipc,\nconst scoped_refptr<base::MessageLoopProxy>& io_loop)\n: ScopedLoopObserver(io_loop),\ninput_channels_(0),\ncallback_(NULL),\nipc_(ipc),\nstream_i...",
+    "matched": true,
+    "vuln_lines": [
+      9,
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 249,
+    "code": "krb5_gss_process_context_token(minor_status, context_handle,\ntoken_buffer)\nOM_uint32 *minor_status;\ngss_ctx_id_t context_handle;\ngss_buffer_t token_buffer;\n{\nkrb5_gss_ctx_id_rec *ctx;\nOM_uint32 majerr...",
+    "matched": true,
+    "vuln_lines": [
+      9,
+      18,
+      19
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 250,
+    "code": "void Verify_StoreExistingGroupExistingCache(base::Time expected_update_time) {\nEXPECT_TRUE(delegate()->stored_group_success_);\nEXPECT_EQ(cache_.get(), group_->newest_complete_cache());\nAppCacheDatabas...",
+    "matched": true,
+    "vuln_lines": [
+      17,
+      20,
+      23
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 251,
+    "code": "KioskNextHomeInterfaceBrokerImpl::KioskNextHomeInterfaceBrokerImpl(\ncontent::BrowserContext* context)\n: connector_(content::BrowserContext::GetConnectorFor(context)->Clone()),\napp_controller_(std::mak...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 252,
+    "code": "AcpiPsCompleteFinalOp (\nACPI_WALK_STATE         *WalkState,\nACPI_PARSE_OBJECT       *Op,\nACPI_STATUS             Status)\n{\nACPI_STATUS             Status2;\nACPI_FUNCTION_TRACE_PTR (PsCompleteFinalOp, ...",
+    "matched": true,
+    "vuln_lines": [
+      5,
+      12,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      47,
+      48,
+      51,
+      52,
+      54,
+      60
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 253,
+    "code": "void PulseAudioMixer::GetAudioInfo(AudioInfo* info) const {\nDCHECK_GT(mainloop_lock_count_, 0);\nCallbackWrapper data = {const_cast<PulseAudioMixer*>(this), false, info};\npa_operation* pa_op = pa_conte...",
+    "matched": true,
+    "vuln_lines": [
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 254,
+    "code": "static int snd_hrtimer_stop(struct snd_timer *t)\n{\nstruct snd_hrtimer *stime = t->private_data;\natomic_set(&stime->running, 0);\nreturn 0;\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 255,
+    "code": "static void perform_gamma_scale16_tests(png_modifier *pm)\n{\n#  ifndef PNG_MAX_GAMMA_8\n#     define PNG_MAX_GAMMA_8 11\n#  endif\n#  define SBIT_16_TO_8 PNG_MAX_GAMMA_8\nunsigned int i, j;\nfor (i=0; i<pm-...",
+    "matched": true,
+    "vuln_lines": [
+      5
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 256,
+    "code": "void ChangeListLoader::LoadAfterGetAboutResource(\nconst DirectoryFetchInfo& directory_fetch_info,\nbool is_initial_load,\nint64 local_changestamp,\ngoogle_apis::GDataErrorCode status,\nscoped_ptr<google_a...",
+    "matched": true,
+    "vuln_lines": [
+      16,
+      17,
+      22,
+      23
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 257,
+    "code": "static int put_chars(u32 vtermno, const char *buf, int count)\n{\nstruct port *port;\nstruct scatterlist sg[1];\nif (unlikely(early_put_chars))\nreturn early_put_chars(vtermno, buf, count);\nport = find_por...",
+    "matched": true,
+    "vuln_lines": [
+      9,
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 258,
+    "code": "static Image *ReadPNGImage(const ImageInfo *image_info,ExceptionInfo *exception)\n{\nImage\n*image;\nMagickBooleanType\nlogging,\nstatus;\nMngInfo\n*mng_info;\nchar\nmagic_number[MaxTextExtent];\nssize_t\ncount;\n...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 259,
+    "code": "void Splash::vertFlipImage(SplashBitmap *img, int width, int height,\nint nComps) {\nGuchar *lineBuf;\nGuchar *p0, *p1;\nint w;\nw = width * nComps;\nGuchar *lineBuf;\nGuchar *p0, *p1;\nint w;\nw = width * nCo...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 260,
+    "code": "static const char *parse_object( cJSON *item, const char *value )\n{\ncJSON *child;\nif ( *value != '{' ) {\nep = value;\nreturn 0;\n}\nitem->type = cJSON_Object;\nvalue =skip( value + 1 );\nif ( *value == '}'...",
+    "matched": true,
+    "vuln_lines": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 261,
+    "code": "static ssize_t eth_rx(NetClientState *nc, const uint8_t *buf, size_t size)\n{\nstruct xlx_ethlite *s = qemu_get_nic_opaque(nc);\nunsigned int rxbase = s->rxbuf * (0x800 / 4);\nif (!(buf[0] & 0x80) && memc...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 262,
+    "code": "OMX_ERRORTYPE  omx_vdec::set_config(OMX_IN OMX_HANDLETYPE      hComp,\nOMX_IN OMX_INDEXTYPE configIndex,\nOMX_IN OMX_PTR        configData)\n{\n(void) hComp;\nif (m_state == OMX_StateInvalid) {\nDEBUG_PRINT...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 263,
+    "code": "bmexec_trans (kwset_t kwset, char const *text, size_t size)\n{\nunsigned char const *d1;\nchar const *ep, *sp, *tp;\nint d;\nint len = kwset->mind;\nchar const *trans = kwset->trans;\nif (len == 0)\nreturn 0;...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 264,
+    "code": "int ssl23_get_client_hello(SSL *s)\n{\nchar buf_space[11];\nchar *buf= &(buf_space[0]);\nunsigned char *p,*d,*d_len,*dd;\nunsigned int i;\nunsigned int csl,sil,cl;\nint n=0,j;\nint type=0;\nint v[2];\nif (s->st...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 265,
+    "code": "bool WebPage::touchEvent(const Platform::TouchEvent& event)\n{\n#if DEBUG_TOUCH_EVENTS\nBBLOG(LogLevelCritical, \"%s\", event.toString().c_str());\n#endif\n#if ENABLE(TOUCH_EVENTS)\nif (!d->m_mainFrame)\nretur...",
+    "matched": true,
+    "vuln_lines": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 266,
+    "code": "static int ohci_service_iso_td(OHCIState *ohci, struct ohci_ed *ed,\nint completion)\n{\nint dir;\nsize_t len = 0;\nconst char *str = NULL;\nint pid;\nint ret;\nint i;\nUSBDevice *dev;\nUSBEndpoint *ep;\nstruct ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 267,
+    "code": "void MediaElementAudioSourceHandler::OnCurrentSrcChanged(\nconst KURL& current_src) {\nDCHECK(IsMainThread());\nLocker<MediaElementAudioSourceHandler> locker(*this);\npasses_current_src_cors_access_check_...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 268,
+    "code": "int read_image_tga( gdIOCtx *ctx, oTga *tga )\n{\nint pixel_block_size = (tga->bits / 8);\nint image_block_size = (tga->width * tga->height) * pixel_block_size;\nuint8_t* decompression_buffer = NULL;\nunsi...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 269,
+    "code": "void SelectionEditor::NodeWillBeRemoved(Node& node_to_be_removed) {\nif (selection_.IsNone())\nreturn;\nconst Position old_base = selection_.base_;\nconst Position old_extent = selection_.extent_;\nconst P...",
+    "matched": true,
+    "vuln_lines": [
+      13
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 270,
+    "code": "static void perf_event_interrupt(struct pt_regs *regs)\n{\nint i;\nstruct cpu_hw_events *cpuhw = &__get_cpu_var(cpu_hw_events);\nstruct perf_event *event;\nunsigned long val;\nint found = 0;\nint nmi;\nnmi = ...",
+    "matched": true,
+    "vuln_lines": [
+      19
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 271,
+    "code": "DecodeIPV6ExtHdrs(ThreadVars *tv, DecodeThreadVars *dtv, Packet *p, uint8_t *pkt, uint16_t len, PacketQueue *pq)\n{\nSCEnter();\nuint8_t *orig_pkt = pkt;\nuint8_t nh = 0;\nuint16_t hdrextlen = 0;\nuint16_t ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 272,
+    "code": "void sendTouchEvent(BlackBerry::Platform::TouchEvent::Type type)\n{\nBlackBerry::Platform::TouchEvent event;\nevent.m_type = type;\nevent.m_points.assign(touches.begin(), touches.end());\nBlackBerry::WebKi...",
+    "matched": true,
+    "vuln_lines": [
+      8,
+      9
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 273,
+    "code": "cib_remote_listen(gpointer data)\n{\nint lpc = 0;\nint csock = 0;\nunsigned laddr;\ntime_t now = 0;\ntime_t start = time(NULL);\nstruct sockaddr_in addr;\nint ssock = *(int *)data;\n#ifdef HAVE_GNUTLS_GNUTLS_H...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      5,
+      6,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      33,
+      34,
+      35,
+      36,
+      37,
+      41,
+      43,
+      44,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      55,
+      56,
+      57,
+      58,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      87,
+      88,
+      90,
+      91,
+      92,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 274,
+    "code": "wb_prep(netdissect_options *ndo,\nconst struct pkt_prep *prep, u_int len)\n{\nint n;\nconst struct pgstate *ps;\nconst u_char *ep = ndo->ndo_snapend;\nND_PRINT((ndo, \" wb-prep:\"));\nif (len < sizeof(*prep)) ...",
+    "matched": true,
+    "vuln_lines": [
+      12,
+      20
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 275,
+    "code": "void GraphicsContext::clip(const Path& path)\n{\n#ifdef __WXMAC__\nif (paintingDisabled())\nreturn;\nwxGraphicsContext* gc = m_data->context->GetGraphicsContext();\nCGContextRef context = (CGContextRef)gc->...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 276,
+    "code": "std::unique_ptr<WebContents> CreateWebContents() {\nstd::unique_ptr<WebContents> web_contents = CreateTestWebContents();\ncontent::WebContentsTester::For(web_contents.get())\n->NavigateAndCommit(GURL(\"ht...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 277,
+    "code": "void ExternalFeedbackReporterAndroid::ReportExternalFeedback(\ncontent::WebContents* web_contents,\nconst GURL& url,\nconst bool good) {\nif (!web_contents)\nreturn;\nWindowAndroidHelper* helper =\ncontent::...",
+    "matched": true,
+    "vuln_lines": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      15,
+      16
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 278,
+    "code": "dns_stricmp(const char* str1, const char* str2)\n{\nchar c1, c2;\n*----------------------------------------------------------------------------*/\nstatic struct udp_pcb        *dns_pcb;\nstatic u8_t       ...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 279,
+    "code": "virtual void CancelHandwritingStrokes(int stroke_count) {\nif (!initialized_successfully_)\nreturn;\nchromeos::CancelHandwriting(input_method_status_connection_, stroke_count);\n}...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 280,
+    "code": "static void InputMethodChangedHandler(\nvoid* object,\nconst chromeos::InputMethodDescriptor& current_input_method) {\nif (!BrowserThread::CurrentlyOn(BrowserThread::UI)) {\nLOG(ERROR) << \"Not on UI threa...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      7,
+      8,
+      9
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 281,
+    "code": "void MediaControlTimelineElement::defaultEventHandler(Event* event) {\nif (event->isMouseEvent() &&\ntoMouseEvent(event)->button() !=\nstatic_cast<short>(WebPointerProperties::Button::Left))\nreturn;\nif (...",
+    "matched": true,
+    "vuln_lines": [
+      18,
+      19,
+      20,
+      23,
+      26
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 282,
+    "code": "static OPJ_BOOL opj_pi_next_rpcl(opj_pi_iterator_t * pi)\n{\nopj_pi_comp_t *comp = NULL;\nopj_pi_resolution_t *res = NULL;\nOPJ_UINT32 index = 0;\nif (!pi->first) {\ngoto LABEL_SKIP;\n} else {\nOPJ_UINT32 com...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 283,
+    "code": "void PulseAudioMixer::DoInit(InitDoneCallback* callback) {\nbool success = PulseAudioInit();\ncallback->Run(success);\ndelete callback;\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 284,
+    "code": "xsltAddTemplate(xsltStylesheetPtr style, xsltTemplatePtr cur,\nconst xmlChar *mode, const xmlChar *modeURI) {\nxsltCompMatchPtr pat, list, next;\nvoid **top = NULL;\nconst xmlChar *name = NULL;\nfloat prio...",
+    "matched": true,
+    "vuln_lines": [
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 285,
+    "code": "static Image *ReadEMFImage(const ImageInfo *image_info,\nExceptionInfo *exception)\n{\nBITMAPINFO\nDIBinfo;\nHBITMAP\nhBitmap,\nhOldBitmap;\nHDC\nhDC;\nHENHMETAFILE\nhemf;\nImage\n*image;\nRECT\nrect;\nregister ssize...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 286,
+    "code": "static void virtqueue_map_desc(unsigned int *p_num_sg, hwaddr *addr, struct iovec *iov,\nunsigned int max_num_sg, bool is_write,\nhwaddr pa, size_t sz)\n{\nunsigned num_sg = *p_num_sg;\nassert(num_sg <= ma...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 287,
+    "code": "static int l2tp_ip6_bind(struct sock *sk, struct sockaddr *uaddr, int addr_len)\n{\nstruct inet_sock *inet = inet_sk(sk);\nstruct ipv6_pinfo *np = inet6_sk(sk);\nstruct sockaddr_l2tpip6 *addr = (struct so...",
+    "matched": true,
+    "vuln_lines": [
+      9,
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 288,
+    "code": "void processRequest(struct reqelem * req)\n{\nssize_t n;\nunsigned int l, m;\nunsigned char buf[2048];\nconst unsigned char * p;\nenum request_type type;\nstruct device * d = devlist;\nunsigned char rbuf[RESP...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 289,
+    "code": "static int tcp_v6_send_synack(const struct sock *sk, struct dst_entry *dst,\nstruct flowi *fl,\nstruct request_sock *req,\nstruct tcp_fastopen_cookie *foc,\nbool attach_req)\n{\nstruct inet_request_sock *ir...",
+    "matched": true,
+    "vuln_lines": [
+      21
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 290,
+    "code": "void DoCheckFakeData(uint8* audio_data, size_t length) {\nType* output = reinterpret_cast<Type*>(audio_data);\nfor (size_t i = 0; i < length; i++) {\nEXPECT_TRUE(algorithm_.is_muted() || output[i] != 0);...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 291,
+    "code": "void DocumentLoader::DidInstallNewDocument(Document* document) {\ndocument->SetReadyState(Document::kLoading);\nif (content_security_policy_) {\ndocument->InitContentSecurityPolicy(content_security_polic...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 292,
+    "code": "int svc_rdma_sendto(struct svc_rqst *rqstp)\n{\nstruct svc_xprt *xprt = rqstp->rq_xprt;\nstruct svcxprt_rdma *rdma =\ncontainer_of(xprt, struct svcxprt_rdma, sc_xprt);\nstruct rpcrdma_msg *rdma_argp;\nstruc...",
+    "matched": true,
+    "vuln_lines": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      30,
+      31,
+      32,
+      34,
+      38,
+      39,
+      41,
+      42,
+      44,
+      45,
+      47,
+      48,
+      53,
+      54,
+      57,
+      58,
+      59,
+      63,
+      66
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 293,
+    "code": "int32_t DownmixLib_Create(const effect_uuid_t *uuid,\nint32_t sessionId,\nint32_t ioId,\neffect_handle_t *pHandle) {\nint ret;\nint i;\ndownmix_module_t *module;\nconst effect_descriptor_t *desc;\nALOGV(\"Down...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 294,
+    "code": "int Track::Info::CopyStr(char* Info::*str, Info& dst_) const {\nif (str == static_cast<char * Info::*>(NULL))\nreturn -1;\nchar*& dst = dst_.*str;\nif (dst)\nreturn -1;\nconst char* const src = this->*str;\n...",
+    "matched": true,
+    "vuln_lines": [
+      10
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 295,
+    "code": "int main(int argc, char *argv[])\n{\nstruct MHD_Daemon *d;\nint port, opti, optc, cmdok, ret, slog_interval;\nchar *log_file, *slog_file;\nprogram_name = argv[0];\nsetlocale(LC_ALL, \"\");\n#if ENABLE_NLS\nbind...",
+    "matched": true,
+    "vuln_lines": [
+      39,
+      72,
+      73
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 296,
+    "code": "PasswordAutofillAgent::PasswordAutofillAgent(content::RenderFrame* render_frame)\n: content::RenderFrameObserver(render_frame),\nlogging_state_active_(false),\nwas_username_autofilled_(false),\nwas_passwo...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      5
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 297,
+    "code": "static int fill_thread_core_info(struct elf_thread_core_info *t,\nconst struct user_regset_view *view,\nlong signr, size_t *total)\n{\nunsigned int i;\nfill_prstatus(&t->prstatus, t->task, signr);\n(void) v...",
+    "matched": true,
+    "vuln_lines": [
+      16
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 298,
+    "code": "Vp9Parser::Vp9Parser() {\nReset();\n}...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 299,
+    "code": "static zend_always_inline int process_nested_data(UNSERIALIZE_PARAMETER, HashTable *ht, zend_long elements, int objprops)\n{\nwhile (elements-- > 0) {\nzval key, *data, d, *old_data;\nzend_ulong idx;\nZVAL...",
+    "matched": true,
+    "vuln_lines": [
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      68
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 300,
+    "code": "NetworkChangeNotifier* NetworkChangeNotifier::Create() {\nif (g_network_change_notifier_factory)\nreturn g_network_change_notifier_factory->CreateInstance();\n#if defined(OS_WIN)\nNetworkChangeNotifierWin...",
+    "matched": true,
+    "vuln_lines": [
+      12
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 301,
+    "code": "v8::Handle<v8::Value> V8DirectoryEntry::getDirectoryCallback(const v8::Arguments& args)\n{\nINC_STATS(\"DOM.DirectoryEntry.getDirectory\");\nDirectoryEntry* imp = V8DirectoryEntry::toNative(args.Holder());...",
+    "matched": true,
+    "vuln_lines": [
+      5
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 302,
+    "code": "cherokee_validator_ldap_check (cherokee_validator_ldap_t *ldap,\ncherokee_connection_t     *conn)\n{\nint                              re;\nret_t                            ret;\nsize_t                    ...",
+    "matched": true,
+    "vuln_lines": [
+      12
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 303,
+    "code": "DirectoryEntrySync* DirectoryEntrySync::getDirectory(const String& path, const Dictionary& options, ExceptionState& exceptionState)\n{\nFileSystemFlags flags(options);\nRefPtr<EntrySyncCallbackHelper> he...",
+    "matched": true,
+    "vuln_lines": [
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 304,
+    "code": "status_t CameraDeviceClient::dump(int fd, const Vector<String16>& args) {\nString8 result;\nresult.appendFormat(\"CameraDeviceClient[%d] (%p) PID: %d, dump:\\n\",\nmCameraId,\ngetRemoteCallback()->asBinder()...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 305,
+    "code": "void jpc_qmfb_split_colres(jpc_fix_t *a, int numrows, int numcols,\nint stride, int parity)\n{\nint bufsize = JPC_CEILDIVPOW2(numrows, 1);\njpc_fix_t splitbuf[QMFB_SPLITBUFSIZE * JPC_QMFB_COLGRPSIZE];\njpc...",
+    "matched": true,
+    "vuln_lines": [
+      15
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 306,
+    "code": "static int ecdsa_sign_det_restartable( mbedtls_ecp_group *grp,\nmbedtls_mpi *r, mbedtls_mpi *s,\nconst mbedtls_mpi *d, const unsigned char *buf, size_t blen,\nmbedtls_md_type_t md_alg,\nmbedtls_ecdsa_rest...",
+    "matched": true,
+    "vuln_lines": [
+      40
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 307,
+    "code": "static inline int ip6_ufo_append_data(struct sock *sk,\nint getfrag(void *from, char *to, int offset, int len,\nint odd, struct sk_buff *skb),\nvoid *from, int length, int hh_len, int fragheaderlen,\nint ...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      28
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 308,
+    "code": "void HTMLMediaElement::ChangeNetworkStateFromLoadingToIdle() {\nprogress_event_timer_.Stop();\nif (GetWebMediaPlayer() && GetWebMediaPlayer()->DidLoadingProgress())\nScheduleEvent(EventTypeNames::progres...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 309,
+    "code": "HeadlessWebContentsImpl::HeadlessWebContentsImpl(\ncontent::WebContents* web_contents,\nHeadlessBrowserContextImpl* browser_context)\n: content::WebContentsObserver(web_contents),\nweb_contents_delegate_(...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 310,
+    "code": "static int usb_parse_configuration(struct usb_device *dev, int cfgidx,\nstruct usb_host_config *config, unsigned char *buffer, int size)\n{\nstruct device *ddev = &dev->dev;\nunsigned char *buffer0 = buff...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 311,
+    "code": "int gdAlphaBlend (int dst, int src) {\nint src_alpha = gdTrueColorGetAlpha(src);\nint dst_alpha, alpha, red, green, blue;\nint src_weight, dst_weight, tot_weight;\nif( src_alpha == gdAlphaOpaque )\nreturn ...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 312,
+    "code": "static int __poke_user_compat(struct task_struct *child,\naddr_t addr, addr_t data)\n{\nstruct compat_user *dummy32 = NULL;\n__u32 tmp = (__u32) data;\naddr_t offset;\nif (addr < (addr_t) &dummy32->regs.acr...",
+    "matched": true,
+    "vuln_lines": [
+      11
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 313,
+    "code": "logger_get_mask_expanded (struct t_gui_buffer *buffer, const char *mask)\n{\nchar *mask2, *mask_decoded, *mask_decoded2, *mask_decoded3, *mask_decoded4;\nchar *mask_decoded5;\nconst char *dir_separator;\ni...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      3,
+      9,
+      10,
+      11,
+      12,
+      13,
+      17,
+      20,
+      21,
+      23,
+      26,
+      29,
+      32,
+      34,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      49,
+      57,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 314,
+    "code": "static Image *ReadSUNImage(const ImageInfo *image_info,ExceptionInfo *exception)\n{\n#define RMT_EQUAL_RGB  1\n#define RMT_NONE  0\n#define RMT_RAW  2\n#define RT_STANDARD  1\n#define RT_ENCODED  2\n#define ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 315,
+    "code": "int _yr_scan_match_callback(\nuint8_t* match_data,\nint32_t match_length,\nint flags,\nvoid* args)\n{\nCALLBACK_ARGS* callback_args = (CALLBACK_ARGS*) args;\nYR_STRING* string = callback_args->string;\nYR_MAT...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 316,
+    "code": "static int userns_install(struct nsproxy *nsproxy, void *ns)\n{\nstruct user_namespace *user_ns = ns;\nstruct cred *cred;\nif (user_ns == current_user_ns())\nreturn -EINVAL;\nif (atomic_read(&current->mm->m...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 317,
+    "code": "static void UpdatePropertyHandler(\nvoid* object, const ImePropertyList& prop_list) {\nif (!BrowserThread::CurrentlyOn(BrowserThread::UI)) {\nLOG(ERROR) << \"Not on UI thread\";\nreturn;\n}\nInputMethodLibrar...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 318,
+    "code": "ft_smooth_render_generic( FT_Renderer       render,\nFT_GlyphSlot      slot,\nFT_Render_Mode    mode,\nconst FT_Vector*  origin,\nFT_Render_Mode    required_mode )\n{\nFT_Error     error;\nFT_Outline*  outli...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 319,
+    "code": "bool PrintRenderFrameHelper::PreviewPageRendered(int page_number,\nPdfMetafileSkia* metafile) {\nDCHECK_GE(page_number, FIRST_PAGE_INDEX);\nif (!print_preview_context_.IsModifiable() ||\n!print_preview_co...",
+    "matched": true,
+    "vuln_lines": [
+      15,
+      16,
+      17
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 320,
+    "code": "static int hid_copy_transfer_data(int sub_api, struct usbi_transfer *itransfer, uint32_t io_size) {\nstruct libusb_transfer *transfer = USBI_TRANSFER_TO_LIBUSB_TRANSFER(itransfer);\nstruct libusb_contex...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 321,
+    "code": "Chapters::Edition::Edition()\n{\n}...",
+    "matched": true,
+    "vuln_lines": [
+      1
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 322,
+    "code": "static void tcp_send_challenge_ack(struct sock *sk, const struct sk_buff *skb)\n{\nstatic u32 challenge_timestamp;\nstatic unsigned int challenge_count;\nstruct tcp_sock *tp = tcp_sk(sk);\nu32 now;\nif (tcp...",
+    "matched": true,
+    "vuln_lines": [
+      5,
+      13,
+      15
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 323,
+    "code": "void PropertyTreeManager::EmitClipMaskLayer() {\nint clip_id = EnsureCompositorClipNode(current_clip_);\nCompositorElementId mask_isolation_id, mask_effect_id;\ncc::Layer* mask_layer = client_.CreateOrRe...",
+    "matched": true,
+    "vuln_lines": [
+      15,
+      16
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 324,
+    "code": "EffectPaintPropertyNode* EffectPaintPropertyNode::Root() {\nDEFINE_STATIC_REF(EffectPaintPropertyNode, root,\n(EffectPaintPropertyNode::Create(\nnullptr, State{TransformPaintPropertyNode::Root(),\nClipPai...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 325,
+    "code": "static int attach_recursive_mnt(struct mount *source_mnt,\nstruct mount *dest_mnt,\nstruct mountpoint *dest_mp,\nstruct path *parent_path)\n{\nHLIST_HEAD(tree_list);\nstruct mount *child, *p;\nstruct hlist_n...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 326,
+    "code": "long long mkvparser::ReadUInt(IMkvReader* pReader, long long pos, long& len) {\nassert(pReader);\nassert(pos >= 0);\nint status;\nlen = 1;\nunsigned char b;\nstatus = pReader->Read(pos, 1, &b);\nif (status <...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 327,
+    "code": "parse_rock_ridge_inode_internal(struct iso_directory_record *de,\nstruct inode *inode, int regard_xa)\n{\nint symlink_len = 0;\nint cnt, sig;\nstruct inode *reloc;\nstruct rock_ridge *rr;\nint rootflag;\nstru...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 328,
+    "code": "void AcceleratedStaticBitmapImage::CheckThread() {\nif (detach_thread_at_next_check_) {\nthread_checker_.DetachFromThread();\ndetach_thread_at_next_check_ = false;\n}\nCHECK(thread_checker_.CalledOnValidTh...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 329,
+    "code": "static long aio_read_events_ring(struct kioctx *ctx,\nstruct io_event __user *event, long nr)\n{\nstruct aio_ring *ring;\nunsigned head, tail, pos;\nlong ret = 0;\nint copy_ret;\nmutex_lock(&ctx->ring_lock);...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 330,
+    "code": "static inline bool elementCanUseSimpleDefaultStyle(Element* e)\n{\nreturn isHTMLHtmlElement(e) || e->hasTagName(headTag) || e->hasTagName(bodyTag) || e->hasTagName(divTag) || e->hasTagName(spanTag) || e...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 331,
+    "code": "juniper_ggsn_print(netdissect_options *ndo,\nconst struct pcap_pkthdr *h, register const u_char *p)\n{\nstruct juniper_l2info_t l2info;\nstruct juniper_ggsn_header {\nuint8_t svc_id;\nuint8_t flags_len;\nuin...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 332,
+    "code": "BufferMeta(const sp<IMemory> &mem, OMX_U32 portIndex, bool is_backup = false)\n: mMem(mem),\nmIsBackup(is_backup),\nmPortIndex(portIndex) {\n}...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 333,
+    "code": "static int skcipher_recvmsg(struct kiocb *unused, struct socket *sock,\nstruct msghdr *msg, size_t ignored, int flags)\n{\nstruct sock *sk = sock->sk;\nstruct alg_sock *ask = alg_sk(sk);\nstruct skcipher_c...",
+    "matched": true,
+    "vuln_lines": [
+      16
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 334,
+    "code": "void InlineSigninHelper::OnClientOAuthSuccessAndBrowserOpened(\nconst ClientOAuthResult& result,\nProfile* profile,\nProfile::CreateStatus status) {\nif (is_force_sign_in_with_usermanager_)\nUnlockProfileA...",
+    "matched": true,
+    "vuln_lines": [
+      45,
+      46
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 335,
+    "code": "png_set_text_2(png_structp png_ptr, png_infop info_ptr, png_textp text_ptr,\nint num_text)\n{\nint i;\npng_debug1(1, \"in %s storage function\", ((png_ptr == NULL ||\npng_ptr->chunk_name[0] == '\\0') ?\n\"text\"...",
+    "matched": true,
+    "vuln_lines": [
+      100,
+      103
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 336,
+    "code": "long long CuePoint::GetTimeCode() const\n{\nreturn m_timecode;\n}...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 337,
+    "code": "void BluetoothDeviceChromeOS::OnRegisterAgentError(\nconst ConnectErrorCallback& error_callback,\nconst std::string& error_name,\nconst std::string& error_message) {\nif (--num_connecting_calls_ == 0)\nada...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 338,
+    "code": "get_princs_2_svc(gprincs_arg *arg, struct svc_req *rqstp)\n{\nstatic gprincs_ret              ret;\nchar                            *prime_arg;\ngss_buffer_desc                 client_name,\nservice_name;\n...",
+    "matched": true,
+    "vuln_lines": [
+      4,
+      5,
+      43
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 339,
+    "code": "void HTMLMediaElement::NoneSupported(const String& message) {\nBLINK_MEDIA_LOG << \"NoneSupported(\" << (void*)this << \", message='\" << message\n<< \"')\";\nStopPeriodicTimers();\nload_state_ = kWaitingForSou...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      2
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 340,
+    "code": "ip_printroute(netdissect_options *ndo,\nregister const u_char *cp, u_int length)\n{\nregister u_int ptr;\nregister u_int len;\nif (length < 3) {\nND_PRINT((ndo, \" [bad length %u]\", length));\nreturn;\n}\nif ((...",
+    "matched": true,
+    "vuln_lines": [
+      7
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 341,
+    "code": "static v8::Handle<v8::Value> methodThatRequiresAllArgsAndThrowsCallback(const v8::Arguments& args)\n{\nINC_STATS(\"DOM.TestObj.methodThatRequiresAllArgsAndThrows\");\nif (args.Length() < 2)\nreturn V8Proxy:...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 342,
+    "code": "copy_move_file (CopyMoveJob   *copy_job,\nGFile         *src,\nGFile         *dest_dir,\ngboolean       same_fs,\ngboolean       unique_names,\nchar         **dest_fs_type,\nSourceInfo    *source_info,\nTran...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 343,
+    "code": "restore_page_device(i_ctx_t *i_ctx_p, const gs_gstate * pgs_old, const gs_gstate * pgs_new)\n{\ngx_device *dev_old = gs_currentdevice(pgs_old);\ngx_device *dev_new;\ngx_device *dev_t1;\ngx_device *dev_t2;\n...",
+    "matched": true,
+    "vuln_lines": [
+      20
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 344,
+    "code": "BlockEntry::~BlockEntry()\n{\n}...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 345,
+    "code": "spnego_gss_get_mic_iov_length(OM_uint32 *minor_status,\ngss_ctx_id_t context_handle, gss_qop_t qop_req,\ngss_iov_buffer_desc *iov, int iov_count)\n{\nreturn gss_get_mic_iov_length(minor_status, context_ha...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 346,
+    "code": "bool extractPages (const char *srcFileName, const char *destFileName) {\nchar pathName[1024];\nGooString *gfileName = new GooString (srcFileName);\nPDFDoc *doc = new PDFDoc (gfileName, NULL, NULL, NULL);...",
+    "matched": true,
+    "vuln_lines": [
+      1,
+      21
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 347,
+    "code": "int vrend_create_shader(struct vrend_context *ctx,\nuint32_t handle,\nconst struct pipe_stream_output_info *so_info,\nconst char *shd_text, uint32_t offlen, uint32_t num_tokens,\nuint32_t type, uint32_t p...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 348,
+    "code": "static int rtnl_fill_link_ifmap(struct sk_buff *skb, struct net_device *dev)\n{\nstruct rtnl_link_ifmap map = {\n.mem_start   = dev->mem_start,\n.mem_end     = dev->mem_end,\n.base_addr   = dev->base_addr,...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 349,
+    "code": "void __init setup_arch(char **cmdline_p)\n{\nmemblock_reserve(__pa_symbol(_text),\n(unsigned long)__bss_stop - (unsigned long)_text);\nearly_reserve_initrd();\n#ifdef CONFIG_X86_32\nmemcpy(&boot_cpu_data, &...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 350,
+    "code": "bool WebMediaPlayerImpl::HasSingleSecurityOrigin() const {\nif (data_source_)\nreturn data_source_->HasSingleOrigin();\nreturn true;\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 351,
+    "code": "void MemoryInstrumentation::GetVmRegionsForHeapProfiler(\nRequestGlobalDumpCallback callback) {\nconst auto& coordinator = GetCoordinatorBindingForCurrentThread();\ncoordinator->GetVmRegionsForHeapProfil...",
+    "matched": true,
+    "vuln_lines": [
+      0
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 352,
+    "code": "jiffies_to_timespec(const unsigned long jiffies, struct timespec *value)\n{\nu64 nsec = (u64)jiffies * TICK_NSEC;\nvalue->tv_sec = div_long_long_rem(nsec, NSEC_PER_SEC, &value->tv_nsec);\n}...",
+    "matched": true,
+    "vuln_lines": [
+      2,
+      3
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 353,
+    "code": "static inline signed int ReadPropertyMSBLong(const unsigned char **p,\nsize_t *length)\n{\nunion\n{\nunsigned int\nunsigned_value;\nsigned int\nsigned_value;\n} quantum;\nint\nc;\nregister ssize_t\ni;\nunsigned cha...",
+    "matched": true,
+    "vuln_lines": [
+      16,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 354,
+    "code": "void ImageBitmapFactories::ImageBitmapLoader::Trace(blink::Visitor* visitor) {\nvisitor->Trace(factory_);\nvisitor->Trace(resolver_);\nvisitor->Trace(options_);\n}...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 355,
+    "code": "void GraphicsContext::fillRoundedRect(const IntRect& rect, const IntSize& topLeft, const IntSize& topRight, const IntSize& bottomLeft, const IntSize& bottomRight, const Color& color, ColorSpace colorS...",
+    "matched": true,
+    "vuln_lines": [
+      4
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 356,
+    "code": "void WtsSessionProcessDelegate::Core::KillProcess(DWORD exit_code) {\nDCHECK(main_task_runner_->BelongsToCurrentThread());\nchannel_.reset();\nif (launch_elevated_) {\nif (job_.IsValid()) {\nTerminateJobOb...",
+    "matched": true,
+    "vuln_lines": [],
+    "source": "train.jsonl(diff)",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 357,
+    "code": "struct key *request_key_and_link(struct key_type *type,\nconst char *description,\nconst void *callout_info,\nsize_t callout_len,\nvoid *aux,\nstruct key *dest_keyring,\nunsigned long flags)\n{\nstruct keyrin...",
+    "matched": true,
+    "vuln_lines": [
+      12
+    ],
+    "source": "train.jsonl",
+    "reliability": 1.0
+  },
+  {
+    "sample_idx": 358,
+    "code": "static int hash_accept(struct socket *sock, struct socket *newsock, int flags)\n{\nstruct sock *sk = sock->sk;\nstruct alg_sock *ask = alg_sk(sk);\nstruct hash_ctx *ctx = ask->private;\nstruct ahash_reques...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 359,
+    "code": "bool RegisterFeedbackReporter(JNIEnv* env) {\nreturn RegisterNativesImpl(env);\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 360,
+    "code": "void SplitUrlAndTitle(const base::string16& str,\nbase::string16* url,\nbase::string16* title) {\nDCHECK(url && title);\nsize_t newline_pos = str.find('\\n');\nif (newline_pos != base::string16::npos) {\nurl...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 361,
+    "code": "char *path_name(struct strbuf *path, const char *name)\n{\nstruct strbuf ret = STRBUF_INIT;\nif (path)\nstrbuf_addbuf(&ret, path);\nstrbuf_addstr(&ret, name);\nreturn strbuf_detach(&ret, NULL);\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 362,
+    "code": "WebRunnerMainDelegate::CreateContentBrowserClient() {\nDCHECK(!browser_client_);\nbrowser_client_ = std::make_unique<WebRunnerContentBrowserClient>(\nstd::move(context_channel_));\nreturn browser_client_....",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 363,
+    "code": "IDNSpoofChecker::IDNSpoofChecker() {\nUErrorCode status = U_ZERO_ERROR;\nchecker_ = uspoof_open(&status);\nif (U_FAILURE(status)) {\nchecker_ = nullptr;\nreturn;\n}\nuspoof_setRestrictionLevel(checker_, USPO...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 364,
+    "code": "void Compositor::OnFirstSurfaceActivation(\nconst viz::SurfaceInfo& surface_info) {\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 365,
+    "code": "int rpc_pack(rpc_pkg *pkg, void **data, uint32_t *size)\n{\nstatic void *send_buf;\nstatic size_t send_buf_size;\nuint32_t pkg_size = RPC_PKG_HEAD_SIZE + pkg->ext_size + pkg->body_size;\nif (send_buf_size ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 366,
+    "code": "bool ExtensionTtsPlatformImplChromeOs::IsSpeaking() {\nif (chromeos::CrosLibrary::Get()->EnsureLoaded()) {\nreturn chromeos::CrosLibrary::Get()->GetSpeechSynthesisLibrary()->\nIsSpeaking();\n}\nset_error(k...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 367,
+    "code": "void pin_remove(struct fs_pin *pin)\n{\nspin_lock(&pin_lock);\nhlist_del(&pin->m_list);\nhlist_del(&pin->s_list);\nspin_unlock(&pin_lock);\nspin_lock_irq(&pin->wait.lock);\npin->done = 1;\nwake_up_locked(&pin...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 368,
+    "code": "int yr_execute_code(\nYR_RULES* rules,\nYR_SCAN_CONTEXT* context,\nint timeout,\ntime_t start_time)\n{\nint64_t mem[MEM_SIZE];\nint32_t sp = 0;\nuint8_t* ip = rules->code_start;\nYR_VALUE args[MAX_FUNCTION_ARG...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 369,
+    "code": "static int _snd_timer_stop(struct snd_timer_instance * timeri,\nint keep_flag, int event)\n{\nstruct snd_timer *timer;\nunsigned long flags;\nif (snd_BUG_ON(!timeri))\nreturn -ENXIO;\nif (timeri->flags & SND...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 370,
+    "code": "display_sigset( const char *msg, sigset_t *mask )\n{\nint\t\t\t\t\tsigno;\nNameTableIterator       next_sig( SigNames );\nif( msg ) {\ndprintf( D_ALWAYS, msg );\n}\nwhile( (signo = next_sig()) != -1 ) {\nif( sigis...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 371,
+    "code": "void PageHandler::PrintToPDF(Maybe<bool> landscape,\nMaybe<bool> display_header_footer,\nMaybe<bool> print_background,\nMaybe<double> scale,\nMaybe<double> paper_width,\nMaybe<double> paper_height,\nMaybe<d...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 372,
+    "code": "set_string_2_svc(sstring_arg *arg, struct svc_req *rqstp)\n{\nstatic generic_ret              ret;\nchar                            *prime_arg;\ngss_buffer_desc                 client_name,\nservice_name;\n...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 373,
+    "code": "krb5_gss_wrap_size_limit(minor_status, context_handle, conf_req_flag,\nqop_req, req_output_size, max_input_size)\nOM_uint32           *minor_status;\ngss_ctx_id_t        context_handle;\nint              ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 374,
+    "code": "static int em_loop(struct x86_emulate_ctxt *ctxt)\n{\nregister_address_increment(ctxt, reg_rmw(ctxt, VCPU_REGS_RCX), -1);\nif ((address_mask(ctxt, reg_read(ctxt, VCPU_REGS_RCX)) != 0) &&\n(ctxt->b == 0xe2...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 375,
+    "code": "aiptek_probe(struct usb_interface *intf, const struct usb_device_id *id)\n{\nstruct usb_device *usbdev = interface_to_usbdev(intf);\nstruct usb_endpoint_descriptor *endpoint;\nstruct aiptek *aiptek;\nstruc...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 376,
+    "code": "gray_render_span( int             y,\nint             count,\nconst FT_Span*  spans,\nPWorker         worker )\n{\nunsigned char*  p;\nFT_Bitmap*      map = &worker->target;\np = (unsigned char*)map->buffer ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 377,
+    "code": "static int i8042_start(struct serio *serio)\n{\nstruct i8042_port *port = serio->port_data;\nport->exists = true;\nmb();\nreturn 0;\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 378,
+    "code": "String AXNodeObject::textFromDescendants(AXObjectSet& visited,\nbool recursive) const {\nif (!canHaveChildren() && recursive)\nreturn String();\nStringBuilder accumulatedText;\nAXObject* previous = nullptr...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 379,
+    "code": "static int encrypted_update(struct key *key, struct key_preparsed_payload *prep)\n{\nstruct encrypted_key_payload *epayload = key->payload.data[0];\nstruct encrypted_key_payload *new_epayload;\nchar *buf;...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 380,
+    "code": "get_page_image(LoadContext *lc, ddjvu_page_t *page, int x, int y, int w, int h, const ImageInfo *image_info ) {\nddjvu_format_t\n*format;\nddjvu_page_type_t\ntype;\nImage\n*image;\nint\nret,\nstride;\nunsigned ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 381,
+    "code": "static void __net_exit sctp_net_exit(struct net *net)\n{\nsctp_free_addr_wq(net);\nsctp_free_local_addr_list(net);\ninet_ctl_sock_destroy(net->sctp.ctl_sock);\nsctp_dbg_objcnt_exit(net);\nsctp_proc_exit(net...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 382,
+    "code": "status_t MPEG4Extractor::readMetaData() {\nif (mInitCheck != NO_INIT) {\nreturn mInitCheck;\n}\noff64_t offset = 0;\nstatus_t err;\nbool sawMoovOrSidx = false;\nwhile (!(sawMoovOrSidx && (mMdatFound || mMoof...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 383,
+    "code": "static RList *relocs(RBinFile *arch) {\nstruct r_bin_bflt_obj *obj = (struct r_bin_bflt_obj*)arch->o->bin_obj;\nRList *list = r_list_newf ((RListFree)free);\nint i, len, n_got, amount;\nif (!list || !obj)...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 384,
+    "code": "static inline void sem_getref(struct sem_array *sma)\n{\nspin_lock(&(sma)->sem_perm.lock);\nipc_rcu_getref(sma);\nipc_unlock(&(sma)->sem_perm);\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 385,
+    "code": "static void _php_image_create_from(INTERNAL_FUNCTION_PARAMETERS, int image_type, char *tn, gdImagePtr (*func_p)(), gdImagePtr (*ioctx_func_p)())\n{\nchar *file;\nint file_len;\nlong srcx, srcy, width, hei...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 386,
+    "code": "void jas_matrix_asr(jas_matrix_t *matrix, int n)\n{\nint i;\nint j;\njas_seqent_t *rowstart;\nint rowstep;\njas_seqent_t *data;\nassert(n >= 0);\nif (jas_matrix_numrows(matrix) > 0 && jas_matrix_numcols(matri...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 387,
+    "code": "static bool get_build_id(\nBacktrace* backtrace, uintptr_t base_addr, uint8_t* e_ident, std::string* build_id) {\nHdrType hdr;\nmemcpy(&hdr.e_ident[0], e_ident, EI_NIDENT);\nif (backtrace->Read(base_addr ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 388,
+    "code": "static int ssl_scan_serverhello_tlsext(SSL *s, unsigned char **p,\nunsigned char *d, int n, int *al)\n{\nunsigned short length;\nunsigned short type;\nunsigned short size;\nunsigned char *data = *p;\nint tls...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 389,
+    "code": "Response ServiceWorkerHandler::DispatchSyncEvent(\nconst std::string& origin,\nconst std::string& registration_id,\nconst std::string& tag,\nbool last_chance) {\nif (!enabled_)\nreturn CreateDomainNotEnable...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 390,
+    "code": "vc4_get_bcl(struct drm_device *dev, struct vc4_exec_info *exec)\n{\nstruct drm_vc4_submit_cl *args = exec->args;\nvoid *temp = NULL;\nvoid *bin;\nint ret = 0;\nuint32_t bin_offset = 0;\nuint32_t shader_rec_o...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 391,
+    "code": "void PasswordInputType::EnableSecureTextInput() {\nLocalFrame* frame = GetElement().GetDocument().GetFrame();\nif (!frame)\nreturn;\nframe->Selection().SetUseSecureKeyboardEntryWhenActive(true);\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 392,
+    "code": "modify_principal_2_svc(mprinc_arg *arg, struct svc_req *rqstp)\n{\nstatic generic_ret              ret;\nchar                            *prime_arg;\ngss_buffer_desc                 client_name,\nservice_n...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 393,
+    "code": "static int do_check(struct bpf_verifier_env *env)\n{\nstruct bpf_verifier_state *state = &env->cur_state;\nstruct bpf_insn *insns = env->prog->insnsi;\nstruct bpf_reg_state *regs = state->regs;\nint insn_c...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 394,
+    "code": "BrowserGpuChannelHostFactory::EstablishRequest::EstablishRequest()\n: event(false, false),\ngpu_process_handle(base::kNullProcessHandle) {\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 395,
+    "code": "static void mark_screen_rdonly(struct mm_struct *mm)\n{\npgd_t *pgd;\npud_t *pud;\npmd_t *pmd;\npte_t *pte;\nspinlock_t *ptl;\nint i;\npgd = pgd_offset(mm, 0xA0000);\nif (pgd_none_or_clear_bad(pgd))\ngoto out;\n...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 396,
+    "code": "prep_reprocess_req(krb5_kdc_req *request, krb5_principal *krbtgt_princ)\n{\nkrb5_error_code retval = KRB5KRB_AP_ERR_BADMATCH;\nchar **realms, **cpp, *temp_buf=NULL;\nkrb5_data *comp1 = NULL, *comp2 = NULL...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 397,
+    "code": "cpStripToTile(uint8* out, uint8* in,\nuint32 rows, uint32 cols, int outskew, int inskew)\n{\nwhile (rows-- > 0) {\nuint32 j = cols;\nwhile (j-- > 0)\n*out++ = *in++;\nout += outskew;\nin += inskew;\n}\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 398,
+    "code": "bool TryAddNextUnusedAxesButton() {\nfor (const auto& axes_data_pair : axes_data_) {\nvr::EVRButtonId button_id = axes_data_pair.first;\nif (IsUsed(button_id))\ncontinue;\nif (TryAddAxesButton(button_id, A...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 399,
+    "code": "CancelPendingTask() {\nfilter_->ResumeAttachOrDestroy(element_instance_id_,\nMSG_ROUTING_NONE  );\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 400,
+    "code": "uint8_t* input() const {\nreturn input_ + BorderTop() * kOuterBlockSize + BorderLeft();\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 401,
+    "code": "uint8_t* input() const {\nreturn input_ + BorderTop() * kOuterBlockSize + BorderLeft();\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 402,
+    "code": "void GDataFileSystem::AddUploadedFileOnUIThread(\nUploadMode upload_mode,\nconst FilePath& virtual_dir_path,\nscoped_ptr<DocumentEntry> entry,\nconst FilePath& file_content_path,\nGDataCache::FileOperation...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 403,
+    "code": "void GDataFileSystem::AddUploadedFileOnUIThread(\nUploadMode upload_mode,\nconst FilePath& virtual_dir_path,\nscoped_ptr<DocumentEntry> entry,\nconst FilePath& file_content_path,\nGDataCache::FileOperation...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 404,
+    "code": "CompileKeymap(XkbFile *file, struct xkb_keymap *keymap, enum merge_mode merge)\n{\nbool ok;\nXkbFile *files[LAST_KEYMAP_FILE_TYPE + 1] = { NULL };\nenum xkb_file_type type;\nstruct xkb_context *ctx = keyma...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 405,
+    "code": "bool asn1_write_BOOLEAN(struct asn1_data *data, bool v)\n{\nasn1_push_tag(data, ASN1_BOOLEAN);\nasn1_write_uint8(data, v ? 0xFF : 0);\nasn1_pop_tag(data);\nreturn !data->has_error;\n}...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 406,
+    "code": "CompileKeymap(XkbFile *file, struct xkb_keymap *keymap, enum merge_mode merge)\n{\nbool ok;\nXkbFile *files[LAST_KEYMAP_FILE_TYPE + 1] = { NULL };\nenum xkb_file_type type;\nstruct xkb_context *ctx = keyma...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 407,
+    "code": "void AcceleratedStaticBitmapImage::RetainOriginalSkImage() {\nDCHECK(texture_holder_->IsSkiaTextureHolder());\noriginal_skia_image_ = texture_holder_->GetSkImage();\noriginal_skia_image_context_provider_...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 408,
+    "code": "long pipe_fcntl(struct file *file, unsigned int cmd, unsigned long arg)\n{\nstruct pipe_inode_info *pipe;\nlong ret;\npipe = get_pipe_info(file);\nif (!pipe)\nreturn -EBADF;\n__pipe_lock(pipe);\nswitch (cmd) ...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 409,
+    "code": "void FragmentPaintPropertyTreeBuilder::UpdateEffect() {\nDCHECK(properties_);\nconst ComputedStyle& style = object_.StyleRef();\nif (NeedsPaintPropertyUpdate()) {\nconst auto* output_clip =\nobject_.IsSVGC...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  },
+  {
+    "sample_idx": 410,
+    "code": "int udp_sendmsg(struct kiocb *iocb, struct sock *sk, struct msghdr *msg,\nsize_t len)\n{\nstruct inet_sock *inet = inet_sk(sk);\nstruct udp_sock *up = udp_sk(sk);\nstruct flowi4 *fl4;\nint ulen = len;\nstruc...",
+    "matched": false,
+    "vuln_lines": [],
+    "source": "unmatched",
+    "reliability": 0.0,
+    "match_type": "needs_joern"
+  }
+]

@@ -1,0 +1,11 @@
+digraph "file_write" {  
+node [shape="rect"];  
+"107374183401" [label = <METHOD<BR/>file_write> ]
+"124554052585" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669151075" [label = <PARAM<BR/>p1> ]
+"111669151076" [label = <PARAM<BR/>p2> ]
+  "111669151075" -> "124554052585"  [ label = "DDG: p1"] 
+  "111669151076" -> "124554052585"  [ label = "DDG: p2"] 
+  "107374183401" -> "111669151075"  [ label = "DDG: "] 
+  "107374183401" -> "111669151076"  [ label = "DDG: "] 
+}

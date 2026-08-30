@@ -14,10 +14,10 @@ Use this folder when you want to benchmark UniXcoder on the GRAML datasets.
 ## Example
 
 ```bash
-python baseline/Unixcoder/run.py \
-  --train_data_file Dataset/ID_dataset/Ultimate_train.json \
-  --eval_data_file Dataset/ID_dataset/Ultimate_valid.json \
-  --test_data_file Dataset/ID_dataset/Ultimate_test.json \
+python baseline/unixcoder/run.py \
+  --train_data_file Dataset/id/Ultimate_train.json \
+  --eval_data_file Dataset/id/Ultimate_valid.json \
+  --test_data_file Dataset/id/Ultimate_test.json \
   --output_dir outputs/unixcoder \
   --result_dir outputs/unixcoder/results \
   --model_name_or_path microsoft/unixcoder-base \

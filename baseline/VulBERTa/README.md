@@ -23,10 +23,10 @@ This folder serves two roles:
 ## Example
 
 ```bash
-python baseline/VulBERTa/run_vulberta.py \
-  --train_file Dataset/ID_dataset/Ultimate_train.json \
-  --valid_file Dataset/ID_dataset/Ultimate_valid.json \
-  --test_file Dataset/ID_dataset/Ultimate_test.json \
+python baseline/vulberta/run_vulberta.py \
+  --train_file Dataset/id/Ultimate_train.json \
+  --valid_file Dataset/id/Ultimate_valid.json \
+  --test_file Dataset/id/Ultimate_test.json \
   --output_dir outputs/vulberta \
   --model_name_or_path claudios/VulBERTa-MLP-Devign \
   --epochs 5 \

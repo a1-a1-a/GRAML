@@ -14,10 +14,10 @@ Use this folder to evaluate GraphCodeBERT as a baseline on the GRAML data splits
 ## Example
 
 ```bash
-python baseline/GraphCodebert/run.py \
-  --train_data_file Dataset/ID_dataset/Ultimate_train.json \
-  --eval_data_file Dataset/ID_dataset/Ultimate_valid.json \
-  --test_data_file Dataset/ID_dataset/Ultimate_test.json \
+python baseline/graphcodebert/run.py \
+  --train_data_file Dataset/id/Ultimate_train.json \
+  --eval_data_file Dataset/id/Ultimate_valid.json \
+  --test_data_file Dataset/id/Ultimate_test.json \
   --output_dir outputs/graphcodebert \
   --model_type roberta \
   --model_name_or_path microsoft/graphcodebert-base \

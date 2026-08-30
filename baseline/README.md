@@ -7,10 +7,11 @@ This folder contains the baseline models used for comparison against the main GR
 - [codebert](codebert/README.md)
 - [codeberta](codeberta/README.md)
 - [gpt2](gpt2/README.md)
-- [GraphCodebert](GraphCodebert/README.md)
-- [RoBerta](RoBerta/README.md)
-- [Unixcoder](Unixcoder/README.md)
-- [VulBERTa](VulBERTa/README.md)
+- [GraphCodebert](graphcodebert/README.md)
+- [RoBerta](roberta/README.md)
+- [Unixcoder](unixcoder/README.md)
+- [VulBERTa](vulberta/README.md)
+- [llm_baselines](llm_baselines/README.md): few-shot / zero-shot LLM baselines (e.g., GPT-5) via OpenAI-compatible API
 
 ## What This Folder Is For
 
@@ -25,9 +26,9 @@ Most baseline folders contain:
 
 Most baselines consume:
 
-- `Dataset/ID_dataset/Ultimate_train.json`
-- `Dataset/ID_dataset/Ultimate_valid.json`
-- `Dataset/ID_dataset/Ultimate_test.json`
+- `Dataset/id/Ultimate_train.json`
+- `Dataset/id/Ultimate_valid.json`
+- `Dataset/id/Ultimate_test.json`
 
 ## Shared Data Assumption
 
