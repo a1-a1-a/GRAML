@@ -136,11 +136,25 @@ The scripts also tolerate several alternative task keys such as `task`, `categor
 
 We recommend using Python 3.10+ with a CUDA-enabled GPU for the Unsloth training and inference pipeline.
 
+### One-click installation
+
+```bash
+bash install.sh cu124
+```
+
+The script creates a conda environment named `graml`, installs PyTorch (matching the given CUDA tag), Unsloth, and all dependencies from `requirements.txt`. Available CUDA tags:
+
+- `cu121` — CUDA 12.1 (most GPUs)
+- `cu124` — CUDA 12.4
+- `cu128` — CUDA 12.8 (e.g., RTX 5090)
+
+### Manual installation
+
 1. Install a PyTorch build that matches your CUDA environment.
 2. Install the main dependencies:
 
 ```bash
-pip install unsloth transformers datasets trl accelerate peft bitsandbytes tqdm openai
+pip install -r requirements.txt
 ```
 
 If your environment requires a CUDA-specific Unsloth installation, please follow the official Unsloth installation guide:

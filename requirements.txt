@@ -1,0 +1,27 @@
+# Core ML
+torch>=2.1.0
+transformers>=4.40.0
+datasets>=2.19.0
+accelerate>=0.30.0
+trl>=0.9.0
+peft>=0.11.0
+bitsandbytes>=0.43.0
+
+# Unsloth (LoRA fine-tuning backend)
+unsloth>=2025.3.0
+unsloth_zoo>=2025.3.0
+
+# Data processing
+numpy>=1.26.0
+pandas>=2.0.0
+scikit-learn>=1.4.0
+scipy>=1.11.0
+jsonlines>=4.0.0
+sentencepiece>=0.1.99
+regex>=2024.5.15
+
+# API / misc
+openai>=1.30.0
+tqdm>=4.66.0
+huggingface-hub>=0.23.0
+networkx>=3.0
