@@ -1,11 +1,12 @@
 # ToT Guide
 
-This folder contains the Tree-of-Thought-style vulnerability reasoning component used in GRAML.
+This folder contains the Tree-of-Thought-guided vulnerability reasoning (ToT-VR) component used in GRAML.
 
 ## Files
 
-- `tot_vr.py`: the main ToT-guided vulnerability reasoning implementation
-- `ToT_description.json`: generated vulnerability descriptions
+- `tot_vr.py`: the main ToT-VR implementation (five-stage reasoning pipeline)
+- `ToT_description.json`: generated vulnerability descriptions (413 samples, aligned with the training set)
+- `generate_wo_graph_evidence.py`: ablation script that generates descriptions without graph evidence (w/o Graph Evidence)
 
 ## What `tot_vr.py` Does
 

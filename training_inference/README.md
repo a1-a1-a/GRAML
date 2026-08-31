@@ -14,7 +14,7 @@ This is the primary folder to use if you want to reproduce the main GRAML experi
 ## Training Example
 
 ```bash
-python training/train_unsloth.py \
+python training_inference/train_unsloth.py \
   --model_name path/to/base-model \
   --train_path Dataset/id/Ultimate_train.json \
   --valid_path Dataset/id/Ultimate_valid.json \
@@ -32,7 +32,7 @@ python training/train_unsloth.py \
 ## Inference Example
 
 ```bash
-python training/infer_unsloth.py \
+python training_inference/infer_unsloth.py \
   --adapter_path checkpoints/graml_main_run/checkpoint-1731 \
   --test_path Dataset/id/Ultimate_test.json \
   --valid_path Dataset/id/Ultimate_valid.json \

@@ -7,14 +7,16 @@ This folder contains all datasets released with GRAML. It is the central entry p
 - `id/`: the main in-distribution split used for training, validation, and testing
 - `ood/`: external out-of-distribution evaluation sets from multiple open-source sources
 - `robustness/`: perturbed versions of test sets used for robustness analysis
-- `Ablation/`: variants of the task data used for ablation studies
+- `ablations/`: ablation dataset variants organized by experiment
+- `graph_context/`: critical-line selection outputs and Joern CPG extraction examples
+- `scripts/`: dataset construction scripts
 
 ## How to Use It
 
 - Use `id/` for the main training and validation pipeline.
 - Use `ood/` to test cross-dataset generalization.
 - Use `robustness/` to test perturbation robustness.
-- Use `Ablation/` to measure the contribution of different task components.
+- Use `ablations/` to measure the contribution of different components (multi-task supervision, graph evidence, direct CPG, random lines).
 
 ## Data Format
 
@@ -29,7 +31,8 @@ The scripts in `training_inference/` accept either a plain JSON list or a JSON o
 
 ## Subfolder Guides
 
-- [Ablation](Ablation/README.md)
+- [ablations](ablations/multi_task/README.md)
+- [graph_context](graph_context/critical_lines/README.md)
 - [id](id/README.md)
 - [ood](ood/README.md)
 - [robustness](robustness/README.md)
