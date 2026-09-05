@@ -26,3 +26,7 @@ Thumbs.db
 checkpoints/
 outputs/
 predictions/
+
+# Joern critical-line work dirs
+Dataset/graph_context/cpg_evidence/joern_work_crit/
+Dataset/graph_context/cpg_evidence/joern_work/
