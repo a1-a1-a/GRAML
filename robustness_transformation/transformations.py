@@ -2,6 +2,7 @@ import random
 import string
 import re
 
+
 def no_transformation(code):
     
     return code
@@ -52,28 +53,7 @@ def tf_1(code):
             
     return code
 
-import random
-
 def tf_2(code):
-
-    if "(" in code and ")" in code:
-        parameters = code.split(")")[0].split("(")[1]
-        
-        if len(parameters) > 0:
-            if "," in parameters:
-                parameters = parameters.split(",")
-                random.shuffle(parameters)
-                new_parameters = ""
-                for param in parameters:
-                    new_parameters += param.strip()
-                    new_parameters += ", "
-                new_parameters = new_parameters[:-2]
-                
-                code = code.split("(")[0] + "(" + new_parameters + ")" + code.split(")")[1]
-            
-    return code
-
-def tf_3(code):
 
     letters = string.ascii_lowercase
     new_function_name = ''.join(random.choice(letters) for i in range(2))
@@ -90,6 +70,11 @@ def tf_3(code):
             
     return code
 
+
+def tf_3(code):
+    pat = re.compile(r'(/\*([^*]|(\*+[^*/]))*\*+/)|(//.*)')
+    code = re.sub(pat,'',code)
+    return(code)
 
 def tf_4(code):
     
@@ -175,16 +160,6 @@ def tf_7(code):
     
     begin_of_function = code.index('{')
 
-    text_to_insert = '                                                                                                                                                                                 '
-
-    code = code[0:begin_of_function + 1] + text_to_insert + code[begin_of_function + 1:]
-    
-    return code
-
-def tf_8(code):
-    
-    begin_of_function = code.index('{')
-
     text_to_insert = '\n    help_func();'
 
     code = code[0:begin_of_function + 1] + text_to_insert + code[begin_of_function + 1:]
@@ -200,10 +175,34 @@ def tf_8(code):
     
     return code
 
-def tf_9(code):
-    pat = re.compile(r'(/\*([^*]|(\*+[^*/]))*\*+/)|(//.*)')
-    code = re.sub(pat,'',code)
-    return(code)
+def aux_parameter_shuffle(code):
+
+    if "(" in code and ")" in code:
+        parameters = code.split(")")[0].split("(")[1]
+        
+        if len(parameters) > 0:
+            if "," in parameters:
+                parameters = parameters.split(",")
+                random.shuffle(parameters)
+                new_parameters = ""
+                for param in parameters:
+                    new_parameters += param.strip()
+                    new_parameters += ", "
+                new_parameters = new_parameters[:-2]
+                
+                code = code.split("(")[0] + "(" + new_parameters + ")" + code.split(")")[1]
+            
+    return code
+
+def aux_whitespace_insert(code):
+    
+    begin_of_function = code.index('{')
+
+    text_to_insert = '                                                                                                                                                                                 '
+
+    code = code[0:begin_of_function + 1] + text_to_insert + code[begin_of_function + 1:]
+    
+    return code
 
 def tf_10(code, training_sample_code):
 

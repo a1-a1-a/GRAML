@@ -37,12 +37,12 @@ def apply_transforms(item, transform_names):
     return new_item
 
 def main():
-    parser = argparse.ArgumentParser(description="使用 transformations.py 对数据集进行 C/C++ 代码扰动")
-    parser.add_argument("--input_path", type=str, required=True, help="原始测试集 JSON 路径")
-    parser.add_argument("--output_path", type=str, required=True, help="输出路径")
-    parser.add_argument("--transforms", type=str, nargs='+', required=True, 
-                        help="要应用的变换列表，例如: tf_1 tf_6 (支持多选)")
-    parser.add_argument("--seed", type=int, default=42, help="随机种子")
+    parser = argparse.ArgumentParser(description="Apply C/C++ code perturbations using transformations.py")
+    parser.add_argument("--input_path", type=str, required=True, help="Original test set JSON path")
+    parser.add_argument("--output_path", type=str, required=True, help="Output path")
+    parser.add_argument("--transforms", type=str, nargs='+', required=True,
+                        help="Transformation list, e.g. tf_1 tf_6 (multiple supported)")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed")
     
     args = parser.parse_args()
     
