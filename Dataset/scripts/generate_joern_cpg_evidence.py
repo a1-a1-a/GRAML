@@ -542,7 +542,7 @@ def high_degree_context_lines(
     ]
 
 
-def paper_style_critical_lines(
+def select_critical_lines(
     code: str,
     edges: List[Dict[str, Any]],
     vulnerable_lines: List[int],
@@ -644,7 +644,7 @@ def build_evidence_records(
 
         vulnerable_lines = parse_location_lines_from_output(sample)
         if include_label_lines and vulnerable_lines:
-            critical_lines, relations = paper_style_critical_lines(
+            critical_lines, relations = select_critical_lines(
                 code,
                 edges,
                 vulnerable_lines=vulnerable_lines,

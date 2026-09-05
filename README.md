@@ -110,7 +110,7 @@ This folder contains the graph-structured context extraction outputs:
 - `critical_lines/`: selected critical lines and typed line relations (with generation scripts)
 - `cpg_evidence/`: Joern CPG extraction examples
 
-These correspond to the graph-structured context extraction step described in the paper.
+These correspond to the graph-structured context extraction step.
 
 ## Data Format
 

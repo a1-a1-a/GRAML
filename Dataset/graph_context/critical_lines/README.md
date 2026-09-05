@@ -1,6 +1,6 @@
 # Critical Line Selection
 
-This folder contains the outputs and scripts for the graph-structured context extraction step described in the paper (Sec. 2.2), which selects critical source lines and typed line relations from the Code Property Graph (CPG).
+This folder contains the outputs and scripts for the graph-structured context extraction step (Sec. 2.2 of the manuscript), which selects critical source lines and typed line relations from the Code Property Graph (CPG).
 
 ## Outputs
 
@@ -10,7 +10,7 @@ This folder contains the outputs and scripts for the graph-structured context ex
 
 ## Scripts
 
-- `scripts/crit.py`: end-to-end pipeline that (1) exports DDG/CDG/CFG edges via Joern, (2) constructs the relation matrices from the paper, and (3) selects critical lines with the paper equations
+- `scripts/crit.py`: end-to-end pipeline that (1) exports DDG/CDG/CFG edges via Joern, (2) constructs the relation matrices and (3) selects critical lines using the scoring equations
 - `scripts/extract_vul_lines.py`: extracts vulnerable lines from source data (produces `train_vul_lines.json`)
 
 ## Requirements
@@ -33,7 +33,7 @@ For every vulnerable Description sample, `crit.py`:
 2. Runs `joern-parse` on that single file to build a per-sample CPG.
 3. Runs `joern-export --repr pdg` (yields `DDG` / `CDG` edges) and `joern-export --repr cfg` (yields `CFG` edges).
 4. Parses the exported `.dot` files and maps graph edges back to source line numbers.
-5. Applies the paper equations (mask, weighted relation matrix, symmetric normalization, two-hop propagation, greedy critical-score selection) to output `critical_lines` and typed `line_relations`.
+5. Applies the graph-context equations (mask, weighted relation matrix, symmetric normalization, two-hop propagation, greedy critical-score selection) to output `critical_lines` and typed `line_relations`.
 
 ## Usage
 

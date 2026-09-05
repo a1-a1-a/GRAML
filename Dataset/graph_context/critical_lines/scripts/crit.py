@@ -19,7 +19,7 @@ JX = r"PATH\TO\joern-export.bat"
 # eq. relation_matrix: A0[i,j] = M_i M_j * (0.50 D + 0.30 C + 0.20 F)
 REL_TYPE_TO_KEY = {"REACHING_DEF": "D", "DDG": "D", "CONTROL_DEPENDENCE": "C", "CDG": "C", "CFG_NEXT": "F", "CFG": "F"}
 KEY_TO_WEIGHT = {"D": 0.50, "C": 0.30, "F": 0.20}
-MC = 20          # cap on critical lines (up to 20, as in the paper)
+MC = 20          # cap on critical lines (up to 20)
 Z1 = 0.45        # eq. critical_score coefficient
 Z2 = 0.25
 DV = 0.20
@@ -150,7 +150,7 @@ def _parse_dot(dot_path):
 
 
 def _select_critical(code, vuln_lines, valid, edges):
-    """Strict implementation of the paper equations (Sec. 2.2).
+    """Strict implementation of the graph-context equations (Sec. 2.2 of the manuscript).
     edges: list of {src, dst, type}. Returns (crit, rels, status, svl, om)."""
     valid_set = set(valid)
     vuln = set(int(v) for v in vuln_lines) & valid_set
@@ -267,7 +267,7 @@ def _select_critical(code, vuln_lines, valid, edges):
     return crit, rels, status, svl, om
 def main():
     print("=" * 50)
-    print("CRIT v2 (strict paper equations)")
+    print("CRIT v2")
     print("=" * 50)
     ss = ls()
     n = len(ss)
@@ -322,7 +322,7 @@ def main():
     ecnt = dict(edge_type_counter)
     print(f"  Edge types: {ecnt}")
 
-    print("[3/4] Matrix construction and critical-line selection (paper equations)...")
+    print("[3/4] Matrix construction and critical-line selection...")
     res = []
     st = Counter()
     for i, s in enumerate(ss):

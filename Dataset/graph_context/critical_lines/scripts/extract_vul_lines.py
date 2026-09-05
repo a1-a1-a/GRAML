@@ -5,7 +5,7 @@ TRAIN_EVID = os.path.join(str(Path(__file__).resolve().parents[3]), "ablations",
     "Ultimate_train_cpg_description_only_plus_grouped_2019_2026_detection.json")
 TRAIN_JSONL = os.path.join(str(Path(__file__).resolve().parents[3]), "graph_context", "critical_lines", "source_data", "train.jsonl")
 DIVERSEVUL = os.path.join(str(Path(__file__).resolve().parents[3]), "graph_context", "critical_lines", "source_data", "diversevul_20230702.json")
-MSR_PATH = r"PATH\TO\VulLLM\gpt5\MSR_data_cleaned.json"
+MSR_PATH = r"PATH\TO\MSR_data_cleaned.json"
 OUTPUT = os.path.join(str(Path(__file__).resolve().parents[3]), "graph_context", "critical_lines", "output", "train_vul_lines.json")
 
 def norm_code(code):

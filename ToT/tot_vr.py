@@ -5,7 +5,7 @@ from typing import Dict, Any, Optional
 class ToTVRGenerator:
     """
     ToT-guided Vulnerability Reasoning (ToT-VR) Process
-    Based on the prompt templates defined in the paper.
+    Based on the prompt templates used in the reasoning pipeline.
     """
     def __init__(self, api_key: Optional[str] = None, model: str = "gpt-5"):
         """

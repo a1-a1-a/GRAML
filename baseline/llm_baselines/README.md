@@ -20,4 +20,4 @@ To switch to a different LLM (e.g., GLM, DeepSeek, Qwen), change `$MODEL` and `$
 
 ## What These Baselines Cover
 
-These scripts reproduce the few-shot / zero-shot LLM baselines reported in the paper (e.g., GPT-5).
+These scripts reproduce the few-shot / zero-shot LLM baselines used in the experiments (e.g., GPT-5).
