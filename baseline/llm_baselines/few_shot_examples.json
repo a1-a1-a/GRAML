@@ -1,0 +1,34 @@
+[
+  {
+    "output": "Yes",
+    "input": "mainloop_destroy_trigger(crm_trigger_t * source)\n{\nsource->trigger = FALSE;\nif (source->id > 0) {\ng_source_remove(source->id);\n}\nreturn TRUE;\n}"
+  },
+  {
+    "output": "No",
+    "input": "psutil_proc_pidtaskinfo_oneshot(PyObject *self, PyObject *args) {\n    long pid;\n    struct proc_taskinfo pti;\n\n    if (! PyArg_ParseTuple(args, \"l\", &pid))\n        return NULL;\n    if (psutil_proc_pidinfo(pid, PROC_PIDTASKINFO, 0, &pti, sizeof(pti)) <= 0)\n        return NULL;\n\n    return Py_BuildValue(\n        \"(ddKKkkkk)\",\n        (float)pti.pti_total_user / 1000000000.0,     // (float) cpu user time\n        (float)pti.pti_total_system / 1000000000.0,   // (float) cpu sys time\n        // Note about memory: determining other mem stats on macOS is a mess:\n        // http://www.opensource.apple.com/source/top/top-67/libtop.c?txt\n        // I just give up.\n        // struct proc_regioninfo pri;\n        // psutil_proc_pidinfo(pid, PROC_PIDREGIONINFO, 0, &pri, sizeof(pri))\n        pti.pti_resident_size,  // (uns long long) rss\n        pti.pti_virtual_size,   // (uns long long) vms\n        pti.pti_faults,         // (uns long) number of page faults (pages)\n        pti.pti_pageins,        // (uns long) number of actual pageins (pages)\n        pti.pti_threadnum,      // (uns long) num threads\n        // Unvoluntary value seems not to be available;\n        // pti.pti_csw probably refers to the sum of the two;\n        // getrusage() numbers seems to confirm this theory.\n        pti.pti_csw             // (uns long) voluntary ctx switches\n    );\n}"
+  },
+  {
+    "output": "Yes",
+    "input": "std::map<int64, int64> GetMetaProtoTimes(sqlite3* db_handle) {\nsqlite_utils::SQLStatement statement;\nstatement.prepare(\ndb_handle,\n\"SELECT metahandle, mtime, server_mtime, ctime, server_ctime FROM metas\");\nEXPECT_EQ(5, statement.column_count());\nstd::map<int64, int64> meta_times;\nwhile (true) {\nint query_result = statement.step();\nif (query_result != SQLITE_ROW) {\nEXPECT_EQ(SQLITE_DONE, query_result);\nbreak;\n}\nint64 metahandle = statement.column_int64(0);\nint64 mtime = statement.column_int64(1);\nint64 server_mtime = statement.column_int64(2);\nint64 ctime = statement.column_int64(3);\nint64 server_ctime = statement.column_int64(4);\nEXPECT_EQ(mtime, server_mtime);\nEXPECT_EQ(mtime, ctime);\nEXPECT_EQ(mtime, server_ctime);\nmeta_times[metahandle] = mtime;\n}\nreturn meta_times;\n}"
+  },
+  {
+    "output": "No",
+    "input": "ElementsAttr ExpandTo4DForDepthwiseConv(Attribute a) {\n  return ExpandTo4DForConvImpl(a, true);\n}"
+  },
+  {
+    "output": "Yes",
+    "input": "DisplayItemListTest()\n: m_displayItemList(DisplayItemList::create())\n, m_originalSlimmingPaintSubsequenceCachingEnabled(RuntimeEnabledFeatures::slimmingPaintSubsequenceCachingEnabled()) { }"
+  },
+  {
+    "output": "No",
+    "input": "int\taf_get_sectorsize(AFFILE *af)\t// returns sector size\n{\n    return af->image_sectorsize;\n}"
+  },
+  {
+    "output": "Yes",
+    "input": "bool CSPSource::schemeMatches(const KURL& url) const\n{\nif (m_scheme.isEmpty())\nreturn m_policy->protocolMatchesSelf(url);\nreturn equalIgnoringCase(url.protocol(), m_scheme);\n}"
+  },
+  {
+    "output": "No",
+    "input": "void ionic_tx_flush(struct ionic_cq *cq)\n{\n\tu32 work_done;\n\n\twork_done = ionic_tx_cq_service(cq, cq->num_descs, false);\n\tif (work_done)\n\t\tionic_intr_credits(cq->idev->intr_ctrl, cq->bound_intr->index,\n\t\t\t\t   work_done, IONIC_INTR_CRED_RESET_COALESCE);\n}"
+  }
+]

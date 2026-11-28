@@ -1,0 +1,33 @@
+{
+  "method": "VulLLM",
+  "backbones": [
+    "Llama-2",
+    "CodeLlama",
+    "DeepSeek-Coder",
+    "Mistral",
+    "Qwen"
+  ],
+  "tasks": {
+    "detection": 21537,
+    "localization": 820,
+    "interpretation": 823
+  },
+  "interpretation_source": "gpt4_cot_sv",
+  "lora": {
+    "rank": 16
+  },
+  "optimization": {
+    "learning_rate": 0.0002,
+    "batch_size": 32,
+    "epochs": 3
+  },
+  "input_limit": 512,
+  "score": "yes_no_continuation_probability",
+  "threshold": {
+    "source": "id_validation",
+    "metric": "f1",
+    "fixed_for_all_evaluations": true
+  },
+  "implementation": "https://github.com/CGCL-codes/VulLLM",
+  "checkpoint_entry": "https://zenodo.org/records/10677069"
+}

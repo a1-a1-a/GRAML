@@ -1,0 +1,17 @@
+{
+  "method": "LOSVER",
+  "base_encoder": "UniXcoder",
+  "checkpoints": {
+    "line_localizer": "released_devign_trained",
+    "function_detector": "released_devign_trained_weighted"
+  },
+  "additional_training": false,
+  "input_limit": 512,
+  "localizer_rerun_per_evaluation_set": true,
+  "threshold": {
+    "value": 0.5,
+    "fixed_for_all_evaluations": true
+  },
+  "implementation": "https://github.com/waroad/losver",
+  "checkpoint_entry": "https://doi.org/10.6084/m9.figshare.29192708"
+}

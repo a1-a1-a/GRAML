@@ -1,0 +1,599 @@
+from __future__ import absolute_import, division, print_function
+
+import argparse
+import glob
+import logging
+import os
+import pickle
+import random
+import re
+import shutil
+import pandas as pd
+import numpy as np
+import torch
+from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
+from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler,TensorDataset
+from torch.utils.data.distributed import DistributedSampler
+import json
+
+from tqdm import tqdm, trange
+import multiprocessing
+from model import Model
+cpu_cont = multiprocessing.cpu_count()
+from torch.optim import AdamW
+from transformers import (WEIGHTS_NAME, get_linear_schedule_with_warmup,
+                          BertConfig, BertForSequenceClassification, BertTokenizer,
+                          GPT2Config, GPT2ForSequenceClassification, GPT2Tokenizer,
+                          OpenAIGPTConfig, OpenAIGPTLMHeadModel, OpenAIGPTTokenizer,
+                          RobertaConfig, RobertaForSequenceClassification, RobertaTokenizer,
+                          DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer)
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+MODEL_CLASSES = {
+    'gpt2': (GPT2Config, GPT2ForSequenceClassification, GPT2Tokenizer),
+    'openai-gpt': (OpenAIGPTConfig, OpenAIGPTLMHeadModel, OpenAIGPTTokenizer),
+    'bert': (BertConfig, BertForSequenceClassification, BertTokenizer),
+    'roberta': (RobertaConfig, RobertaForSequenceClassification, RobertaTokenizer),
+    'distilbert': (DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer)
+}
+
+
+class InputFeatures(object):
+    def __init__(self,
+                 input_tokens,
+                 input_ids,
+                 idx,
+                 label,
+
+    ):
+        self.input_tokens = input_tokens
+        self.input_ids = input_ids
+        self.idx=str(idx)
+        self.label=label
+
+
+def convert_examples_to_features(js,tokenizer,args):
+    code=' '.join(js['input'].split())
+    code_tokens=tokenizer.tokenize(code)[:args.block_size-2]
+
+    source_tokens = code_tokens
+
+    if tokenizer.cls_token:
+        source_tokens = [tokenizer.cls_token] + source_tokens
+    elif tokenizer.bos_token:
+        source_tokens = [tokenizer.bos_token] + source_tokens
+
+    if tokenizer.sep_token:
+        source_tokens = source_tokens + [tokenizer.sep_token]
+    elif tokenizer.eos_token:
+        source_tokens = source_tokens + [tokenizer.eos_token]
+
+    source_ids =  tokenizer.convert_tokens_to_ids(source_tokens)
+    padding_length = args.block_size - len(source_ids)
+
+    pad_token_id = tokenizer.pad_token_id
+    if pad_token_id is None:
+        pad_token_id = tokenizer.eos_token_id if tokenizer.eos_token_id is not None else 0
+
+    if padding_length > 0:
+        source_ids+=[pad_token_id]*padding_length
+
+    label = js['output']
+    if isinstance(label, str):
+        if label.lower() == 'yes':
+            label = 1
+        elif label.lower() == 'no':
+            label = 0
+        else:
+            try:
+                label = int(label)
+            except:
+                label = 0
+    return InputFeatures(source_tokens,source_ids,0,int(label))
+
+def is_detection_example(js):
+    task = str(js.get('Task', js.get('task', ''))).strip().lower()
+    if task and task != 'detection':
+        return False
+    return str(js.get('output', '')).strip().lower() in {'yes', 'no'}
+
+
+class TextDataset(Dataset):
+    def __init__(self, tokenizer, args, file_path=None):
+        self.examples = []
+        with open(file_path) as f:
+            datas = json.load(f)
+            for js in datas:
+                if not is_detection_example(js):
+                    continue
+                self.examples.append(convert_examples_to_features(js,tokenizer,args))
+        if not self.examples:
+            raise ValueError(f"No detection records with Yes/No labels found in {file_path}")
+        if 'train' in file_path:
+            for idx, example in enumerate(self.examples[:3]):
+                    logger.info("*** Example ***")
+                    logger.info("idx: {}".format(idx))
+                    logger.info("label: {}".format(example.label))
+                    logger.info("input_tokens: {}".format([x.replace('\u0120','_') for x in example.input_tokens]))
+                    logger.info("input_ids: {}".format(' '.join(map(str, example.input_ids))))
+
+    def __len__(self):
+        return len(self.examples)
+
+    def __getitem__(self, i):
+        try:
+            return torch.tensor(self.examples[i].input_ids),torch.tensor(self.examples[i].label)
+        except Exception as e:
+            logger.error(f"Error loading item {i}: {e}")
+            logger.error(f"Input IDs type: {type(self.examples[i].input_ids)}")
+            logger.error(f"Label type: {type(self.examples[i].label)}")
+            logger.error(f"Input IDs content (first 10): {self.examples[i].input_ids[:10] if self.examples[i].input_ids else 'None'}")
+            logger.error(f"Label content: {self.examples[i].label}")
+            return torch.tensor([0]*512), torch.tensor(0)
+
+
+def set_seed(seed=42):
+    random.seed(seed)
+    os.environ['PYHTONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
+
+
+def train(args, train_dataset, model, tokenizer):
+    args.train_batch_size = args.per_gpu_train_batch_size * max(1, args.n_gpu)
+    train_sampler = RandomSampler(train_dataset) if args.local_rank == -1 else DistributedSampler(train_dataset)
+
+    train_dataloader = DataLoader(train_dataset, sampler=train_sampler,
+                                  batch_size=args.train_batch_size,num_workers=4,pin_memory=True)
+    args.max_steps=args.epoch*len( train_dataloader)
+    args.save_steps=len( train_dataloader)
+    args.warmup_steps=len( train_dataloader)
+    args.logging_steps=len( train_dataloader)
+    args.num_train_epochs=args.epoch
+    model.to(args.device)
+    no_decay = ['bias', 'LayerNorm.weight']
+    optimizer_grouped_parameters = [
+        {'params': [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
+         'weight_decay': args.weight_decay},
+        {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
+    ]
+    optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.max_steps*0.1,
+                                                num_training_steps=args.max_steps)
+    if args.fp16:
+        try:
+            from apex import amp
+        except ImportError:
+            raise ImportError("Please install apex from https://www.github.com/nvidia/apex to use fp16 training.")
+        model, optimizer = amp.initialize(model, optimizer, opt_level=args.fp16_opt_level)
+
+    if args.n_gpu > 1:
+        model = torch.nn.DataParallel(model)
+
+    if args.local_rank != -1:
+        model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.local_rank],
+                                                          output_device=args.local_rank,
+                                                          find_unused_parameters=True)
+
+    checkpoint_last = os.path.join(args.output_dir, 'checkpoint-last')
+    scheduler_last = os.path.join(checkpoint_last, 'scheduler.pt')
+    optimizer_last = os.path.join(checkpoint_last, 'optimizer.pt')
+    if os.path.exists(scheduler_last):
+        scheduler.load_state_dict(torch.load(scheduler_last))
+    if os.path.exists(optimizer_last):
+        optimizer.load_state_dict(torch.load(optimizer_last))
+    logger.info("***** Running training *****")
+    logger.info("  Num examples = %d", len(train_dataset))
+    logger.info("  Num Epochs = %d", args.num_train_epochs)
+    logger.info("  Instantaneous batch size per GPU = %d", args.per_gpu_train_batch_size)
+    logger.info("  Total train batch size (w. parallel, distributed & accumulation) = %d",
+                args.train_batch_size * args.gradient_accumulation_steps * (
+                    torch.distributed.get_world_size() if args.local_rank != -1 else 1))
+    logger.info("  Gradient Accumulation steps = %d", args.gradient_accumulation_steps)
+    logger.info("  Total optimization steps = %d", args.max_steps)
+
+    global_step = args.start_step
+    tr_loss, logging_loss,avg_loss,tr_nb,tr_num,train_loss = 0.0, 0.0,0.0,0,0,0
+    best_mrr=0.0
+    best_acc=0.0
+    best_f1=0.0
+    model.zero_grad()
+
+    for idx in range(args.start_epoch, int(args.num_train_epochs)):
+        bar = tqdm(train_dataloader,total=len(train_dataloader))
+        tr_num=0
+        train_loss=0
+        for step, batch in enumerate(bar):
+            inputs = batch[0].to(args.device)
+            labels=batch[1].to(args.device)
+            model.train()
+            loss,logits = model(inputs,labels)
+
+
+            if args.n_gpu > 1:
+                loss = loss.mean()
+            if args.gradient_accumulation_steps > 1:
+                loss = loss / args.gradient_accumulation_steps
+
+            if args.fp16:
+                with amp.scale_loss(loss, optimizer) as scaled_loss:
+                    scaled_loss.backward()
+                torch.nn.utils.clip_grad_norm_(amp.master_params(optimizer), args.max_grad_norm)
+            else:
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
+
+            tr_loss += loss.item()
+            tr_num+=1
+            train_loss+=loss.item()
+            if avg_loss==0:
+                avg_loss=tr_loss
+            avg_loss=round(train_loss/tr_num,5)
+            bar.set_description("epoch {} loss {}".format(idx,avg_loss))
+
+
+            if (step + 1) % args.gradient_accumulation_steps == 0:
+                optimizer.step()
+                optimizer.zero_grad()
+                scheduler.step()
+                global_step += 1
+                output_flag=True
+                avg_loss=round(np.exp((tr_loss - logging_loss) /(global_step- tr_nb)),4)
+                if args.local_rank in [-1, 0] and args.logging_steps > 0 and global_step % args.logging_steps == 0:
+                    logging_loss = tr_loss
+                    tr_nb=global_step
+
+
+        if args.local_rank == -1 and args.evaluate_during_training:
+            results = evaluate(args, model, tokenizer,eval_when_training=True)
+            for key, value in results.items():
+                logger.info("  %s = %s", key, round(value,4))
+
+            if results['eval_f1']> best_f1:
+                best_f1=results['eval_f1']
+                logger.info("  "+"*"*20)
+                logger.info("  Best f1:%s",round(best_f1,4))
+                logger.info("  "+"*"*20)
+
+                checkpoint_prefix = 'checkpoint-best-f1'
+                output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))
+                if not os.path.exists(output_dir):
+                    os.makedirs(output_dir)
+                model_to_save = model.module if hasattr(model,'module') else model
+                output_dir = os.path.join(output_dir, 'model.bin')
+                torch.save(model_to_save.state_dict(), output_dir)
+                logger.info("Saving model checkpoint to %s", output_dir)
+
+
+def find_best_threshold(labels, scores):
+    best_threshold = 0.5
+    best_f1 = -1.0
+    for threshold in np.arange(0.01, 0.91, 0.01):
+        preds = scores > threshold
+        score = f1_score(labels, preds)
+        if score > best_f1:
+            best_f1 = score
+            best_threshold = float(threshold)
+    return best_threshold, float(best_f1)
+
+
+def evaluate(args, model, tokenizer,eval_when_training=False):
+    eval_output_dir = args.output_dir
+
+    eval_dataset = TextDataset(tokenizer, args,args.eval_data_file)
+
+    if not os.path.exists(eval_output_dir) and args.local_rank in [-1, 0]:
+        os.makedirs(eval_output_dir)
+
+    args.eval_batch_size = args.per_gpu_eval_batch_size * max(1, args.n_gpu)
+    eval_sampler = SequentialSampler(eval_dataset) if args.local_rank == -1 else DistributedSampler(eval_dataset)
+    eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=args.eval_batch_size,num_workers=4,pin_memory=True)
+
+    if args.n_gpu > 1 and eval_when_training is False:
+        model = torch.nn.DataParallel(model)
+
+    logger.info("***** Running evaluation *****")
+    logger.info("  Num examples = %d", len(eval_dataset))
+    logger.info("  Batch size = %d", args.eval_batch_size)
+    eval_loss = 0.0
+    nb_eval_steps = 0
+    model.eval()
+    logits=[]
+    labels=[]
+    for batch in eval_dataloader:
+        inputs = batch[0].to(args.device)
+        label=batch[1].to(args.device)
+        with torch.no_grad():
+            lm_loss,logit = model(inputs,label)
+            eval_loss += lm_loss.mean().item()
+            logits.append(logit.cpu().numpy())
+            labels.append(label.cpu().numpy())
+        nb_eval_steps += 1
+    logits=np.concatenate(logits,0)
+    labels=np.concatenate(labels,0)
+    scores = logits[:, 0]
+    best_threshold, best_f1 = find_best_threshold(labels, scores)
+    preds = scores > best_threshold
+    eval_acc=np.mean(labels==preds)
+    eval_loss = eval_loss / nb_eval_steps
+    perplexity = torch.tensor(eval_loss)
+
+
+    result = {
+        "eval_loss": float(perplexity),
+        "eval_acc":round(eval_acc,4),
+        "eval_f1": round(best_f1, 4),
+        "best_threshold": best_threshold,
+    }
+
+    return result
+
+def test(args, model, tokenizer, split="test", threshold=0.5):
+    eval_dataset = TextDataset(tokenizer, args,args.test_data_file)
+
+
+    args.eval_batch_size = args.per_gpu_eval_batch_size * max(1, args.n_gpu)
+    eval_sampler = SequentialSampler(eval_dataset) if args.local_rank == -1 else DistributedSampler(eval_dataset)
+    eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=args.eval_batch_size)
+
+    if args.n_gpu > 1:
+        model = torch.nn.DataParallel(model)
+
+    logger.info("***** Running Test *****")
+    logger.info("  Num examples = %d", len(eval_dataset))
+    logger.info("  Batch size = %d", args.eval_batch_size)
+    eval_loss = 0.0
+    nb_eval_steps = 0
+    model.eval()
+    logits=[]
+    labels=[]
+    representations = []
+    for batch in tqdm(eval_dataloader,total=len(eval_dataloader)):
+        inputs = batch[0].to(args.device)
+        label=batch[1].to(args.device)
+        with torch.no_grad():
+            logit = model(inputs)
+            logits.append(logit.cpu().numpy())
+            labels.append(label.cpu().numpy())
+
+    logits=np.concatenate(logits,0)
+    labels=np.concatenate(labels,0)
+    preds=logits[:,0]>threshold
+    y_trues, y_preds = labels, preds
+    acc = accuracy_score(y_trues, y_preds)
+    recall = recall_score(y_trues, y_preds, zero_division=0)
+    precision = precision_score(y_trues, y_preds, zero_division=0)
+    f1 = f1_score(y_trues, y_preds, zero_division=0)
+
+    for label, pred in zip(y_trues, y_preds):
+        temp_df = pd.DataFrame({'Label': [label], 'Prediction': [pred]})
+        temp_df.to_csv(args.csv_path, index=False, mode='a', header=False)
+
+    result = {
+        "test_accuracy": float(acc),
+        "test_recall": float(recall),
+        "test_precision": float(precision),
+        "test_f1": float(f1),
+    }
+
+    logger.info("***** Test results *****")
+
+    result['model_name'] = args.model_name_or_path
+    result['test_data_file'] = args.test_data_file
+
+    ordered_keys = ['model_name', 'test_data_file', 'test_accuracy', 'test_precision', 'test_recall', 'test_f1']
+
+    remaining_keys = sorted([k for k in result.keys() if k not in ordered_keys])
+    ordered_keys.extend(remaining_keys)
+
+    output_csv_file = os.path.join(args.output_dir, 'test_results.csv')
+    df = pd.DataFrame([result])
+    df = df[ordered_keys]
+
+    if os.path.exists(output_csv_file):
+        df.to_csv(output_csv_file, mode='a', header=False, index=False)
+    else:
+        df.to_csv(output_csv_file, mode='w', header=True, index=False)
+
+    with open(os.path.join(args.output_dir, 'test_results.txt'), 'w') as f:
+        for key in sorted(result.keys()):
+            logger.info("  %s = %s", key, str(result[key]))
+            f.write("%s = %s\n" % (key, str(result[key])))
+
+def main(args):
+    if args.local_rank == -1 or args.no_cuda:
+        device = torch.device("cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
+        args.n_gpu = torch.cuda.device_count()
+    else:
+        torch.cuda.set_device(args.local_rank)
+        device = torch.device("cuda", args.local_rank)
+        torch.distributed.init_process_group(backend='nccl')
+        args.n_gpu = 1
+    args.device = device
+    args.n_gpu = max(1, args.n_gpu)
+    args.per_gpu_train_batch_size=args.train_batch_size//args.n_gpu
+    args.per_gpu_eval_batch_size=args.eval_batch_size//args.n_gpu
+    logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
+                        datefmt='%m/%d/%Y %H:%M:%S',
+                        level=logging.INFO if args.local_rank in [-1, 0] else logging.WARN)
+    logger.warning("Process rank: %s, device: %s, n_gpu: %s, distributed training: %s, 16-bits training: %s",
+                   args.local_rank, device, args.n_gpu, bool(args.local_rank != -1), args.fp16)
+
+
+
+    set_seed(args.seed)
+
+    if args.local_rank not in [-1, 0]:
+        torch.distributed.barrier()
+
+    config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
+    config = config_class.from_pretrained(args.config_name if args.config_name else args.model_name_or_path,
+                                          cache_dir=args.cache_dir if args.cache_dir else None)
+    config.num_labels=1
+    tokenizer = tokenizer_class.from_pretrained(args.tokenizer_name,
+                                                do_lower_case=args.do_lower_case,
+                                                cache_dir=args.cache_dir if args.cache_dir else None)
+
+    if args.model_type in ['gpt2', 'openai-gpt']:
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
+            config.pad_token_id = config.eos_token_id
+
+    if args.block_size <= 0:
+        args.block_size = tokenizer.max_len_single_sentence
+    args.block_size = min(args.block_size, tokenizer.max_len_single_sentence)
+
+    if args.model_name_or_path:
+        model = model_class.from_pretrained(args.model_name_or_path,
+                                            from_tf=bool('.ckpt' in args.model_name_or_path),
+                                            config=config,
+                                            cache_dir=args.cache_dir if args.cache_dir else None)
+    else:
+        model = model_class(config)
+
+    args.start_epoch = 0
+    args.start_step = 0
+    model=Model(model,config,args)
+    if args.local_rank == 0:
+        torch.distributed.barrier()
+
+    logger.info("Training/evaluation parameters %s", args)
+
+    if args.do_train:
+        if args.local_rank not in [-1, 0]:
+            torch.distributed.barrier()
+
+        train_dataset = TextDataset(tokenizer, args,args.train_data_file)
+        if args.local_rank == 0:
+            torch.distributed.barrier()
+
+        train(args, train_dataset, model, tokenizer)
+
+
+    best_threshold = 0.5
+    if args.do_eval and args.local_rank in [-1, 0]:
+            output_path = os.path.join(args.output_dir, 'checkpoint-best-f1/model.bin')
+            model.load_state_dict(torch.load(output_path))
+            model.to(args.device)
+            result=evaluate(args, model, tokenizer)
+            best_threshold = result.get('best_threshold', 0.5)
+            logger.info("***** Eval results *****")
+            for key in sorted(result.keys()):
+                logger.info("  %s = %s", key, str(round(result[key],4)))
+
+    if args.do_test and args.local_rank in [-1, 0]:
+            output_path = os.path.join(args.output_dir, 'checkpoint-best-f1/model.bin')
+            model.load_state_dict(torch.load(output_path))
+            model.to(args.device)
+            if not args.do_eval:
+                result=evaluate(args, model, tokenizer)
+                best_threshold = result.get('best_threshold', 0.5)
+            test(args, model, tokenizer, threshold=best_threshold)
+
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--train_data_file", default=None, type=str, required=True,
+                        help="The input training data file (a text file).")
+    parser.add_argument("--output_dir", default="", type=str,
+                        help="The output directory where the model predictions and checkpoints will be written.")
+    parser.add_argument("--eval_data_file", default=None, type=str,
+                        help="An optional input evaluation data file to evaluate the perplexity on (a text file).")
+    parser.add_argument("--test_data_file", default=None, type=str,
+                        help="An optional input evaluation data file to evaluate the perplexity on (a text file).")
+
+    parser.add_argument("--model_type", default="roberta", type=str,
+                        help="The model architecture to be fine-tuned.")
+    parser.add_argument("--model_name_or_path", default="microsoft/codebert-base", type=str,
+                        help="The model checkpoint for weights initialization.")
+
+    parser.add_argument("--mlm", action='store_true',
+                        help="Train with masked-language modeling loss instead of language modeling.")
+    parser.add_argument("--mlm_probability", type=float, default=0.15,
+                        help="Ratio of tokens to mask for masked language modeling loss")
+
+    parser.add_argument("--config_name", default="", type=str,
+                        help="Optional pretrained config name or path if not the same as model_name_or_path")
+    parser.add_argument("--tokenizer_name", default="microsoft/codebert-base", type=str,
+                        help="Optional pretrained tokenizer name or path if not the same as model_name_or_path")
+    parser.add_argument("--cache_dir", default="", type=str,
+                        help="Optional directory to store the pre-trained models downloaded from s3 (instread of the default one)")
+    parser.add_argument("--block_size", default=512, type=int,
+                        help="Optional input sequence length after tokenization."
+                             "The training dataset will be truncated in block of this size for training."
+                             "Default to the model max input length for single sentence inputs (take into account special tokens).")
+    parser.add_argument("--do_train", action='store_true',
+                        help="Whether to run training.")
+    parser.add_argument("--do_eval", action='store_true',
+                        help="Whether to run eval on the dev set.")
+    parser.add_argument("--do_test", action='store_true',
+                        help="Whether to run eval on the dev set.")
+    parser.add_argument("--do_attribution", action='store_true',
+                        help="Whether to run attribution")
+    parser.add_argument("--evaluate_during_training", action='store_true',
+                        help="Run evaluation during training at each logging step.")
+    parser.add_argument("--do_lower_case", action='store_true',
+                        help="Set this flag if you are using an uncased model.")
+    parser.add_argument("--train_batch_size", default=8, type=int,
+                        help="Batch size per GPU/CPU for training.")
+    parser.add_argument("--eval_batch_size", default=16, type=int,
+                        help="Batch size per GPU/CPU for evaluation.")
+    parser.add_argument('--gradient_accumulation_steps', type=int, default=4,
+                        help="Number of updates steps to accumulate before performing a backward/update pass.")
+    parser.add_argument("--learning_rate", default=2e-4, type=float,
+                        help="The initial learning rate for Adam.")
+    parser.add_argument("--weight_decay", default=0.0, type=float,
+                        help="Weight deay if we apply some.")
+    parser.add_argument("--adam_epsilon", default=1e-8, type=float,
+                        help="Epsilon for Adam optimizer.")
+    parser.add_argument("--max_grad_norm", default=1.0, type=float,
+                        help="Max gradient norm.")
+    parser.add_argument("--num_train_epochs", default=1.0, type=float,
+                        help="Total number of training epochs to perform.")
+    parser.add_argument("--max_steps", default=-1, type=int,
+                        help="If > 0: set total number of training steps to perform. Override num_train_epochs.")
+    parser.add_argument("--warmup_steps", default=0, type=int,
+                        help="Linear warmup over warmup_steps.")
+    parser.add_argument('--logging_steps', type=int, default=50,
+                        help="Log every X updates steps.")
+    parser.add_argument('--save_steps', type=int, default=50,
+                        help="Save checkpoint every X updates steps.")
+    parser.add_argument('--save_total_limit', type=int, default=None,
+                        help='Limit the total amount of checkpoints, delete the older checkpoints in the output_dir, does not delete by default')
+    parser.add_argument("--eval_all_checkpoints", action='store_true',
+                        help="Evaluate all checkpoints starting with the same prefix as model_name_or_path ending and ending with step number")
+    parser.add_argument("--no_cuda", action='store_true',
+                        help="Avoid using CUDA when available")
+    parser.add_argument('--overwrite_output_dir', action='store_true',
+                        help="Overwrite the content of the output directory")
+    parser.add_argument('--overwrite_cache', action='store_true',
+                        help="Overwrite the cached training and evaluation sets")
+    parser.add_argument('--seed', type=int, default=42,
+                        help="random seed for initialization")
+    parser.add_argument('--epoch', type=int, default=10,
+                        help="random seed for initialization")
+    parser.add_argument('--fp16', action='store_true',
+                        help="Whether to use 16-bit (mixed) precision (through NVIDIA apex) instead of 32-bit")
+    parser.add_argument('--fp16_opt_level', type=str, default='O1',
+                        help="For fp16: Apex AMP optimization level selected in ['O0', 'O1', 'O2', and 'O3']."
+                             "See details at https://nvidia.github.io/apex/amp.html")
+    parser.add_argument("--local_rank", type=int, default=-1,
+                        help="For distributed training: local_rank")
+    parser.add_argument("--early_stopping_patience", type=int, default=None,
+                        help="Number of epochs with no improvement after which training will be stopped.")
+    parser.add_argument("--min_loss_delta", type=float, default=0.001,
+                        help="Minimum change in the loss required to qualify as an improvement.")
+    parser.add_argument('--dropout_probability', type=float, default=0, help='dropout probability')
+    parser.add_argument('--node', type=str, default='node')
+    parser.add_argument("--csv_path", default='results.csv', help="Path to save the CSV results.")
+
+    args = parser.parse_args()
+    print(args)
+    logger = logging.getLogger(__name__)
+
+    main(args)

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+
+# Junk / temp
+*.tmp
+*.bak
+*.swp
+~$*
+.DS_Store
+Thumbs.db
+
+# Outputs (regenerable)
+checkpoints/
+outputs/
+predictions/
+ToT/experiments/
+
+# Joern critical-line work dirs
+Dataset/graph_context/cpg_evidence/joern_work_crit/
+Dataset/graph_context/cpg_evidence/joern_work/
+Dataset/graph_context/cpg_evidence/joern_work_description_only/
+Dataset/graph_context/cpg_evidence/joern_cpg_evidence_limit*.json
+Dataset/graph_context/critical_lines/c_files/
+Dataset/graph_context/critical_lines/source_data/
+
+# Generated w/o Graph Evidence outputs
+Dataset/ablations/graph_evidence/Ultimate_train_wo_graph_evidence.json
+Dataset/ablations/graph_evidence/wo_graph_evidence_output.json
+Dataset/ablations/graph_evidence/wo_graph_evidence_manifest.json

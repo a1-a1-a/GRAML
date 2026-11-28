@@ -1,0 +1,3761 @@
+[
+  {
+    "sample_idx": 0,
+    "vuln_lines": [
+      38
+    ]
+  },
+  {
+    "sample_idx": 1,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 2,
+    "vuln_lines": [
+      3,
+      80,
+      81,
+      82
+    ]
+  },
+  {
+    "sample_idx": 3,
+    "vuln_lines": [
+      77,
+      78,
+      79
+    ]
+  },
+  {
+    "sample_idx": 4,
+    "vuln_lines": [
+      8,
+      23,
+      31
+    ]
+  },
+  {
+    "sample_idx": 5,
+    "vuln_lines": [
+      4,
+      6,
+      7,
+      15,
+      16,
+      24,
+      25
+    ]
+  },
+  {
+    "sample_idx": 6,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 7,
+    "vuln_lines": [
+      57
+    ]
+  },
+  {
+    "sample_idx": 8,
+    "vuln_lines": [
+      18
+    ]
+  },
+  {
+    "sample_idx": 9,
+    "vuln_lines": [
+      5,
+      7
+    ]
+  },
+  {
+    "sample_idx": 10,
+    "vuln_lines": [
+      6,
+      7
+    ]
+  },
+  {
+    "sample_idx": 11,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 12,
+    "vuln_lines": [
+      2,
+      3
+    ]
+  },
+  {
+    "sample_idx": 13,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 14,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 15,
+    "vuln_lines": [
+      17
+    ]
+  },
+  {
+    "sample_idx": 16,
+    "vuln_lines": [
+      10
+    ]
+  },
+  {
+    "sample_idx": 17,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 18,
+    "vuln_lines": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "sample_idx": 19,
+    "vuln_lines": [
+      36,
+      38
+    ]
+  },
+  {
+    "sample_idx": 20,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 21,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 22,
+    "vuln_lines": [
+      7,
+      8,
+      10
+    ]
+  },
+  {
+    "sample_idx": 23,
+    "vuln_lines": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "sample_idx": 24,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 25,
+    "vuln_lines": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ]
+  },
+  {
+    "sample_idx": 26,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 27,
+    "vuln_lines": [
+      9,
+      47,
+      111
+    ]
+  },
+  {
+    "sample_idx": 28,
+    "vuln_lines": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "sample_idx": 29,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 30,
+    "vuln_lines": [
+      16
+    ]
+  },
+  {
+    "sample_idx": 31,
+    "vuln_lines": [
+      9,
+      10,
+      11,
+      13,
+      19,
+      23
+    ]
+  },
+  {
+    "sample_idx": 32,
+    "vuln_lines": [
+      12,
+      78,
+      79
+    ]
+  },
+  {
+    "sample_idx": 33,
+    "vuln_lines": [
+      13
+    ]
+  },
+  {
+    "sample_idx": 34,
+    "vuln_lines": [
+      14,
+      19,
+      26
+    ]
+  },
+  {
+    "sample_idx": 35,
+    "vuln_lines": [
+      3,
+      9,
+      15,
+      16
+    ]
+  },
+  {
+    "sample_idx": 36,
+    "vuln_lines": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      51,
+      58,
+      60,
+      66,
+      68,
+      69,
+      70,
+      72,
+      73,
+      74
+    ]
+  },
+  {
+    "sample_idx": 37,
+    "vuln_lines": [
+      81
+    ]
+  },
+  {
+    "sample_idx": 38,
+    "vuln_lines": [
+      12
+    ]
+  },
+  {
+    "sample_idx": 39,
+    "vuln_lines": [
+      94
+    ]
+  },
+  {
+    "sample_idx": 40,
+    "vuln_lines": [
+      11,
+      99
+    ]
+  },
+  {
+    "sample_idx": 41,
+    "vuln_lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "sample_idx": 42,
+    "vuln_lines": [
+      5
+    ]
+  },
+  {
+    "sample_idx": 43,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 44,
+    "vuln_lines": [
+      10
+    ]
+  },
+  {
+    "sample_idx": 45,
+    "vuln_lines": [
+      61,
+      63
+    ]
+  },
+  {
+    "sample_idx": 46,
+    "vuln_lines": [
+      5
+    ]
+  },
+  {
+    "sample_idx": 47,
+    "vuln_lines": [
+      6
+    ]
+  },
+  {
+    "sample_idx": 48,
+    "vuln_lines": [
+      15,
+      16,
+      18,
+      24,
+      25,
+      26,
+      27,
+      28,
+      31,
+      32,
+      51
+    ]
+  },
+  {
+    "sample_idx": 49,
+    "vuln_lines": [
+      2,
+      3
+    ]
+  },
+  {
+    "sample_idx": 50,
+    "vuln_lines": [
+      26,
+      37,
+      42
+    ]
+  },
+  {
+    "sample_idx": 51,
+    "vuln_lines": [
+      5
+    ]
+  },
+  {
+    "sample_idx": 52,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 53,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 54,
+    "vuln_lines": [
+      3,
+      4,
+      6,
+      8,
+      9
+    ]
+  },
+  {
+    "sample_idx": 55,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 56,
+    "vuln_lines": [
+      18
+    ]
+  },
+  {
+    "sample_idx": 57,
+    "vuln_lines": [
+      7
+    ]
+  },
+  {
+    "sample_idx": 58,
+    "vuln_lines": [
+      5
+    ]
+  },
+  {
+    "sample_idx": 59,
+    "vuln_lines": [
+      6
+    ]
+  },
+  {
+    "sample_idx": 60,
+    "vuln_lines": [
+      4,
+      5
+    ]
+  },
+  {
+    "sample_idx": 61,
+    "vuln_lines": [
+      83,
+      93,
+      105
+    ]
+  },
+  {
+    "sample_idx": 62,
+    "vuln_lines": [
+      7
+    ]
+  },
+  {
+    "sample_idx": 63,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 64,
+    "vuln_lines": [
+      116,
+      121,
+      122,
+      123
+    ]
+  },
+  {
+    "sample_idx": 65,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 66,
+    "vuln_lines": [
+      6,
+      7
+    ]
+  },
+  {
+    "sample_idx": 67,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 68,
+    "vuln_lines": [
+      17,
+      38,
+      54
+    ]
+  },
+  {
+    "sample_idx": 69,
+    "vuln_lines": [
+      18
+    ]
+  },
+  {
+    "sample_idx": 70,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 71,
+    "vuln_lines": [
+      13
+    ]
+  },
+  {
+    "sample_idx": 72,
+    "vuln_lines": [
+      6
+    ]
+  },
+  {
+    "sample_idx": 73,
+    "vuln_lines": [
+      9
+    ]
+  },
+  {
+    "sample_idx": 74,
+    "vuln_lines": [
+      4,
+      6,
+      7,
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "sample_idx": 75,
+    "vuln_lines": [
+      15
+    ]
+  },
+  {
+    "sample_idx": 76,
+    "vuln_lines": [
+      5,
+      6,
+      7,
+      8,
+      11,
+      23,
+      24
+    ]
+  },
+  {
+    "sample_idx": 77,
+    "vuln_lines": [
+      17,
+      22
+    ]
+  },
+  {
+    "sample_idx": 78,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 79,
+    "vuln_lines": [
+      8,
+      28,
+      29,
+      34
+    ]
+  },
+  {
+    "sample_idx": 80,
+    "vuln_lines": [
+      4,
+      5
+    ]
+  },
+  {
+    "sample_idx": 81,
+    "vuln_lines": [
+      18,
+      35
+    ]
+  },
+  {
+    "sample_idx": 82,
+    "vuln_lines": [
+      2,
+      7,
+      13
+    ]
+  },
+  {
+    "sample_idx": 83,
+    "vuln_lines": [
+      32,
+      33
+    ]
+  },
+  {
+    "sample_idx": 84,
+    "vuln_lines": [
+      41
+    ]
+  },
+  {
+    "sample_idx": 85,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 86,
+    "vuln_lines": [
+      10,
+      42,
+      43,
+      48,
+      50,
+      69,
+      76
+    ]
+  },
+  {
+    "sample_idx": 87,
+    "vuln_lines": [
+      33
+    ]
+  },
+  {
+    "sample_idx": 88,
+    "vuln_lines": [
+      10,
+      11
+    ]
+  },
+  {
+    "sample_idx": 89,
+    "vuln_lines": [
+      10,
+      19,
+      20
+    ]
+  },
+  {
+    "sample_idx": 90,
+    "vuln_lines": [
+      18,
+      21,
+      24
+    ]
+  },
+  {
+    "sample_idx": 91,
+    "vuln_lines": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "sample_idx": 92,
+    "vuln_lines": [
+      6,
+      13,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      48,
+      49,
+      52,
+      53,
+      55,
+      61
+    ]
+  },
+  {
+    "sample_idx": 93,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 94,
+    "vuln_lines": [
+      17,
+      18,
+      23,
+      24
+    ]
+  },
+  {
+    "sample_idx": 95,
+    "vuln_lines": [
+      10,
+      11
+    ]
+  },
+  {
+    "sample_idx": 96,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ]
+  },
+  {
+    "sample_idx": 97,
+    "vuln_lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "sample_idx": 98,
+    "vuln_lines": [
+      20
+    ]
+  },
+  {
+    "sample_idx": 99,
+    "vuln_lines": [
+      3,
+      6,
+      7,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      34,
+      35,
+      36,
+      37,
+      38,
+      42,
+      44,
+      45,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      56,
+      57,
+      58,
+      59,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      88,
+      89,
+      91,
+      92,
+      93,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123
+    ]
+  },
+  {
+    "sample_idx": 100,
+    "vuln_lines": [
+      13,
+      21
+    ]
+  },
+  {
+    "sample_idx": 101,
+    "vuln_lines": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  {
+    "sample_idx": 102,
+    "vuln_lines": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      16,
+      17
+    ]
+  },
+  {
+    "sample_idx": 103,
+    "vuln_lines": [
+      10,
+      11
+    ]
+  },
+  {
+    "sample_idx": 104,
+    "vuln_lines": [
+      22
+    ]
+  },
+  {
+    "sample_idx": 105,
+    "vuln_lines": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "sample_idx": 106,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 107,
+    "vuln_lines": [
+      2,
+      3
+    ]
+  },
+  {
+    "sample_idx": 108,
+    "vuln_lines": [
+      11
+    ]
+  },
+  {
+    "sample_idx": 109,
+    "vuln_lines": [
+      40,
+      73,
+      74
+    ]
+  },
+  {
+    "sample_idx": 110,
+    "vuln_lines": [
+      5,
+      6
+    ]
+  },
+  {
+    "sample_idx": 111,
+    "vuln_lines": [
+      17
+    ]
+  },
+  {
+    "sample_idx": 112,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 113,
+    "vuln_lines": [
+      13
+    ]
+  },
+  {
+    "sample_idx": 114,
+    "vuln_lines": [
+      5,
+      29
+    ]
+  },
+  {
+    "sample_idx": 115,
+    "vuln_lines": [
+      12
+    ]
+  },
+  {
+    "sample_idx": 116,
+    "vuln_lines": [
+      16,
+      17,
+      18
+    ]
+  },
+  {
+    "sample_idx": 117,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 118,
+    "vuln_lines": [
+      6,
+      14,
+      16
+    ]
+  },
+  {
+    "sample_idx": 119,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 120,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 121,
+    "vuln_lines": [
+      2,
+      3
+    ]
+  },
+  {
+    "sample_idx": 122,
+    "vuln_lines": [
+      8
+    ]
+  },
+  {
+    "sample_idx": 123,
+    "vuln_lines": [
+      21
+    ]
+  },
+  {
+    "sample_idx": 124,
+    "vuln_lines": [
+      5
+    ]
+  },
+  {
+    "sample_idx": 125,
+    "vuln_lines": [
+      2,
+      22
+    ]
+  },
+  {
+    "sample_idx": 126,
+    "vuln_lines": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "sample_idx": 127,
+    "vuln_lines": [
+      1
+    ]
+  },
+  {
+    "sample_idx": 128,
+    "vuln_lines": [
+      3,
+      4
+    ]
+  },
+  {
+    "sample_idx": 129,
+    "vuln_lines": [
+      17,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  {
+    "sample_idx": 130,
+    "vuln_lines": [
+      13
+    ]
+  },
+  {
+    "sample_idx": 131,
+    "vuln_lines": [
+      26,
+      27,
+      28,
+      33,
+      34,
+      35,
+      40,
+      41,
+      42
+    ]
+  },
+  {
+    "sample_idx": 132,
+    "vuln_lines": [
+      17,
+      18,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ]
+  },
+  {
+    "sample_idx": 133,
+    "vuln_lines": [
+      27,
+      74,
+      82,
+      108,
+      115
+    ]
+  },
+  {
+    "sample_idx": 134,
+    "vuln_lines": [
+      69,
+      71,
+      74,
+      76,
+      77,
+      78,
+      84,
+      106,
+      108,
+      110
+    ]
+  },
+  {
+    "sample_idx": 135,
+    "vuln_lines": [
+      62,
+      82,
+      90,
+      98,
+      107
+    ]
+  },
+  {
+    "sample_idx": 136,
+    "vuln_lines": [
+      16,
+      29,
+      56,
+      80
+    ]
+  },
+  {
+    "sample_idx": 137,
+    "vuln_lines": [
+      14,
+      16,
+      18,
+      21,
+      22,
+      25
+    ]
+  },
+  {
+    "sample_idx": 138,
+    "vuln_lines": [
+      21,
+      64,
+      65
+    ]
+  },
+  {
+    "sample_idx": 139,
+    "vuln_lines": [
+      3,
+      4
+    ]
+  },
+  {
+    "sample_idx": 140,
+    "vuln_lines": [
+      3,
+      13,
+      14,
+      17,
+      22,
+      23
+    ]
+  },
+  {
+    "sample_idx": 141,
+    "vuln_lines": [
+      6,
+      8
+    ]
+  },
+  {
+    "sample_idx": 142,
+    "vuln_lines": [
+      43,
+      44
+    ]
+  },
+  {
+    "sample_idx": 143,
+    "vuln_lines": [
+      5,
+      6
+    ]
+  },
+  {
+    "sample_idx": 144,
+    "vuln_lines": [
+      4,
+      5,
+      69,
+      70,
+      71,
+      75,
+      77,
+      82,
+      83,
+      84,
+      85,
+      88,
+      89,
+      90,
+      93,
+      94
+    ]
+  },
+  {
+    "sample_idx": 145,
+    "vuln_lines": [
+      38,
+      39,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  {
+    "sample_idx": 146,
+    "vuln_lines": [
+      1,
+      4,
+      5,
+      12,
+      42,
+      43,
+      44
+    ]
+  },
+  {
+    "sample_idx": 147,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      8
+    ]
+  },
+  {
+    "sample_idx": 148,
+    "vuln_lines": [
+      76,
+      77,
+      80
+    ]
+  },
+  {
+    "sample_idx": 149,
+    "vuln_lines": [
+      12,
+      15,
+      16,
+      29,
+      35
+    ]
+  },
+  {
+    "sample_idx": 150,
+    "vuln_lines": [
+      15,
+      39,
+      70
+    ]
+  },
+  {
+    "sample_idx": 151,
+    "vuln_lines": [
+      76,
+      78,
+      83
+    ]
+  },
+  {
+    "sample_idx": 152,
+    "vuln_lines": [
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "sample_idx": 153,
+    "vuln_lines": [
+      30,
+      31
+    ]
+  },
+  {
+    "sample_idx": 154,
+    "vuln_lines": [
+      42,
+      51
+    ]
+  },
+  {
+    "sample_idx": 155,
+    "vuln_lines": [
+      12
+    ]
+  },
+  {
+    "sample_idx": 156,
+    "vuln_lines": [
+      29,
+      30,
+      31,
+      32
+    ]
+  },
+  {
+    "sample_idx": 157,
+    "vuln_lines": [
+      11,
+      15,
+      17
+    ]
+  },
+  {
+    "sample_idx": 158,
+    "vuln_lines": [
+      3,
+      18,
+      36,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      53,
+      55,
+      57
+    ]
+  },
+  {
+    "sample_idx": 159,
+    "vuln_lines": [
+      6,
+      7,
+      8,
+      9,
+      27,
+      28,
+      30,
+      47,
+      48
+    ]
+  },
+  {
+    "sample_idx": 160,
+    "vuln_lines": [
+      35,
+      39,
+      41,
+      45,
+      46
+    ]
+  },
+  {
+    "sample_idx": 161,
+    "vuln_lines": [
+      10,
+      22,
+      23,
+      26,
+      27,
+      28,
+      29,
+      30,
+      33,
+      34,
+      36,
+      39,
+      40,
+      43,
+      44,
+      45,
+      46,
+      47,
+      50,
+      51,
+      54,
+      55
+    ]
+  },
+  {
+    "sample_idx": 162,
+    "vuln_lines": [
+      8,
+      9,
+      14,
+      20,
+      24,
+      32,
+      39,
+      43,
+      47,
+      51,
+      55,
+      56,
+      57,
+      59,
+      60,
+      61,
+      62,
+      63,
+      65,
+      66,
+      67,
+      70,
+      71,
+      72,
+      74,
+      76,
+      77,
+      79,
+      84,
+      85,
+      86,
+      90
+    ]
+  },
+  {
+    "sample_idx": 163,
+    "vuln_lines": [
+      12,
+      22,
+      26,
+      30,
+      34
+    ]
+  },
+  {
+    "sample_idx": 164,
+    "vuln_lines": [
+      18,
+      20,
+      22
+    ]
+  },
+  {
+    "sample_idx": 165,
+    "vuln_lines": [
+      9,
+      10,
+      11,
+      14,
+      19
+    ]
+  },
+  {
+    "sample_idx": 166,
+    "vuln_lines": [
+      3,
+      4,
+      5,
+      6,
+      15,
+      16,
+      33,
+      40,
+      41,
+      68
+    ]
+  },
+  {
+    "sample_idx": 167,
+    "vuln_lines": [
+      8,
+      17,
+      18,
+      23,
+      27
+    ]
+  },
+  {
+    "sample_idx": 168,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      16,
+      20,
+      22,
+      29,
+      32,
+      34,
+      35,
+      38,
+      39,
+      41,
+      42,
+      43,
+      45,
+      46,
+      48
+    ]
+  },
+  {
+    "sample_idx": 169,
+    "vuln_lines": [
+      10,
+      11,
+      14,
+      30
+    ]
+  },
+  {
+    "sample_idx": 170,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "sample_idx": 171,
+    "vuln_lines": [
+      2,
+      10,
+      14,
+      18,
+      24,
+      31,
+      32,
+      35
+    ]
+  },
+  {
+    "sample_idx": 172,
+    "vuln_lines": [
+      6,
+      7,
+      11,
+      12,
+      13,
+      14,
+      16
+    ]
+  },
+  {
+    "sample_idx": 173,
+    "vuln_lines": [
+      9,
+      12,
+      14
+    ]
+  },
+  {
+    "sample_idx": 174,
+    "vuln_lines": [
+      40,
+      41,
+      42
+    ]
+  },
+  {
+    "sample_idx": 175,
+    "vuln_lines": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  {
+    "sample_idx": 176,
+    "vuln_lines": [
+      6,
+      11,
+      16
+    ]
+  },
+  {
+    "sample_idx": 177,
+    "vuln_lines": [
+      29,
+      59,
+      60,
+      62
+    ]
+  },
+  {
+    "sample_idx": 178,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "sample_idx": 179,
+    "vuln_lines": [
+      8,
+      12,
+      39,
+      44,
+      46
+    ]
+  },
+  {
+    "sample_idx": 180,
+    "vuln_lines": [
+      15,
+      41,
+      42,
+      58,
+      66,
+      67,
+      68,
+      76,
+      77,
+      78,
+      79,
+      91
+    ]
+  },
+  {
+    "sample_idx": 181,
+    "vuln_lines": [
+      5,
+      7
+    ]
+  },
+  {
+    "sample_idx": 182,
+    "vuln_lines": [
+      44,
+      45,
+      46,
+      60,
+      61,
+      63
+    ]
+  },
+  {
+    "sample_idx": 183,
+    "vuln_lines": [
+      34,
+      35,
+      36
+    ]
+  },
+  {
+    "sample_idx": 184,
+    "vuln_lines": [
+      25,
+      50,
+      69,
+      78
+    ]
+  },
+  {
+    "sample_idx": 185,
+    "vuln_lines": [
+      14
+    ]
+  },
+  {
+    "sample_idx": 186,
+    "vuln_lines": [
+      10,
+      18
+    ]
+  },
+  {
+    "sample_idx": 187,
+    "vuln_lines": [
+      9,
+      13,
+      33
+    ]
+  },
+  {
+    "sample_idx": 188,
+    "vuln_lines": [
+      52,
+      54
+    ]
+  },
+  {
+    "sample_idx": 189,
+    "vuln_lines": [
+      30,
+      31
+    ]
+  },
+  {
+    "sample_idx": 190,
+    "vuln_lines": [
+      99
+    ]
+  },
+  {
+    "sample_idx": 191,
+    "vuln_lines": [
+      18,
+      19
+    ]
+  },
+  {
+    "sample_idx": 192,
+    "vuln_lines": [
+      15,
+      16
+    ]
+  },
+  {
+    "sample_idx": 193,
+    "vuln_lines": [
+      1,
+      2
+    ]
+  },
+  {
+    "sample_idx": 194,
+    "vuln_lines": [
+      23,
+      26
+    ]
+  },
+  {
+    "sample_idx": 195,
+    "vuln_lines": [
+      57,
+      59
+    ]
+  },
+  {
+    "sample_idx": 196,
+    "vuln_lines": [
+      4,
+      11,
+      13
+    ]
+  },
+  {
+    "sample_idx": 197,
+    "vuln_lines": [
+      7
+    ]
+  },
+  {
+    "sample_idx": 198,
+    "vuln_lines": [
+      65
+    ]
+  },
+  {
+    "sample_idx": 199,
+    "vuln_lines": [
+      6,
+      46
+    ]
+  },
+  {
+    "sample_idx": 200,
+    "vuln_lines": [
+      87,
+      88,
+      89
+    ]
+  },
+  {
+    "sample_idx": 201,
+    "vuln_lines": [
+      10
+    ]
+  },
+  {
+    "sample_idx": 202,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 203,
+    "vuln_lines": [
+      5
+    ]
+  },
+  {
+    "sample_idx": 204,
+    "vuln_lines": [
+      31
+    ]
+  },
+  {
+    "sample_idx": 205,
+    "vuln_lines": [
+      24
+    ]
+  },
+  {
+    "sample_idx": 206,
+    "vuln_lines": [
+      2,
+      3
+    ]
+  },
+  {
+    "sample_idx": 207,
+    "vuln_lines": [
+      23,
+      24
+    ]
+  },
+  {
+    "sample_idx": 208,
+    "vuln_lines": [
+      8,
+      14
+    ]
+  },
+  {
+    "sample_idx": 209,
+    "vuln_lines": [
+      4
+    ]
+  },
+  {
+    "sample_idx": 210,
+    "vuln_lines": [
+      5,
+      18
+    ]
+  },
+  {
+    "sample_idx": 211,
+    "vuln_lines": [
+      1,
+      23
+    ]
+  },
+  {
+    "sample_idx": 212,
+    "vuln_lines": [
+      12
+    ]
+  },
+  {
+    "sample_idx": 213,
+    "vuln_lines": [
+      8,
+      9
+    ]
+  },
+  {
+    "sample_idx": 214,
+    "vuln_lines": [
+      9,
+      16,
+      37,
+      38
+    ]
+  },
+  {
+    "sample_idx": 215,
+    "vuln_lines": [
+      1,
+      7,
+      21,
+      25,
+      32,
+      36,
+      38,
+      39
+    ]
+  },
+  {
+    "sample_idx": 216,
+    "vuln_lines": [
+      14,
+      18,
+      38,
+      54,
+      70
+    ]
+  },
+  {
+    "sample_idx": 217,
+    "vuln_lines": [
+      3,
+      4,
+      5,
+      8
+    ]
+  },
+  {
+    "sample_idx": 218,
+    "vuln_lines": [
+      72,
+      75,
+      76,
+      78,
+      79,
+      80,
+      84,
+      87,
+      88,
+      89
+    ]
+  },
+  {
+    "sample_idx": 219,
+    "vuln_lines": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      10
+    ]
+  },
+  {
+    "sample_idx": 220,
+    "vuln_lines": [
+      1,
+      26,
+      27,
+      31,
+      32,
+      37,
+      38,
+      42,
+      43,
+      47,
+      50,
+      55,
+      56,
+      57,
+      58,
+      62,
+      63,
+      64,
+      70,
+      76,
+      79,
+      86,
+      89,
+      96,
+      99,
+      102,
+      109
+    ]
+  },
+  {
+    "sample_idx": 221,
+    "vuln_lines": [
+      5,
+      6,
+      12,
+      14,
+      18,
+      23,
+      24
+    ]
+  },
+  {
+    "sample_idx": 222,
+    "vuln_lines": [
+      7,
+      8,
+      19,
+      28,
+      35,
+      44,
+      45,
+      47,
+      51,
+      57
+    ]
+  },
+  {
+    "sample_idx": 223,
+    "vuln_lines": [
+      1,
+      6,
+      12
+    ]
+  },
+  {
+    "sample_idx": 224,
+    "vuln_lines": [
+      2,
+      8,
+      11
+    ]
+  },
+  {
+    "sample_idx": 225,
+    "vuln_lines": [
+      20,
+      22,
+      25
+    ]
+  },
+  {
+    "sample_idx": 226,
+    "vuln_lines": [
+      30,
+      33,
+      81,
+      119
+    ]
+  },
+  {
+    "sample_idx": 227,
+    "vuln_lines": [
+      42,
+      43
+    ]
+  },
+  {
+    "sample_idx": 228,
+    "vuln_lines": [
+      19
+    ]
+  },
+  {
+    "sample_idx": 229,
+    "vuln_lines": [
+      16,
+      17
+    ]
+  },
+  {
+    "sample_idx": 230,
+    "vuln_lines": [
+      27,
+      31,
+      39,
+      40,
+      48,
+      49,
+      51,
+      53,
+      54,
+      69,
+      72,
+      73,
+      75,
+      76,
+      77
+    ]
+  },
+  {
+    "sample_idx": 231,
+    "vuln_lines": [
+      16,
+      17
+    ]
+  },
+  {
+    "sample_idx": 232,
+    "vuln_lines": [
+      6,
+      21
+    ]
+  },
+  {
+    "sample_idx": 233,
+    "vuln_lines": [
+      1,
+      3,
+      10
+    ]
+  },
+  {
+    "sample_idx": 234,
+    "vuln_lines": [
+      5
+    ]
+  },
+  {
+    "sample_idx": 235,
+    "vuln_lines": [
+      6,
+      24,
+      29
+    ]
+  },
+  {
+    "sample_idx": 236,
+    "vuln_lines": [
+      7
+    ]
+  },
+  {
+    "sample_idx": 237,
+    "vuln_lines": [
+      61,
+      62
+    ]
+  },
+  {
+    "sample_idx": 238,
+    "vuln_lines": [
+      6
+    ]
+  },
+  {
+    "sample_idx": 239,
+    "vuln_lines": [
+      5
+    ]
+  },
+  {
+    "sample_idx": 240,
+    "vuln_lines": [
+      5,
+      46,
+      54
+    ]
+  },
+  {
+    "sample_idx": 241,
+    "vuln_lines": [
+      28,
+      30
+    ]
+  },
+  {
+    "sample_idx": 242,
+    "vuln_lines": [
+      8
+    ]
+  },
+  {
+    "sample_idx": 243,
+    "vuln_lines": [
+      58,
+      59,
+      60
+    ]
+  },
+  {
+    "sample_idx": 244,
+    "vuln_lines": [
+      17,
+      29
+    ]
+  },
+  {
+    "sample_idx": 245,
+    "vuln_lines": [
+      11,
+      35
+    ]
+  },
+  {
+    "sample_idx": 246,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 247,
+    "vuln_lines": [
+      21
+    ]
+  },
+  {
+    "sample_idx": 248,
+    "vuln_lines": [
+      25
+    ]
+  },
+  {
+    "sample_idx": 249,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 250,
+    "vuln_lines": [
+      9
+    ]
+  },
+  {
+    "sample_idx": 251,
+    "vuln_lines": [
+      84
+    ]
+  },
+  {
+    "sample_idx": 252,
+    "vuln_lines": [
+      11
+    ]
+  },
+  {
+    "sample_idx": 253,
+    "vuln_lines": [
+      18
+    ]
+  },
+  {
+    "sample_idx": 254,
+    "vuln_lines": [
+      23
+    ]
+  },
+  {
+    "sample_idx": 255,
+    "vuln_lines": [
+      66
+    ]
+  },
+  {
+    "sample_idx": 256,
+    "vuln_lines": [
+      11
+    ]
+  },
+  {
+    "sample_idx": 257,
+    "vuln_lines": [
+      1,
+      8
+    ]
+  },
+  {
+    "sample_idx": 258,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 259,
+    "vuln_lines": [
+      2
+    ]
+  },
+  {
+    "sample_idx": 260,
+    "vuln_lines": [
+      22
+    ]
+  },
+  {
+    "sample_idx": 261,
+    "vuln_lines": [
+      15
+    ]
+  },
+  {
+    "sample_idx": 262,
+    "vuln_lines": [
+      52
+    ]
+  },
+  {
+    "sample_idx": 263,
+    "vuln_lines": [
+      52
+    ]
+  },
+  {
+    "sample_idx": 264,
+    "vuln_lines": [
+      70
+    ]
+  },
+  {
+    "sample_idx": 265,
+    "vuln_lines": [
+      10
+    ]
+  },
+  {
+    "sample_idx": 266,
+    "vuln_lines": [
+      2
+    ]
+  },
+  {
+    "sample_idx": 267,
+    "vuln_lines": [
+      16
+    ]
+  },
+  {
+    "sample_idx": 268,
+    "vuln_lines": [
+      7
+    ]
+  },
+  {
+    "sample_idx": 269,
+    "vuln_lines": [
+      78
+    ]
+  },
+  {
+    "sample_idx": 270,
+    "vuln_lines": [
+      19
+    ]
+  },
+  {
+    "sample_idx": 271,
+    "vuln_lines": [
+      9
+    ]
+  },
+  {
+    "sample_idx": 272,
+    "vuln_lines": [
+      15,
+      17,
+      23,
+      30,
+      31,
+      33
+    ]
+  },
+  {
+    "sample_idx": 273,
+    "vuln_lines": [
+      6,
+      7,
+      8,
+      13,
+      17,
+      21
+    ]
+  },
+  {
+    "sample_idx": 274,
+    "vuln_lines": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      21
+    ]
+  },
+  {
+    "sample_idx": 275,
+    "vuln_lines": [
+      19,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ]
+  },
+  {
+    "sample_idx": 276,
+    "vuln_lines": [
+      5,
+      6,
+      9,
+      11,
+      12,
+      15
+    ]
+  },
+  {
+    "sample_idx": 277,
+    "vuln_lines": [
+      9,
+      14,
+      15,
+      16,
+      19
+    ]
+  },
+  {
+    "sample_idx": 278,
+    "vuln_lines": [
+      4,
+      5,
+      8,
+      9,
+      11
+    ]
+  },
+  {
+    "sample_idx": 279,
+    "vuln_lines": [
+      1,
+      3,
+      4,
+      23,
+      24,
+      38,
+      41
+    ]
+  },
+  {
+    "sample_idx": 280,
+    "vuln_lines": [
+      12,
+      13,
+      14,
+      24
+    ]
+  },
+  {
+    "sample_idx": 281,
+    "vuln_lines": [
+      20,
+      24,
+      25,
+      26
+    ]
+  },
+  {
+    "sample_idx": 282,
+    "vuln_lines": [
+      8,
+      9,
+      20,
+      25,
+      28,
+      34,
+      38,
+      41
+    ]
+  },
+  {
+    "sample_idx": 283,
+    "vuln_lines": [
+      101,
+      125,
+      163,
+      164
+    ]
+  },
+  {
+    "sample_idx": 284,
+    "vuln_lines": [
+      20,
+      24,
+      28,
+      107
+    ]
+  },
+  {
+    "sample_idx": 285,
+    "vuln_lines": [
+      8,
+      19,
+      31
+    ]
+  },
+  {
+    "sample_idx": 286,
+    "vuln_lines": [
+      108,
+      116,
+      117
+    ]
+  },
+  {
+    "sample_idx": 287,
+    "vuln_lines": [
+      7,
+      8,
+      11,
+      12
+    ]
+  },
+  {
+    "sample_idx": 288,
+    "vuln_lines": [
+      11,
+      12
+    ]
+  },
+  {
+    "sample_idx": 289,
+    "vuln_lines": [
+      11,
+      12
+    ]
+  },
+  {
+    "sample_idx": 290,
+    "vuln_lines": [
+      13,
+      15,
+      25,
+      30
+    ]
+  },
+  {
+    "sample_idx": 291,
+    "vuln_lines": [
+      11,
+      13,
+      25
+    ]
+  },
+  {
+    "sample_idx": 292,
+    "vuln_lines": [
+      18,
+      20,
+      21,
+      23,
+      25,
+      27,
+      29,
+      34
+    ]
+  },
+  {
+    "sample_idx": 293,
+    "vuln_lines": [
+      3,
+      31
+    ]
+  },
+  {
+    "sample_idx": 294,
+    "vuln_lines": [
+      23,
+      26
+    ]
+  },
+  {
+    "sample_idx": 295,
+    "vuln_lines": [
+      88,
+      89,
+      90,
+      91
+    ]
+  },
+  {
+    "sample_idx": 296,
+    "vuln_lines": [
+      6,
+      8
+    ]
+  },
+  {
+    "sample_idx": 297,
+    "vuln_lines": [
+      18,
+      19,
+      21,
+      23,
+      26,
+      39,
+      40,
+      42,
+      44,
+      46,
+      47,
+      50,
+      52,
+      54
+    ]
+  },
+  {
+    "sample_idx": 298,
+    "vuln_lines": [
+      46,
+      48,
+      49
+    ]
+  },
+  {
+    "sample_idx": 299,
+    "vuln_lines": [
+      11,
+      16
+    ]
+  },
+  {
+    "sample_idx": 300,
+    "vuln_lines": [
+      21,
+      22,
+      23
+    ]
+  },
+  {
+    "sample_idx": 301,
+    "vuln_lines": [
+      25,
+      26,
+      39,
+      40
+    ]
+  },
+  {
+    "sample_idx": 302,
+    "vuln_lines": [
+      20,
+      21
+    ]
+  },
+  {
+    "sample_idx": 303,
+    "vuln_lines": [
+      3,
+      7
+    ]
+  },
+  {
+    "sample_idx": 304,
+    "vuln_lines": [
+      30
+    ]
+  },
+  {
+    "sample_idx": 305,
+    "vuln_lines": [
+      85
+    ]
+  },
+  {
+    "sample_idx": 306,
+    "vuln_lines": [
+      13
+    ]
+  },
+  {
+    "sample_idx": 307,
+    "vuln_lines": [
+      19
+    ]
+  },
+  {
+    "sample_idx": 308,
+    "vuln_lines": [
+      11
+    ]
+  },
+  {
+    "sample_idx": 309,
+    "vuln_lines": [
+      37
+    ]
+  },
+  {
+    "sample_idx": 310,
+    "vuln_lines": [
+      24
+    ]
+  },
+  {
+    "sample_idx": 311,
+    "vuln_lines": [
+      5,
+      18
+    ]
+  },
+  {
+    "sample_idx": 312,
+    "vuln_lines": [
+      3
+    ]
+  },
+  {
+    "sample_idx": 313,
+    "vuln_lines": [
+      6,
+      11,
+      12,
+      14
+    ]
+  },
+  {
+    "sample_idx": 314,
+    "vuln_lines": [
+      4,
+      7,
+      8,
+      13,
+      16
+    ]
+  },
+  {
+    "sample_idx": 315,
+    "vuln_lines": [
+      16,
+      20,
+      24,
+      28
+    ]
+  },
+  {
+    "sample_idx": 316,
+    "vuln_lines": [
+      16,
+      17,
+      53,
+      54,
+      55,
+      61,
+      76
+    ]
+  },
+  {
+    "sample_idx": 317,
+    "vuln_lines": [
+      17,
+      26,
+      32,
+      44,
+      48
+    ]
+  },
+  {
+    "sample_idx": 318,
+    "vuln_lines": [
+      3,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "sample_idx": 319,
+    "vuln_lines": [
+      103,
+      121,
+      122
+    ]
+  },
+  {
+    "sample_idx": 320,
+    "vuln_lines": [
+      12,
+      13,
+      22,
+      29,
+      32
+    ]
+  },
+  {
+    "sample_idx": 321,
+    "vuln_lines": [
+      30
+    ]
+  },
+  {
+    "sample_idx": 322,
+    "vuln_lines": [
+      48
+    ]
+  },
+  {
+    "sample_idx": 323,
+    "vuln_lines": [
+      70,
+      71,
+      74
+    ]
+  },
+  {
+    "sample_idx": 324,
+    "vuln_lines": [
+      7,
+      15,
+      17,
+      19,
+      47,
+      52
+    ]
+  },
+  {
+    "sample_idx": 325,
+    "vuln_lines": [
+      39
+    ]
+  },
+  {
+    "sample_idx": 326,
+    "vuln_lines": [
+      9,
+      22,
+      24,
+      40
+    ]
+  },
+  {
+    "sample_idx": 327,
+    "vuln_lines": [
+      45,
+      52,
+      53,
+      59,
+      60,
+      68
+    ]
+  },
+  {
+    "sample_idx": 328,
+    "vuln_lines": [
+      3,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19
+    ]
+  },
+  {
+    "sample_idx": 329,
+    "vuln_lines": [
+      8,
+      17,
+      18,
+      20,
+      22,
+      23,
+      25,
+      32,
+      33,
+      36
+    ]
+  },
+  {
+    "sample_idx": 330,
+    "vuln_lines": [
+      93,
+      99,
+      100
+    ]
+  },
+  {
+    "sample_idx": 331,
+    "vuln_lines": [
+      4,
+      5,
+      6,
+      10,
+      11,
+      12,
+      14,
+      15,
+      17,
+      18,
+      19,
+      22,
+      23,
+      24,
+      25,
+      27,
+      28,
+      29,
+      31,
+      40,
+      41,
+      44,
+      45
+    ]
+  },
+  {
+    "sample_idx": 332,
+    "vuln_lines": [
+      4,
+      18,
+      20,
+      22,
+      23
+    ]
+  },
+  {
+    "sample_idx": 333,
+    "vuln_lines": [
+      27,
+      32
+    ]
+  },
+  {
+    "sample_idx": 334,
+    "vuln_lines": [
+      6,
+      8,
+      19,
+      22,
+      24,
+      26,
+      27
+    ]
+  },
+  {
+    "sample_idx": 335,
+    "vuln_lines": [
+      21,
+      23,
+      24
+    ]
+  },
+  {
+    "sample_idx": 336,
+    "vuln_lines": [
+      4,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "sample_idx": 337,
+    "vuln_lines": [
+      49,
+      50
+    ]
+  },
+  {
+    "sample_idx": 338,
+    "vuln_lines": [
+      14,
+      21
+    ]
+  },
+  {
+    "sample_idx": 339,
+    "vuln_lines": [
+      21
+    ]
+  },
+  {
+    "sample_idx": 340,
+    "vuln_lines": [
+      4,
+      6,
+      8,
+      13,
+      16,
+      19,
+      22,
+      35,
+      43
+    ]
+  },
+  {
+    "sample_idx": 341,
+    "vuln_lines": [
+      32,
+      34,
+      36,
+      38,
+      40,
+      45
+    ]
+  },
+  {
+    "sample_idx": 342,
+    "vuln_lines": [
+      40,
+      50,
+      55
+    ]
+  },
+  {
+    "sample_idx": 343,
+    "vuln_lines": [
+      106,
+      107,
+      116,
+      117,
+      119,
+      120
+    ]
+  },
+  {
+    "sample_idx": 344,
+    "vuln_lines": [
+      22,
+      42
+    ]
+  },
+  {
+    "sample_idx": 345,
+    "vuln_lines": [
+      58,
+      69
+    ]
+  },
+  {
+    "sample_idx": 346,
+    "vuln_lines": [
+      21
+    ]
+  },
+  {
+    "sample_idx": 347,
+    "vuln_lines": [
+      25,
+      32,
+      35
+    ]
+  },
+  {
+    "sample_idx": 348,
+    "vuln_lines": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ]
+  },
+  {
+    "sample_idx": 349,
+    "vuln_lines": [
+      9,
+      21,
+      26,
+      33,
+      41
+    ]
+  },
+  {
+    "sample_idx": 350,
+    "vuln_lines": [
+      13,
+      19,
+      22,
+      23
+    ]
+  },
+  {
+    "sample_idx": 351,
+    "vuln_lines": [
+      13,
+      14
+    ]
+  },
+  {
+    "sample_idx": 352,
+    "vuln_lines": [
+      5,
+      6,
+      30,
+      71,
+      72
+    ]
+  },
+  {
+    "sample_idx": 353,
+    "vuln_lines": [
+      8,
+      28,
+      29,
+      38,
+      39,
+      40,
+      41
+    ]
+  },
+  {
+    "sample_idx": 354,
+    "vuln_lines": [
+      10,
+      11,
+      54,
+      57
+    ]
+  },
+  {
+    "sample_idx": 355,
+    "vuln_lines": [
+      4,
+      5,
+      14,
+      42
+    ]
+  },
+  {
+    "sample_idx": 356,
+    "vuln_lines": [
+      56,
+      57,
+      58,
+      59,
+      67,
+      74
+    ]
+  },
+  {
+    "sample_idx": 357,
+    "vuln_lines": [
+      18,
+      19,
+      20,
+      21
+    ]
+  },
+  {
+    "sample_idx": 358,
+    "vuln_lines": [
+      35,
+      47,
+      57
+    ]
+  },
+  {
+    "sample_idx": 359,
+    "vuln_lines": [
+      8,
+      27,
+      29,
+      30,
+      32,
+      35,
+      39
+    ]
+  },
+  {
+    "sample_idx": 360,
+    "vuln_lines": [
+      12,
+      15,
+      16,
+      36
+    ]
+  },
+  {
+    "sample_idx": 361,
+    "vuln_lines": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      46
+    ]
+  },
+  {
+    "sample_idx": 362,
+    "vuln_lines": [
+      5,
+      45,
+      46,
+      47,
+      57
+    ]
+  },
+  {
+    "sample_idx": 363,
+    "vuln_lines": [
+      25,
+      32,
+      33,
+      37,
+      44,
+      45,
+      47,
+      48,
+      49,
+      50,
+      52,
+      53
+    ]
+  },
+  {
+    "sample_idx": 364,
+    "vuln_lines": [
+      24,
+      26,
+      28,
+      30,
+      33,
+      35,
+      38,
+      41,
+      44,
+      47,
+      50,
+      52,
+      54,
+      56,
+      59,
+      83
+    ]
+  },
+  {
+    "sample_idx": 365,
+    "vuln_lines": [
+      34,
+      35,
+      36,
+      52,
+      57,
+      58,
+      59,
+      61
+    ]
+  },
+  {
+    "sample_idx": 366,
+    "vuln_lines": [
+      58,
+      59,
+      60,
+      61,
+      68,
+      70
+    ]
+  },
+  {
+    "sample_idx": 367,
+    "vuln_lines": [
+      5,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      68,
+      69,
+      70
+    ]
+  },
+  {
+    "sample_idx": 368,
+    "vuln_lines": [
+      21,
+      22,
+      23,
+      25,
+      28
+    ]
+  },
+  {
+    "sample_idx": 369,
+    "vuln_lines": [
+      6,
+      23,
+      48,
+      50,
+      51,
+      55
+    ]
+  },
+  {
+    "sample_idx": 370,
+    "vuln_lines": [
+      11,
+      12,
+      18,
+      19,
+      20,
+      42,
+      52,
+      57
+    ]
+  },
+  {
+    "sample_idx": 371,
+    "vuln_lines": [
+      16
+    ]
+  },
+  {
+    "sample_idx": 372,
+    "vuln_lines": [
+      8,
+      28,
+      30,
+      31,
+      32,
+      35,
+      36,
+      40
+    ]
+  },
+  {
+    "sample_idx": 373,
+    "vuln_lines": [
+      60,
+      61,
+      62
+    ]
+  },
+  {
+    "sample_idx": 374,
+    "vuln_lines": [
+      6,
+      9,
+      10,
+      11,
+      47
+    ]
+  },
+  {
+    "sample_idx": 375,
+    "vuln_lines": [
+      46,
+      49,
+      65,
+      88
+    ]
+  },
+  {
+    "sample_idx": 376,
+    "vuln_lines": [
+      11,
+      12,
+      16
+    ]
+  },
+  {
+    "sample_idx": 377,
+    "vuln_lines": [
+      9,
+      38,
+      39
+    ]
+  },
+  {
+    "sample_idx": 378,
+    "vuln_lines": [
+      33,
+      34
+    ]
+  },
+  {
+    "sample_idx": 379,
+    "vuln_lines": [
+      11,
+      50,
+      53
+    ]
+  },
+  {
+    "sample_idx": 380,
+    "vuln_lines": [
+      8,
+      9,
+      13,
+      22,
+      23,
+      26,
+      30,
+      32,
+      33,
+      77,
+      79,
+      81,
+      84,
+      89,
+      92,
+      99,
+      112,
+      113,
+      115
+    ]
+  },
+  {
+    "sample_idx": 381,
+    "vuln_lines": [
+      26,
+      27,
+      28,
+      29,
+      31,
+      35,
+      36
+    ]
+  },
+  {
+    "sample_idx": 382,
+    "vuln_lines": [
+      52
+    ]
+  },
+  {
+    "sample_idx": 383,
+    "vuln_lines": [
+      8,
+      9,
+      10,
+      12,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  {
+    "sample_idx": 384,
+    "vuln_lines": [
+      19
+    ]
+  },
+  {
+    "sample_idx": 385,
+    "vuln_lines": [
+      41,
+      42,
+      43,
+      46
+    ]
+  },
+  {
+    "sample_idx": 386,
+    "vuln_lines": [
+      81
+    ]
+  },
+  {
+    "sample_idx": 387,
+    "vuln_lines": [
+      4,
+      23,
+      28,
+      33,
+      38,
+      40,
+      46
+    ]
+  },
+  {
+    "sample_idx": 388,
+    "vuln_lines": [
+      30,
+      31
+    ]
+  },
+  {
+    "sample_idx": 389,
+    "vuln_lines": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ]
+  },
+  {
+    "sample_idx": 390,
+    "vuln_lines": [
+      60,
+      69
+    ]
+  },
+  {
+    "sample_idx": 391,
+    "vuln_lines": [
+      3,
+      4,
+      7,
+      28,
+      29,
+      32,
+      39,
+      41,
+      44
+    ]
+  },
+  {
+    "sample_idx": 392,
+    "vuln_lines": [
+      10,
+      16,
+      26,
+      29
+    ]
+  },
+  {
+    "sample_idx": 393,
+    "vuln_lines": [
+      7,
+      31,
+      46,
+      47,
+      48,
+      52,
+      56
+    ]
+  },
+  {
+    "sample_idx": 394,
+    "vuln_lines": [
+      50,
+      53,
+      54
+    ]
+  },
+  {
+    "sample_idx": 395,
+    "vuln_lines": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ]
+  },
+  {
+    "sample_idx": 396,
+    "vuln_lines": [
+      38
+    ]
+  },
+  {
+    "sample_idx": 397,
+    "vuln_lines": [
+      7,
+      30,
+      31,
+      32,
+      34
+    ]
+  },
+  {
+    "sample_idx": 398,
+    "vuln_lines": [
+      14
+    ]
+  },
+  {
+    "sample_idx": 399,
+    "vuln_lines": [
+      19,
+      20
+    ]
+  },
+  {
+    "sample_idx": 400,
+    "vuln_lines": [
+      14,
+      58,
+      59,
+      60,
+      61
+    ]
+  },
+  {
+    "sample_idx": 401,
+    "vuln_lines": [
+      35,
+      37
+    ]
+  },
+  {
+    "sample_idx": 402,
+    "vuln_lines": [
+      8,
+      18,
+      26,
+      34,
+      40,
+      49
+    ]
+  },
+  {
+    "sample_idx": 403,
+    "vuln_lines": [
+      78,
+      107
+    ]
+  },
+  {
+    "sample_idx": 404,
+    "vuln_lines": [
+      12,
+      13,
+      14,
+      16,
+      18,
+      22
+    ]
+  },
+  {
+    "sample_idx": 405,
+    "vuln_lines": [
+      18,
+      20,
+      21,
+      30
+    ]
+  },
+  {
+    "sample_idx": 406,
+    "vuln_lines": [
+      5,
+      7,
+      8,
+      10,
+      11
+    ]
+  },
+  {
+    "sample_idx": 407,
+    "vuln_lines": [
+      117
+    ]
+  },
+  {
+    "sample_idx": 408,
+    "vuln_lines": [
+      50,
+      73,
+      84
+    ]
+  },
+  {
+    "sample_idx": 409,
+    "vuln_lines": [
+      28,
+      29,
+      30,
+      31,
+      40,
+      44
+    ]
+  },
+  {
+    "sample_idx": 410,
+    "vuln_lines": [
+      7,
+      9,
+      34,
+      35,
+      67,
+      82,
+      83,
+      84,
+      85,
+      92,
+      98,
+      99
+    ]
+  }
+]

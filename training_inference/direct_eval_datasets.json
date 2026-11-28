@@ -1,0 +1,9 @@
+[
+  {"name": "ID_test", "path": "Dataset/eval/ID_test.json", "expected": 3000},
+  {"name": "CVEfixes", "path": "Dataset/eval/CVEfixes_test.json", "expected": 2108},
+  {"name": "Devign", "path": "Dataset/eval/Devign_test.json", "expected": 936},
+  {"name": "DiverseVul", "path": "Dataset/eval/DiverseVul_test.json", "expected": 766},
+  {"name": "Juliet", "path": "Dataset/eval/Juliet_test.json", "expected": 1576},
+  {"name": "PrimeVul", "path": "Dataset/eval/PrimeVul_test.json", "expected": 548},
+  {"name": "ReVeal", "path": "Dataset/eval/ReVeal_test.json", "expected": 1014}
+]

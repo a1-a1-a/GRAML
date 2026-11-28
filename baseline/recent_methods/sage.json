@@ -1,0 +1,43 @@
+{
+  "method": "SAGE",
+  "backbones": [
+    "CodeLlama",
+    "Qwen",
+    "Mistral",
+    "DeepSeek-Coder"
+  ],
+  "task": "detection",
+  "train_samples": 21537,
+  "feature": {
+    "position": "last_token_final_layer",
+    "layer_index": {
+      "CodeLlama": 31,
+      "Mistral": 31,
+      "DeepSeek-Coder": 31,
+      "Qwen": 27
+    },
+    "max_input_tokens": 4096
+  },
+  "sae": {
+    "expansion_factor": 8,
+    "sparsity_coefficient": 1
+  },
+  "optimization": {
+    "epochs": 10,
+    "learning_rate": 0.0001,
+    "batch_size": 256,
+    "seed": 42
+  },
+  "checkpoint_selection": {
+    "split": "Dataset/eval/ID_valid.json",
+    "samples": 3000,
+    "metric": "f1"
+  },
+  "threshold": {
+    "source": "id_validation",
+    "metric": "f1",
+    "fixed_for_all_evaluations": true
+  },
+  "implementation": "https://github.com/BDS-SDU/SAGE",
+  "checkpoint_entry": "train_sae_locally; select on ID validation"
+}
